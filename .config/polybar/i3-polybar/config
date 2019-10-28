@@ -56,32 +56,32 @@ fm = #9F9FB7
 
 ### foreground color of modules ${colors.foreground.modules name}
 ### Цвет текста модулей ${colors.foreground.имя модуля}
-foreground.filesystem = #1E1E1E
+foreground.filesystem = #1A1A1A
 foreground.filesystemunmounted = #CE8280
 foreground.title = #8A8AE5
-foreground.xkeyboard = #0F0F0F
-foreground.network = #171717
-foreground.cpu = #171717
-foreground.memory =  #171717
-foreground.temperature3 = #171717
+foreground.xkeyboard = #1A1A1A
+foreground.network = #407F8B
+foreground.cpu = #8C4790
+foreground.memory =  #7450A2
+foreground.temperature3 = #645FB5
 foreground.temperature3warn  = #FFCC00
-foreground.date = #171717
-foreground.powermenu = #171717
+foreground.date = #6069BD
+foreground.powermenu = #1A1A1A
 
 
 ### background color of modules ${colors.background.modules name}
 ### цвет фона модулей ${colors.background.имя модуля}
-background.filesystem = #4F4F83
+background.filesystem = #57578F
 background.title = #1E2024
-background.xkeyboard = #4F4F83
-background.network = #3D7884
-background.cpu = #7A3A7D
-background.memory = #5E4183
-background.temperature3 = #494592
+background.xkeyboard = #57578F
+background.network = #1E1F25
+background.cpu = #1E1F25
+background.memory = #1E1F25
+background.temperature3 = #1E1F25
 background.temperature3warm = #A33541
-background.date = #39499B
-background.powermenu = #314695
-background.tray = #3750AA
+background.date = #1E1F25
+background.powermenu = #4F4F9C
+background.tray = #57579B
 
 
 ###underline color of modules ${colors.underline.modules name}
@@ -119,10 +119,10 @@ width = 100%
 height = 24
 
 
-
 ### Change polybar location - bottom
 ### Поменять расположение polybar - низ
 #bottom = true
+
 
 ### Panel Offset 
 ### Смещение панели 
@@ -155,7 +155,6 @@ foreground = ${colors.foreground}
 ### размер нижней линии под модулями
 line-size = 4
 #line-color = #6D6DAB
-
 
 
 ### Border around the panel
@@ -200,6 +199,7 @@ tray-background = ${colors.background.tray}
 #tray-transparent = true
 #tray-maxsize = 16
 
+
 ### Requires polybar to be built with xcursor support (xcb-util-cursor)
 ### Changes the cursor when hovering over active polybar icons
 ### Требуется сборка polybar с поддержкой xcursor (xcb-util-cursor)
@@ -235,10 +235,10 @@ modules-right =  pulseaudio network cpu memory temperature3 date powermenu
 
 
 
+
 #[settings]
 ### Прозрачность
 #pseudo-transparency = true
-
 
 
 
@@ -549,7 +549,7 @@ label-layout-padding = 1
 [module/title]
 type = internal/xwindow
 label = %title%
-label-maxlen = 30
+label-maxlen = 24
 label-foreground = ${colors.foreground.title}
 format-background = ${colors.background.title}
 label-padding = 4
@@ -564,18 +564,24 @@ label-padding = 4
 ### Internet connection module
 ### Модуль интернет соединения
 
+
 [module/network]
 type = custom/script
 #format = <label>
 interval = 2
 
 format-prefix = 
-exec =  "nmcli g | awk 'NR==2{print $1}'"
+#exec = "nmcli g | awk 'NR==2{print $1}'"
+#exec = "nmcli c | awk 'NR==2{print $6}'"
+exec = ping -q -w1 -c1 archlinux.org &>/dev/null && echo ONLINE || echo offline
+
+
 
 label-foreground = ${colors.foreground.network}
 format-prefix-foreground = ${colors.foreground.network}
 label-background = ${colors.background.network}
 format-prefix-background = ${colors.background.network}
+
 #format-underline = ${colors.underline.network}
 #format-prefix-underline = ${colors.underline.network}
 
@@ -585,7 +591,6 @@ click-left = nm-connection-editor
 format-prefix-padding-left = 2
 format-prefix-padding-right = 0
 label-padding = 2
-
 
 
 
@@ -725,7 +730,7 @@ label-open-padding = 2
 #format-padding = 4
 
 label-close = cancel
-label-close-foreground = #D73379
+label-close-foreground = #8D8DE8
 label-close-background = #1E2028
 label-close-padding  = 2
 
@@ -757,7 +762,7 @@ menu-0-2-foreground = A92E47
 
 
 menu-0-3 = 
-menu-0-3-background = 3750AA
+menu-0-3-background = 5F5FA2
 menu-0-3-foreground = D5DCF5
 menu-0-3-padding = 2
 menu-0-3-margin-left = 1
