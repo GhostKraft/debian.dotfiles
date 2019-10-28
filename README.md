@@ -1,4 +1,4 @@
-# Welcome to my dotfiles repository:
+## Welcome to my dotfiles repository:
 
 **BSPWM** 
 ![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/screenshot/bspwm/ws-bspwm.png)
