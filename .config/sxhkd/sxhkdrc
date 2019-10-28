@@ -423,7 +423,7 @@ super+F12
 ## управление звуком в mpd+mcp+ncmpcpp	
 ## music control mpd+mcp+ncmpcpp
 super + shift {comma,period,p,s}
-	mpc {next,prev,toggle,stop}	
+	mpc {prev,next,toggle,stop}		
 	
 	
 ### screenshot
