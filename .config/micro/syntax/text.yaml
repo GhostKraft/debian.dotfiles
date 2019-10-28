@@ -1,0 +1,16 @@
+filetype: text/plain
+
+detect:
+    filename: "config"
+    
+rules:
+    - constant.string:
+        start: "\""
+        end: "\""
+        skip: "\\\\."
+        rules: []
+
+    - comment:
+        start: "#"
+        end: "$"
+        rules: []

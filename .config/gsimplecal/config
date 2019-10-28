@@ -1,0 +1,44 @@
+.IP
+show_calendar = 1
+.br
+show_timezones = 1
+.br
+mark_today = 1
+.br
+show_week_numbers = 0
+.br
+close_on_unfocus = 0
+.br
+external_viewer = sunbird \-showdate "%Y\-%m\-%d"
+.br
+clock_format = %a %d %b %H:%M
+.br
+force_lang = ru_RU.utf8
+#.br
+#force_lang = en_US.utf8
+.br
+mainwindow_decorated = 0
+.br
+mainwindow_keep_above = 1
+.br
+mainwindow_sticky = 0
+.br
+mainwindow_skip_taskbar = 1
+.br
+mainwindow_resizable = 0
+.br
+mainwindow_position = none
+
+### BSPWM
+.br
+mainwindow_xoffset = 1710
+.br
+mainwindow_yoffset = 36
+
+### JFM
+#.br
+#mainwindow_xoffset = 1642
+#.br
+#mainwindow_yoffset = 848
+#.br
+#clock_label = Local

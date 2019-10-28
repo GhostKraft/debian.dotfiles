@@ -1,0 +1,658 @@
+
+############################################
+############################################
+###              ARCH Linux              ###
+############################################
+###   i3-gaps config file by GhostKraft  ###
+############################################
+###   https://github.com/Airblader/i3    ###
+### https://i3wm.org/docs/userguide.html ###
+############################################
+############################################
+### https://github.com/GhostKraft/i3gaps-config/tree/master/BlueZ-theme
+## instead of the standard i3bar, is used plolybar (AUR)
+# вместо стандартной панели i3bar исользуется plolybar (устновка через AUR)
+
+
+
+
+##################################
+##################################
+####  Autostart | Автозапуск  ####
+##################################
+##################################
+
+
+### launches selected wallpaper with nitrogen
+### запускает выбранные обои с помощью nitrogen
+exec --no-startup-id nitrogen --restore
+
+
+
+### Notifications
+### Уведомления
+exec --no-startup-id dunst
+
+
+### For authentication in gui applications we use polkit-gnome
+### Для аутентификации в gui приложениях используем polkit-gnome
+exec --no-startup-id "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
+
+### rofi clipboard
+### буфер обмена через rofi
+#exec --no-startup-id greenclip daemon 
+
+
+###Keyboard layout
+###Раскладка клавиатуры
+exec --no-startup-id setxkbmap -layout 'us,ru(winkeys)' -option 'grp:alt_shift_toggle'
+
+
+### Power management
+### Управление питанием
+exec --no-startup-id xfce4-power-manager
+
+### mpd music
+exec --no-startup-id mpd
+
+### network indicator
+### индикатор сети (для работы нужен networkmanager network-manager-applet)
+#exec --no-startup-id nm-applet
+
+
+### compton beautiful transitions, transparency, vertical sync
+### compton красивые переходы, прозрачность, вертикальная синхронизация (выкл)
+#exec --no-startup-id "compton -b --config ~/.config/compton.conf"
+
+
+
+
+########################################################
+########################################################
+###  i3wm APPEARANCE WINDOW | i3wm ВНЕШНИЙ ВИД ОКОН  ###
+########################################################
+########################################################
+
+### Window and Color
+### Основная цветовая схема окон i3
+
+### client.focused — окно в фокусе
+### client.focused_inactive — Окно, которое является сфокусированным на своем контейнере, но в данный момент у него нет фокуса.
+### client.unfocused — Окно, которое не сфокусирован на своем контейнере.
+### client.urgent — окно требует внимания (всплывающее уведомление например или окно открытое на другом рабочем столе)
+### client.placeholder 
+
+###          Граница Заголовка  Фон     Текст   Индикатор Граница окна
+###                     border  bground text    indicator child_border
+client.focused          #8878D4 #695DA4 #FFFFFF #5656EE #695DA4
+client.focused_inactive #424264 #323248 #D8D8D8 #6A6AA5 #323248
+client.unfocused        #424264 #323248 #D8D8D8 #6A6AA5 #323248
+client.urgent           #635493 #635493 #FFFFFF #B49FFB #635493
+client.placeholder      #666666 #666666 #FFFFFF #666666 #666666
+client.background       #FFFFFF
+
+
+
+### Border size around windows (disable if we use GAPS)
+### normal - window title display 
+### pixel - removes the title leaving only the frame 
+### Размер рамки вокругн окон (отключаем если используем отступы GAPS)
+### normal - отображение заголовка окна
+### pixel - убирает заголовок оставляя только рамку
+#default_border normal 2
+
+
+
+### Window title text position left|center|right
+### Положение текста заголовка окона left|center|right
+#title_align center
+
+
+
+### Smart borders - removes borders when there is one window on the screen
+### Умные границы - убирает границы когда на экране находится одно окно
+#hide_edge_borders smart
+
+
+### Font for window titles and standard panel
+### This font is widely installed, provides lots of unicode glyphs, right-to-left
+### text rendering and scalability on retina/hidpi displays (thanks to pango).
+### Шрифт для заголовков окон. Также будет использоваться в стандартной пнели.
+### Благодаря pango текст отображается в хорошем качестве 
+### К стандартной панели можно указать другой шрифт в настройка ниже is used in the bar {} block below.
+font pango: DejaVu Sans = 9
+
+
+
+
+#############################################
+#############################################
+###  GAPS CONFIGURATION | НАСТРОЙКИ GAPS  ### 
+############################################# 
+#############################################
+## works if i3-gaps is installed
+## работает если установлен i3-gaps
+
+
+
+### When one window is open, it takes up all the space
+### Когда открыто одно окно, оно отрывется на весь экран без отступов
+#smart_gaps on
+
+
+### turns on smart borders, when one window is open, the frames turn off
+### включает умные рамки, когда открыто одно окно рамки выключаются
+smart_borders on
+
+
+
+### To use gaps, you must disable the window headers. (or use compton) Removes the window title
+### Чтобы использовать отступы, необходимо отключить заголовки окон. (можно не отключать если используем compton) Убирает заголовок окна
+for_window [class="^.*"] border pixel 4
+for_window [class=".*"] border pixel 4
+
+
+
+### gaps between open windows
+### отступы между открытыми окнами
+gaps inner 20
+
+### gaps padding from the edges of the screen and panel
+### отступы от краёв экрана и панели
+gaps outer -2
+
+
+
+
+
+###################################
+###################################
+###  HOTKEYS | ГОРЯЧИЕ КЛАВИШИ  ###
+###################################
+###################################
+##bindsym
+
+
+
+### Assigned MOD key by default
+### Назначенная клавиша MOD по умолчанию
+set $mod Mod4
+
+
+
+### Use Mouse+$mod to drag floating windows to their wanted position
+### Изменить положение плавающего окна с помощью mod+лкм
+floating_modifier $mod
+
+
+
+### Volume control "+" "-"
+### Регулировка громкости "+" "-"
+bindsym $mod+equal exec --no-startup-id amixer -D pulse sset Master 5%+
+bindsym $mod+minus exec --no-startup-id amixer -D pulse sset Master 5%-
+#bindsym $mod+equal exec --no-startup-id pactl set-sink-volume 0 +5%
+#bindsym $mod+minus exec --no-startup-id pactl set-sink-volume 0 -5%
+
+
+### mpd+mpc+ncmpcpp
+### управление в mpd+mpc+ncmpcpp на любом рабочем пространстве
+bindsym $mod+shift+comma exec --no-startup-id mpc next
+bindsym $mod+shift+period exec --no-startup-id mpc prev
+bindsym $mod+shift+p exec --no-startup-id mpc toggle
+bindsym $mod+shift+s exec --no-startup-id mpc stop
+
+
+### Window switching
+### Переключение между всеми открытыми окнами 
+bindsym $mod+shift+Tab exec --no-startup-id rofi -show
+
+### rofi clipboard
+### буфер обмена через rofi (rofi-greenclip)
+bindsym $mod+c exec --no-startup-id rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
+
+
+
+### Start rofi drun (program launcher, use instead of dmenu)
+### Запуск приложений, используем вместо dmenu
+bindsym $mod+shift+d exec --no-startup-id rofi -show drun -show-icons -icon-theme papirus-icon-theme
+
+### Start rofi run program launcher (extended option)
+### Запуск приложений (расширеный вариант)
+#bindsym $mod+shift+d exec --no-startup-id rofi -show run
+
+### i3-dmenu-desktop which only displays applications (standard start)
+### Запуск приложений через dmenu (стандартный запуск)
+#bindsym $mod+d exec --no-startup-id i3-dmenu-desktop 
+
+### Dmenu bottom with changing color and size
+### Расположение dmenu в низу с изменением цвета и размера
+#bindsym $mod+d exec --no-startup-id dmenu_run -b -nb '#1B1D24' -nf '#E9F2FF' -sf '#F2E2EC' -sb '#7676A7'  -fn 'Monospace:pixelsize=16'
+
+### Dmenu top with changing color and size
+### Расположение dmenu вверху с изменением цвета и размера
+bindsym $mod+d exec --no-startup-id dmenu_run -nb '#1B1D24' -nf '#9F9FB7' -sf '#040404' -sb '#6767AE'  -fn 'Monospace:pixelsize=18'
+
+
+
+
+
+### scratchpad (Optional window) (Дополнительное окно)
+### Win + Shift + grave - sends the current window to scratchpad.
+### Win + grave + shows scratchpad, pressing again hides it.
+### Win + Shift + grave (grave это ~ или Ё) отправляет текущее окно в scratchpad.
+### Win + grave показывает scratchpad, повторное нажатие скрывает его.
+bindsym $mod+Shift+grave move scratchpad
+bindsym $mod+grave scratchpad show
+
+
+
+### Restart configuration files
+### перезапуск конфигурационных файлов 
+bindsym $mod+Shift+c reload
+
+### restart i3 while maintaining the current session
+### перезапуск i3 с сохранением текущей сессии
+bindsym $mod+Shift+r restart
+
+
+
+### Kill focused window 
+### Убить окно 
+bindsym $mod+q kill
+
+
+### The middle button over a titlebar kills the window
+### Убить окно нажав средней кнопкой мыши на титульный заголовок окна
+bindsym --release button2 kill
+
+### The middle button and a modifer over any part of the window kills the window
+### убить окно нажав по нему средней кнопкой мыши в сочитании с клавишей mod
+bindsym --whole-window $mod+shift+button2 kill
+
+
+
+### Start a terminal 
+### Запуск терминала 
+bindsym $mod+Return exec --no-startup-id urxvt
+#bindsym $mod+Return exec --no-startup-id sakura
+
+
+
+### draws a terminal window on the desktop
+### рисует окно терминала на рабочем столе
+bindsym $mod+shift+Return exec --no-startup-id $HOME/.config/i3/scripts/draw.sh
+for_window [class="URxvt" instance="floating"] floating enable
+
+
+
+### screenshot
+### скриншот 
+bindsym Print exec --no-startup-id flameshot gui
+
+
+
+### calendar
+### Календарь 
+bindsym $mod+Menu exec --no-startup-id osmo 
+
+
+### Running commonly used programs
+### Запуск программ
+bindsym $mod+F1 exec --no-startup-id pcmanfm
+bindsym $mod+F2 exec --no-startup-id cherrytree
+bindsym $mod+F3 exec --no-startup-id pamac-manager
+bindsym $mod+F4 exec --no-startup-id firefox
+bindsym $mod+shift+F4 exec --no-startup-id opera
+bindsym $mod+F5 exec --no-startup-id urxvt -e ncmpcpp
+bindsym $mod+shift+F5 exec --no-startup-id audacious
+bindsym $mod+F6 exec --no-startup-id vlc
+bindsym $mod+F7 exec --no-startup-id playonlinux
+bindsym $mod+F8 exec --no-startup-id steam-runtime
+bindsym $mod+F9 exec --no-startup-id lxtask
+bindsym $mod+shift+F9 exec --no-startup-id urxvt -e htop  
+bindsym $mod+F10 exec --no-startup-id keepassxc
+bindsym $mod+F11 exec --no-startup-id timeshift-launcher
+bindsym $mod+F12 exec --no-startup-id "urxvt --title float -e ranger"
+#bindsym $mod+F12 exec --no-startup-id "sakura --title float -e ranger"
+
+
+
+### switch to workspace with urgent window automatically
+### переключение на рабочий стол в автомате в важным открытым окно
+for_window [urgent=latest] focus
+
+
+
+############################################################### 
+###############################################################
+###  HOTKEYS WINDOW MANAGEMENT | HOTKEYS УПРАВЛЕНИЕ ОКНАМИ  ###
+###############################################################
+############################################################### 
+##bindsym
+
+
+# переключение между окнами (вариант 1)
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+
+# переключение между окнами (вариант 2 выкл)
+# change focus 
+#bindsym $mod+j focus left
+#bindsym $mod+k focus down
+#bindsym $mod+l focus up
+#bindsym $mod+semicolon focus right
+
+
+
+# перемещение активного окна (вариант 1)
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+
+### смещение активного окна (вариант 2 выкл)
+### move focused window
+#bindsym $mod+Shift+j move left
+#bindsym $mod+Shift+k move down
+#bindsym $mod+Shift+l move up
+#bindsym $mod+Shift+semicolon move right
+
+
+### Следующее окно будет открыто горизонтально активному окну
+### split in horizontal orientation
+bindsym $mod+h split h;exec --no-startup-id notify-send 'tile horizontally'
+
+
+### Следующее окно будет открыто вертикально активному окну
+### split in vertical orientation
+bindsym $mod+v split v;exec --no-startup-id notify-send 'tile vertically'
+
+### split in vertical/horizontal orientation
+### Переключение режима открытия следующего окна вертикально/горизонтально
+bindsym $mod+Tab split toggle
+
+
+### переключение окна в полноэкранный режим
+### enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+
+# переключение между режимами отображения, окрытых окон
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+
+### переключение режимов окон тайлинг/ плавающий
+### toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+
+### смена фокуса между тайлинг окном и плавающим
+### change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+
+
+### The right button toggles floating
+### mod+ПКМ по заголовку окна меняет режим плавающее/тайлинг
+bindsym button3 floating toggle
+
+### The right button toggles floating
+### нажатие mod+shift+ПКM по окну  меряет меняет режим плавающее/тайлинг
+bindsym --whole-window $mod+shift+button3 floating toggle
+
+
+
+### Quickly swapping containers with mouse ###
+### Поменять местами окна с помощью мыши ###
+## отмечает окно которое хотим переместить
+bindsym --whole-window $mod+shift+button1 mark --add quickswap
+## перемещаем отмеченое окно на место активного окна
+bindsym --whole-window $mod+ctrl+button1 swap container with mark quickswap; [con_mark="quickswap"] focus
+
+
+
+### выделить все открытые окна на текущем рабочем столе
+### focus the parent container
+bindsym $mod+a focus parent
+
+
+### focus the child container
+#bindsym $mod+d focus child
+
+
+
+
+
+###################################################### 
+###################################################### 
+###   WINDOW OPENING MODES | РЕЖИМЫ ОТКРЫТИЯ ОКНА  ###
+######################################################
+###################################################### 
+### opening specific windows in floating mode, in a given size and position.
+### открытие конкретных окон в плавающем режиме, в заданном размере и положении, добавление рамок.
+
+for_window [class="(?i)osmo"] floating enable
+
+for_window [class="(?i)nitrogen"] floating enable
+
+for_window [class="(?i)xreader"] floating enable
+
+for_window [class="(?i)audacious"] floating enable, resize set 850 510 
+
+for_window [class="(?i)cherrytree"] floating enable, resize set 922 850, move position center
+
+for_window [class="(?i)clamtk"] floating enable, resize set 600 500, move position center
+
+for_window [class="(?i)lxtask"] floating enable, resize set 700 700, move position center
+
+for_window [class="(?i)fceux"] floating enable, resize set 700 600, move position center
+
+for_window [class="(?i)gparted"] floating enable, resize set 1100 600, move position center
+
+for_window [class="(?i)lxappearance"] floating enable, resize set 1000 900, move position center
+
+
+for_window [class="(?i)nm-connection-edito"] floating enable, resize set 600 400, move position center
+
+
+for_window [class="(?i)viewnior"] floating enable, move position center, border pixel 4
+
+for_window [class="(?i)gnome-calculator"] floating enable, border pixel 4
+
+for_window [class="(?i)timeshift"] floating enable, border pixel 4
+
+for_window [class="(?i)gcolor3"] floating enable, resize set 400 300, border pixel 4
+
+for_window [class="(?i)pamac-manager"] floating enable, resize set 1000 700, move position center, border pixel 4
+
+for_window [class="(?i)polkit-gnome-authentication-agent-1"] border pixel 4
+
+
+
+
+### Force frame display for a specific program
+### Принудительное отображение рамки для конкретной программы
+for_window [class="(?i)opera"] border pixel 4
+for_window [class="(?i)steam"] border pixel 4
+
+
+#Переключает рамку активного окна
+#bindsym $mod+x border toggle
+
+
+### Opening the file manager in floating mode + scratchpad
+### Открытие файлового менеджера в плавающем режиме + scratchpad
+#for_window [class="(?i)pcmanfm"] move window to scratchpad, scratchpad show, floating enable, resize set 800 590, move position center
+
+
+
+############################################################
+############################################################
+###  WORKPLACES CONFIGURATION | НАСТРОЙКА РАБОЧИХ МЕСТ   ###
+############################################################
+############################################################
+
+### Define names for default workspaces for which we configure key bindings later on.
+### We use variables to avoid repeating the names in multiple places.
+### Определить имена для рабочих областей по умолчанию, для которых мы настроим привязки клавиш позже.
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
+
+### Change workplace
+### Изменить рабочее место
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws10
+
+
+### move the active window to the selected workplace
+### переместить активное окно на выбранное рабочее место
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
+bindsym $mod+Shift+0 move container to workspace $ws10
+
+
+
+
+### Binding applications to specific workspace
+### Привязка приложений к конкретным рабочим столам
+assign [class="(?i)opera|firefox"] $ws1
+assign [class="(?i)vlc|mpv"] $ws2
+assign [class="(?i)aseprite|audacity|shotcut|vidcutter"] $ws3
+assign [class="(?i)steam|mainwindow.py|control.exe|wineboot.exe|Wine"] $ws4
+assign [class="(?i)qbittorrent"] $ws5
+
+##########################################################
+##########################################################
+###   WINDOW SIZE MODE | РЕЖИМ ИЗМЕНЕНИЯ РАЗМЕРА ОКОН  ###
+##########################################################
+##########################################################
+## resize window (you can also use the mouse for that)
+## Режим изменение размера окон mod+r меняем стрелками (вместо этого можно использовать мышь или другие горячие клавиши) 
+
+
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym j resize shrink width 5 px or 5 ppt
+        bindsym k resize grow height 5 px or 5 ppt
+        bindsym l resize shrink height 5 px or 5 ppt
+        bindsym semicolon resize grow width 5 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape or $mod+r
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+r mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+
+
+### Resize windows instantly
+### Изменение размера окон на лету
+bindsym $mod+Ctrl+Right resize shrink width 10 px or 5 ppt
+bindsym $mod+Ctrl+Up resize grow height 10 px or 5 ppt
+bindsym $mod+Ctrl+Down resize shrink height 10 px or 5 ppt
+bindsym $mod+Ctrl+Left resize grow width 10 px or 5 ppt
+
+
+
+############################################
+############################################
+#### PANEL SETTINGS | НАСТРОЙКИ ПАНЕЛИ  ####
+############################################
+############################################
+
+### launch polybar (active panel)
+### запуск polybar (активная панель)
+exec_always --no-startup-id $HOME/.config/polybar/i3-polybar/launch.sh
+
+
+
+# Запуск i3blocks (Вместо стандартой i3bar)
+# Start i3bar to display a workspace bar (plus the system information i3status finds out, if available)
+
+#bar {
+#  colors {
+#    background #203E6A
+#    statusline #FFFFFF
+#    separator  #CBCBCB
+
+#    focused_workspace  #5587AC #235674 #FFFFFF
+#    active_workspace   #12365A #10467C #FFFFFF
+#    inactive_workspace #12365A #10467C #568BAF
+#    urgent_workspace   #12365A #900000 #FFFFFF
+#    binding_mode       #12365A #900000 #FFFFFF
+
+#  }
+#        status_command i3blocks
+#       height 27
+#	position top
+#	font pango:DejaVu Sans Mono 11
+#}
+
+
+
+
+###########################################################
+##  POWEROFF RESET EXIT | ВЫКЛЮЧЕНИЕ ПЕРЕЗАГРУЗКА ВЫХОД  ##
+###########################################################
+
+set $Locker i3lock && sleep 1
+
+set $mode_system (e) logout, (r) reboot, (s) shutdown
+mode "$mode_system" {
+    bindsym e exec --no-startup-id i3-msg exit, mode "default"
+    bindsym r exec --no-startup-id systemctl reboot, mode "default"
+    bindsym s exec --no-startup-id systemctl poweroff -i, mode "default"  
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+bindsym $mod+Pause mode "$mode_system"
+bindsym $mod+p mode "$mode_system"

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<JWM>
+  
+  <!-- Start some programs. -->
+  <StartupCommand>mpd &amp;</StartupCommand>
+  
+  <StartupCommand>nitrogen --restore &amp;</StartupCommand>
+ 
+  <StartupCommand>dunst &amp;</StartupCommand>
+  
+  <StartupCommand>/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &amp;</StartupCommand>
+  
+  <StartupCommand>xfce4-power-manager &amp;</StartupCommand>
+  
+  <StartupCommand>setxkbmap -layout 'us,ru(winkeys)' -option 'grp:alt_shift_toggle' &amp;</StartupCommand>
+  
+  <StartupCommand>greenclip daemon &amp;</StartupCommand>
+  
+  <StartupCommand>volumeicon &amp;</StartupCommand>
+  
+  <StartupCommand>conky &amp;</StartupCommand>
+
+  <StartupCommand>xxkb &amp;</StartupCommand>
+
+</JWM>
