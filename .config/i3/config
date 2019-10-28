@@ -196,8 +196,8 @@ bindsym $mod+minus exec --no-startup-id amixer -D pulse sset Master 5%-
 
 ### mpd+mpc+ncmpcpp
 ### управление в mpd+mpc+ncmpcpp на любом рабочем пространстве
-bindsym $mod+shift+comma exec --no-startup-id mpc next
-bindsym $mod+shift+period exec --no-startup-id mpc prev
+bindsym $mod+shift+comma exec --no-startup-id mpc prev
+bindsym $mod+shift+period exec --no-startup-id mpc next
 bindsym $mod+shift+p exec --no-startup-id mpc toggle
 bindsym $mod+shift+s exec --no-startup-id mpc stop
 
@@ -208,7 +208,7 @@ bindsym $mod+shift+Tab exec --no-startup-id rofi -show
 
 ### rofi clipboard
 ### буфер обмена через rofi (rofi-greenclip)
-bindsym $mod+c exec --no-startup-id rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
+#bindsym $mod+c exec --no-startup-id rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 
 
 
