@@ -20,6 +20,16 @@ This is the repository of my configuration files.
 
 | description of software used              |     software               |
 | ------------- |:------------------:|
-| столбец 3     | выровнен вправо    |
-| столбец 2     | выровнен по центру |
-| зебра-строки  | прикольные         |
+| text editor  console | micro           |
+| text editor  GUI     | geany           |
+| watching video       | mpv             |
+| music                | mpd + ncmpcpp   |
+| File manager console | ranger          |
+| File manager GUI     | pcmanfm         |
+| application launch   | dmenu + rofi    |
+| notifications        | dunst           |
+| calendar             | gsimplecal      |
+| volume in tray       | volumeicon      |
+| bsbwm panel          | polybar         |
+| system information   | neofetch        |
+| wallpaper manager    | nitrogen        |
