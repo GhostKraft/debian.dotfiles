@@ -29,12 +29,12 @@ This is the repository of my configuration files.
 | application launch       | dmenu + rofi       |
 | notifications            | dunst              |
 | calendar                 | gsimplecal         |
-| volume in tray           | volumeicon         |
 | bspwm panel              | polybar            |
 | wallpaper manager        | nitrogen           |
-| keyboard layout          | xxkb               |
-| system information       | neofetch           |
+| JWM volume in tray       | volumeicon         |
+| JWM keyboard layout      | xxkb               |
 | JWM system information   | conky              |
+| system information       | neofetch           |
 | power management         | xfce4-power-manager|
 
 The GTK theme and icons used are is **numix-theme** & **archdroid-icon-theme**, have been modified in **oomox**
