@@ -11,7 +11,7 @@ This is the repository of my configuration files.
 *`polybar active power memu`*
 ***
 **I3-WM** 
-![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/screenshot/bspwm/ws-bspwm.png)
+![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/screenshot/i3-wm/i3wm-00.png)
 *`ArchLinux i3-wm i3status (i3bar) dmenu rxvt-unicode dunst ranger mpd mpc ncmpcpp nitrogen`*
 ***
 **JWM** 
