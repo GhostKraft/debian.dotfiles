@@ -18,22 +18,23 @@ This is the repository of my configuration files.
 ![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/screenshot/JWM/JWM-vilol.png)
 *`ArchLinux jwm gsimplecal xxkb volumeicon conky dmenu pcmanfm rxvt-unicode dunst ranger gsimplecal mpd mpc ncmpcpp nitrogen `*
 
-| description of software used              |     software               |
-| ------------- |:------------------:|
-| text editor  console | micro           |
-| text editor  GUI     | geany           |
-| watching video       | mpv             |
-| music                | mpd + ncmpcpp   |
-| File manager console | ranger          |
-| File manager GUI     | pcmanfm         |
-| application launch   | dmenu + rofi    |
-| notifications        | dunst           |
-| calendar             | gsimplecal      |
-| volume in tray       | volumeicon      |
-| bspwm panel          | polybar         |
-| system information   | neofetch        |
-| wallpaper manager    | nitrogen        |
-| keyboard layout      | xxkb            |
-| power management     | xfce4-power-manager|
+| description software     |   software name    |
+| ------------------------ |:------------------:| 
+| text editor  console     | micro              |
+| text editor  GUI         | geany              |
+| watching video           | mpv                |
+| music                    | mpd + ncmpcpp      |
+| File manager console     | ranger             |
+| File manager GUI         | pcmanfm            |
+| application launch       | dmenu + rofi       |
+| notifications            | dunst              |
+| calendar                 | gsimplecal         |
+| volume in tray           | volumeicon         |
+| bspwm panel              | polybar            |
+| wallpaper manager        | nitrogen           |
+| keyboard layout          | xxkb               |
+| system information       | neofetch           |
+| JWM system information   | conky              |
+| power management         | xfce4-power-manager|
 
 The GTK theme and icons used are is **numix-theme** & **archdroid-icon-theme**, have been modified in **oomox**
