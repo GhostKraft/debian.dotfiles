@@ -34,5 +34,6 @@ This is the repository of my configuration files.
 | system information   | neofetch        |
 | wallpaper manager    | nitrogen        |
 | keyboard layout      | xxkb            |
+| power management     | xfce4-power-manager|
 
 The GTK theme and icons used are is **numix-theme** & **archdroid-icon-theme**, have been modified in **oomox**
