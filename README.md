@@ -30,7 +30,7 @@ This is the repository of my configuration files.
 | notifications        | dunst           |
 | calendar             | gsimplecal      |
 | volume in tray       | volumeicon      |
-| bsbwm panel          | polybar         |
+| bspwm panel          | polybar         |
 | system information   | neofetch        |
 | wallpaper manager    | nitrogen        |
 | keyboard layout      | xxkb            |
