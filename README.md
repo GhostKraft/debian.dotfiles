@@ -5,11 +5,11 @@ This is the repository of my configuration files.
 
 **BSPWM** 
 ![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/screenshot/bspwm/ws-bspwm.png)
-*`ArchLinux bspwm sxhkd polybar dmenu pcmanfm rxvt-unicode dunst ranger gsimplecal mpd mpc ncmpcpp`*
+*`ArchLinux bspwm sxhkd polybar dmenu pcmanfm rxvt-unicode dunst ranger gsimplecal mpd mpc ncmpcpp nitrogen`*
 
 ![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/screenshot/bspwm/power-menu-polybar.png)
 *`polybar active power memu`*
 ***
 **JWM** 
 ![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/screenshot/JWM/JWM-vilol.png)
-*`ArchLinux jwm gsimplecal xxkb volumeicon conky dmenu pcmanfm rxvt-unicode dunst ranger gsimplecal mpd mpc ncmpcpp `*
+*`ArchLinux jwm gsimplecal xxkb volumeicon conky dmenu pcmanfm rxvt-unicode dunst ranger gsimplecal mpd mpc ncmpcpp nitrogen `*
