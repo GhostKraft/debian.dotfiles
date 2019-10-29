@@ -35,4 +35,4 @@ This is the repository of my configuration files.
 | wallpaper manager    | nitrogen        |
 | keyboard layout      | xxkb            |
 
-The GTK theme and icons used are is **numix-theme** & **archdroid-icons**, have been modified in **oomox**
+The GTK theme and icons used are is **numix-theme** & **archdroid-icon-theme**, have been modified in **oomox**
