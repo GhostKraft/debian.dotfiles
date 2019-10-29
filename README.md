@@ -10,6 +10,10 @@ This is the repository of my configuration files.
 ![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/screenshot/bspwm/power-menu-polybar.png)
 *`polybar active power memu`*
 ***
+**I3-WM** 
+![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/screenshot/bspwm/ws-bspwm.png)
+*`ArchLinux i3-wm i3status (i3bar) dmenu rxvt-unicode dunst ranger mpd mpc ncmpcpp nitrogen`*
+***
 **JWM** 
 ![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/screenshot/JWM/JWM-vilol.png)
 *`ArchLinux jwm gsimplecal xxkb volumeicon conky dmenu pcmanfm rxvt-unicode dunst ranger gsimplecal mpd mpc ncmpcpp nitrogen `*
