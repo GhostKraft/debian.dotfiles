@@ -1,3 +1,4 @@
+![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/wallpaper/logo%20DF_GK.png)
 ## Welcome to my dotfiles repository:
 
 **BSPWM** 
