@@ -21,12 +21,12 @@ This is the repository of my configuration files.
 | description software     |   software name     |
 | ------------------------ |:-------------------:|
 | terminal                 | urxvt (rxvt-unicode)|
-| text editor  console     | micro               |
-| text editor  GUI         | geany               |
+| text editor (console)    | micro               |
+| text editor  (GUI)       | geany               |
 | watching video           | mpv                 |
 | music                    | mpd + ncmpcpp       |
-| File manager console     | ranger              | 
-| File manager GUI         | pcmanfm             |
+| File manager (console)   | ranger              | 
+| File manager (GUI)       | pcmanfm             |
 | application launch       | dmenu + rofi        |
 | notifications            | dunst               |
 | calendar                 | gsimplecal          |
