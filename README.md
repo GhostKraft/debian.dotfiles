@@ -33,3 +33,6 @@ This is the repository of my configuration files.
 | bsbwm panel          | polybar         |
 | system information   | neofetch        |
 | wallpaper manager    | nitrogen        |
+| keyboard layout      | xxkb            |
+
+`The GTK theme and icons used are is` **numix-theme** & **archdroid-icons**, `have been modified in` **oomox**
