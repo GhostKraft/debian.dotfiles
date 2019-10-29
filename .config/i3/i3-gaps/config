@@ -3,7 +3,7 @@
 ############################################
 ###              ARCH Linux              ###
 ############################################
-###   i3-wm config file by GhostKraft  ###
+###   i3-gaps config file by GhostKraft  ###
 ############################################
 ###   https://github.com/Airblader/i3    ###
 ### https://i3wm.org/docs/userguide.html ###
@@ -84,7 +84,7 @@ exec --no-startup-id mpd
 
 ###          Граница Заголовка  Фон     Текст   Индикатор Граница окна
 ###                     border  bground text    indicator child_border
-client.focused          #8878D4 #605E9F #FFFFFF #5656EE #605E9F
+client.focused          #8878D4 #695DA4 #FFFFFF #5656EE #695DA4
 client.focused_inactive #424264 #323248 #D8D8D8 #6A6AA5 #323248
 client.unfocused        #424264 #323248 #D8D8D8 #6A6AA5 #323248
 client.urgent           #635493 #635493 #FFFFFF #B49FFB #635493
@@ -99,13 +99,13 @@ client.background       #FFFFFF
 ### Размер рамки вокругн окон (отключаем если используем отступы GAPS)
 ### normal - отображение заголовка окна
 ### pixel - убирает заголовок оставляя только рамку
-default_border normal 2
+#default_border normal 2
 
 
 
 ### Window title text position left|center|right
 ### Положение текста заголовка окона left|center|right
-title_align center
+#title_align center
 
 
 
@@ -123,6 +123,43 @@ title_align center
 font pango: DejaVu Sans = 9
 
 
+
+
+#############################################
+#############################################
+###  GAPS CONFIGURATION | НАСТРОЙКИ GAPS  ### 
+############################################# 
+#############################################
+## works if i3-gaps is installed
+## работает если установлен i3-gaps
+
+
+
+### When one window is open, it takes up all the space
+### Когда открыто одно окно, оно отрывется на весь экран без отступов
+#smart_gaps on
+
+
+### turns on smart borders, when one window is open, the frames turn off
+### включает умные рамки, когда открыто одно окно рамки выключаются
+smart_borders on
+
+
+
+### To use gaps, you must disable the window headers. (or use compton) Removes the window title
+### Чтобы использовать отступы, необходимо отключить заголовки окон. (можно не отключать если используем compton) Убирает заголовок окна
+for_window [class="^.*"] border pixel 4
+for_window [class=".*"] border pixel 4
+
+
+
+### gaps between open windows
+### отступы между открытыми окнами
+gaps inner 20
+
+### gaps padding from the edges of the screen and panel
+### отступы от краёв экрана и панели
+gaps outer -2
 
 
 
@@ -427,25 +464,25 @@ for_window [class="(?i)lxappearance"] floating enable, resize set 1000 900, move
 for_window [class="(?i)nm-connection-edito"] floating enable, resize set 600 400, move position center
 
 
-for_window [class="(?i)viewnior"] floating enable, move position center, border normal 2
+for_window [class="(?i)viewnior"] floating enable, move position center, border pixel 4
 
-for_window [class="(?i)gnome-calculator"] floating enable, border normal 2
+for_window [class="(?i)gnome-calculator"] floating enable, border pixel 4
 
-for_window [class="(?i)timeshift"] floating enable, border normal 2
+for_window [class="(?i)timeshift"] floating enable, border pixel 4
 
-for_window [class="(?i)gcolor3"] floating enable, resize set 400 300, border normal 2
+for_window [class="(?i)gcolor3"] floating enable, resize set 400 300, border pixel 4
 
-for_window [class="(?i)pamac-manager"] floating enable, resize set 1000 700, move position center, border normal 2
+for_window [class="(?i)pamac-manager"] floating enable, resize set 1000 700, move position center, border pixel 4
 
-for_window [class="(?i)polkit-gnome-authentication-agent-1"] border normal 2
+for_window [class="(?i)polkit-gnome-authentication-agent-1"] border pixel 4
 
 
 
 
 ### Force frame display for a specific program
 ### Принудительное отображение рамки для конкретной программы
-for_window [class="(?i)opera"] border normal 2
-for_window [class="(?i)steam"] border normal 2
+for_window [class="(?i)opera"] border pixel 4
+for_window [class="(?i)steam"] border pixel 4
 
 
 #Переключает рамку активного окна
@@ -571,29 +608,31 @@ bindsym $mod+Ctrl+Left resize grow width 10 px or 5 ppt
 
 ### launch polybar (active panel)
 ### запуск polybar (активная панель)
-#exec_always --no-startup-id #$HOME/.config/polybar/i3-polybar/launch.sh
+exec_always --no-startup-id $HOME/.config/polybar/i3-polybar/launch.sh
 
 
 
 # Запуск i3blocks (Вместо стандартой i3bar)
 # Start i3bar to display a workspace bar (plus the system information i3status finds out, if available)
 
-bar {
-        status_command i3status
-     	position Bottom #top
-        font pango:DejaVu Sans Mono, FontAwesome5Free, FontAwesome5Solid, FontAwesome5SolidRegular FontAwesome5Brands 11
-colors {
-    background #1B1D24
-    statusline #D1D1E5
-    separator  #25262A
-#	item			   border  bground  text
-    focused_workspace  #8080DC #6767AE #FFFFFF
-    active_workspace   #6F6FB9 #6767AD #FFFFFF
-    inactive_workspace #6666A7 #525296 #BCC1CF
-    urgent_workspace   #7C63DA #6B55BE #FFFFFF
-    binding_mode       #7C63DA #6B55BE #FFFFFF
-  }
-}
+#bar {
+#  colors {
+#    background #203E6A
+#    statusline #FFFFFF
+#    separator  #CBCBCB
+
+#    focused_workspace  #5587AC #235674 #FFFFFF
+#    active_workspace   #12365A #10467C #FFFFFF
+#    inactive_workspace #12365A #10467C #568BAF
+#    urgent_workspace   #12365A #900000 #FFFFFF
+#    binding_mode       #12365A #900000 #FFFFFF
+
+#  }
+#        status_command i3blocks
+#       height 27
+#	position top
+#	font pango:DejaVu Sans Mono 11
+#}
 
 
 
