@@ -5,14 +5,14 @@ This is the repository of my configuration files.
 
 **BSPWM** 
 ![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/screenshot/bspwm/ws-bspwm.png)
-*`ArchLinux bspwm sxhkd polybar dmenu pcmanfm rxvt-unicode dunst ranger gsimplecal mpd mpc ncmpcpp nitrogen`*
+*`ArchLinux bspwm sxhkd polybar dmenu pcmanfm rxvt-unicode dunst ranger gsimplecal mpd mpc ncmpcpp nitrogen ttf-font-awesome`*
 
 ![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/screenshot/bspwm/power-menu-polybar.png)
 *`polybar active power memu`*
 ***
 **I3-WM** 
 ![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/screenshot/i3-wm/i3wm-00.png)
-*`ArchLinux i3-wm i3status (i3bar) dmenu rxvt-unicode dunst ranger mpd mpc ncmpcpp nitrogen`*
+*`ArchLinux i3-wm i3status (i3bar) dmenu rxvt-unicode dunst ranger mpd mpc ncmpcpp nitrogen ttf-font-awesome  `*
 ***
 **JWM** 
 ![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/screenshot/JWM/JWM-vilol.png)
@@ -37,5 +37,6 @@ This is the repository of my configuration files.
 | JWM system information   | conky               |
 | system information       | neofetch            |
 | power management         | xfce4-power-manager |
+| bar icons                | ttf-font-awesome    |
 
 The GTK theme and icons used are is **numix-theme** & **archdroid-icon-theme**, have been modified in **oomox**
