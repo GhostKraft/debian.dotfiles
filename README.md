@@ -40,3 +40,4 @@ This is the repository of my configuration files.
 | bar icons                | ttf-font-awesome    |
 
 The GTK theme and icons used are is **numix-theme** & **archdroid-icon-theme**, have been modified in **oomox**
+Cursor Themes - **breeze-hacked-cursor-theme** **breeze-purple-cursor-theme**
