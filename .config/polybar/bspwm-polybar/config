@@ -41,22 +41,18 @@ indicator.underline = #5555BB
 ### Цвета для модуля рабочих столов bspwm
 ### Пример вставки цвета в модуль ${colors.focused.foreground}
 
-## Текущий рабочий стол
 focused.foreground = #EBEBEB
 focused.background = #6767AE
 focused.underline = #6767AE
 
-## занятый рабочий стол
 occupied.foreground = #C6C6E2
 occupied.background = #525296
 occupied.underline = #525296
 
-## Пустрой не выбранный рабочий стол
 empty.foreground = #A6A6A6
 empty.background = #2C2F39
 empty.underline = #2C2F39
 
-## Рабочий стол требующий внимания
 urgent.foreground = #EBEBEB
 urgent.background = #AA51C5
 urgent.underline = #A655BE
