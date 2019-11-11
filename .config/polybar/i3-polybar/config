@@ -3,7 +3,7 @@
 ##########################################
 ###             Arch Linux             ###
 ##########################################
-###               POLYBAR              ###
+###             POLYBAR-I3             ###
 ##########################################
 ### https://github.com/polybar/polybar ###
 ##########################################
@@ -19,6 +19,8 @@
 
 
 
+
+
 ########################
 ########################
 ###  COLORS | ЦВЕТА  ###
@@ -26,15 +28,34 @@
 ########################
 
 ### Panel colors
-### Цвета панели
+### Основные Цвета панели
 [colors]
 background = #1B1D24
-background-alt = #484159
 foreground = #dfdfdf
-foreground-alt = #F0EBF7
-primary = #6749B6
-secondary = #5E3D9F
 alert = #7158C1
+
+
+
+
+### Colors for the workspace module i3
+### Цвета для модуля рабочих столов i3
+### Пример вставки цвета в модуль ${colors.focused.foreground}
+
+focused.foreground = #EBEBEB
+focused.background = #6767AE
+focused.underline = #6767AE
+
+unfocused.foreground = #C6C6E2
+unfocused.background = #525296
+unfocused.underline = #525296
+
+urgent.foreground = #C6C6E2
+urgent.background = #5959C9
+urgent.underline = #5959C9
+
+visible.foreground = #A6A6A6
+visible.background = #2C2F39
+visible.underline = #2C2F39
 
 
 ### colors of application launch buttons
@@ -50,23 +71,20 @@ fm = #9F9FB7
 
 
 
-
-
-
-
 ### foreground color of modules ${colors.foreground.modules name}
 ### Цвет текста модулей ${colors.foreground.имя модуля}
 foreground.filesystem = #1A1A1A
 foreground.filesystemunmounted = #CE8280
 foreground.title = #8A8AE5
 foreground.xkeyboard = #1A1A1A
-foreground.network = #407F8B
-foreground.cpu = #8C4790
-foreground.memory =  #7450A2
-foreground.temperature3 = #645FB5
+foreground.network = #4F95A2
+foreground.cpu = #A646AC
+foreground.memory =  #8E5CCC
+foreground.temperature3 = #7864D1
 foreground.temperature3warn  = #FFCC00
-foreground.date = #6069BD
-foreground.powermenu = #1A1A1A
+foreground.date = #6561DA
+foreground.powermenu = #121212
+
 
 
 ### background color of modules ${colors.background.modules name}
@@ -81,18 +99,19 @@ background.temperature3 = #1E1F25
 background.temperature3warm = #A33541
 background.date = #1E1F25
 background.powermenu = #4F4F9C
-background.tray = #57579B
+background.tray = #4F4F9C
+
 
 
 ###underline color of modules ${colors.underline.modules name}
 ###цвет нижней линии в модулях ${colors.underline.имя модуля}
-underline.network = #395A32
-underline.xkeyboard = #9F9FB7
-underline.cpu = #4FA1B7
-underline.memory = #914088
-underline.temperature3 = #C2A65B
-underline.temperature3warn = #E1332B
-underline.date = #3C7CD6
+underline.xkeyboard = #57578F
+underline.network = #1E1F25
+underline.cpu = #1E1F25
+underline.memory = #1E1F25
+underline.temperature3 = #1E1F25
+underline.temperature3warn = #A33541
+underline.date = #1E1F25
 
 
 
@@ -113,7 +132,6 @@ underline.date = #3C7CD6
 ### Ширина панели
 width = 100%
 
-
 ### panel height
 ### высота панели 
 height = 24
@@ -121,8 +139,7 @@ height = 24
 
 ### Change polybar location - bottom
 ### Поменять расположение polybar - низ
-#bottom = true
-
+bottom = true
 
 ### Panel Offset 
 ### Смещение панели 
@@ -157,6 +174,7 @@ line-size = 4
 #line-color = #6D6DAB
 
 
+
 ### Border around the panel
 ### Рамка вокруг панели
 #border-size = 0
@@ -180,14 +198,16 @@ module-margin-right = 1
 #module-margin = 1
 
 
-### Fonts
-### Шрифты
+### FONTS
+### ШРИФТЫ
 #font-0 = DejaVu Sans:pixelsize=10;2
 #font-0 = Droid Sans:pixelsize=10;2
-font-0 = Roboto Condensed:weight=bold:fontformat=truetype:size=12:antialias=true;2
-font-1 = FontAwesome 5 Free:style=Solid:size=11;2
-font-2 = FontAwesome 5 Free:style=Regular:pixelsize=11;2
-font-3 = FontAwesome 5 Brands:pixelsize=12;2
+font-0 = DejaVu Sans:weight=bold:fontformat=truetype:size=9:antialias=true;2
+#font-0 = Ubuntu:weight=bold:fontformat=truetype:size=10:antialias=true;2
+#font-0 = Roboto Condensed:weight=bold:fontformat=truetype:size=12:antialias=true;2
+font-1 = FontAwesome 5 Free:style=Solid:size=10;2
+font-2 = FontAwesome 5 Free:style=Regular:pixelsize=10;2
+font-3 = FontAwesome 5 Brands:pixelsize=11;2
 
 
 ### system tray location and color
@@ -218,16 +238,17 @@ wm-restack = i3
 
 ### Location and activation of modules
 ### асположение и активация модулей
-modules-left = i3workspaces browser audacious vlc lxtask keepassxc term cherrytree fm filesystem  xkeyboard title
+modules-left = i3 browser audacious vlc lxtask keepassxc term cherrytree fm filesystem  xkeyboard title
 modules-center = 
-modules-right =  pulseaudio network cpu memory temperature3 date powermenu
+modules-right = pulseaudio network cpu memory temperature3 date powermenu
 
 
 ### Scrolling workspaces anywhere in the panel
 ### Прокрутка рабочих пространств в любом месте панели
 #scroll-up = i3wm-wsnext
 #scroll-down = i3wm-wsprev
-
+#scroll-up = bspwm-desknext
+#scroll-down = bspwm-deskprev
 
 ### For configuring multiple monitors
 ### Опция для настройки нескольких 
@@ -235,10 +256,11 @@ modules-right =  pulseaudio network cpu memory temperature3 date powermenu
 
 
 
-
 #[settings]
 ### Прозрачность
 #pseudo-transparency = true
+
+
 
 
 
@@ -257,7 +279,7 @@ modules-right =  pulseaudio network cpu memory temperature3 date powermenu
 type = custom/text
 content = 
 content-foreground = ${colors.browser}
-click-left = firefox &
+click-left = firefox & 
 click-right = opera &
 #content-margin = 1
 content-padding = 1
@@ -269,8 +291,8 @@ content-padding = 1
 type = custom/text
 content = 
 content-foreground = ${colors.audacious}
-click-left = urxvt -e ncmpcpp &
-click-right = audacious & 
+click-left = urxvt -e ncmpcpp & 
+click-right = audacious &
 #content-margin = 1
 content-padding = 1
 
@@ -307,7 +329,7 @@ type = custom/text
 content = 
 content-foreground = ${colors.keepassxc}
 click-left = keepassxc &
-click-right =
+click-right = 
 #content-margin = 1
 content-padding = 1
 
@@ -318,7 +340,7 @@ content-padding = 1
 type = custom/text
 content = 
 content-foreground = ${colors.term}
-click-left = urxvt -e fish &
+click-left = urxvt &
 click-right =
 #content-margin = 1
 content-padding = 1
@@ -359,68 +381,59 @@ content-padding = 1
 ##This module uses the i3 ipc to display information about workspaces and active mode.
 ##Модуль для отображения информации о рабочих пространствах и активном режиме;
 ##https://github.com/polybar/polybar/wiki/Module:-i3
-[module/i3workspaces]
+[module/i3]
 type = internal/i3
 
-format = <label-state><label-mode>
+format = <label-state>
 index-sort = false
 enable-click = true
 enable-scroll = true
 wrapping-scroll = true
 reverse-scroll = false
-label-mode-padding = 3
-label-mode-foreground = #000
-label-mode-background = ${colors.primary}
 
 
 label-focused = %icon%
-label-focused-background = 6767AE
-label-focused-foreground = EBEBEB
-label-focused-padding = 3
-#label-focused-underline = 9F9FB7
-#label-focused-overline = ${colors.primary}
+label-focused-foreground = ${colors.focused.foreground}
+label-focused-background = ${colors.focused.background}
+label-focused-underline = ${colors.focused.underline}
+label-focused-padding = 2
 
 
 label-unfocused = %icon%
-label-unfocused-background = 4F4F83
-label-unfocused-foreground = C6C6E2
-label-unfocused-padding = 3
-#label-unfocused-underline = 58587D
-#label-unfocused-overline = ${colors.background}
+label-unfocused-foreground = ${colors.unfocused.foreground}
+label-unfocused-background = ${colors.unfocused.background}
+label-unfocused-underline = ${colors.unfocused.underline}
+label-unfocused-padding = 2
 
 
 label-urgent = %icon%
-label-urgent-background = ${colors.alert}
-label-urgent-foreground = ${colors.foreground}
-label-urgent-padding = 3
-#label-urgent-underline = ${colors.alert}
-#label-urgent-overline = ${colors.background}
+label-urgent-foreground = ${colors.urgent.foreground}
+label-urgent-background = ${colors.urgent.background}
+label-urgent-underline = ${colors.urgent.underline}
+label-urgent-padding = 2
 
 
 label-visible = %icon%
-label-visible-background = ${colors.background}
-label-visible-foreground = ${colors.foreground}
-label-visible-padding = 3
-#label-visible-underline = ${colors.background}
-#label-visible-overline = ${colors.background}
+label-visible-foreground = ${colors.urgent.foreground}
+label-visible-background = ${colors.urgent.background}
+label-visible-underline = ${colors.urgent.underline}
+label-visible-padding = 2
 
 
-ws-icon-0 = 1;I
-ws-icon-1 = 2;II
-ws-icon-2 = 3;III
-ws-icon-3 = 4;IV
-ws-icon-4 = 5;V
-ws-icon-5 = 6;VI
-ws-icon-6 = 7;VII
-ws-icon-7 = 8;VIII
-ws-icon-8 = 9;IX
-ws-icon-9 = 10;X
+ws-icon-0 = 1;1
+ws-icon-1 = 2;2
+ws-icon-2 = 3;3
+ws-icon-3 = 4;4
+ws-icon-4 = 5;5
+ws-icon-5 = 6;6
+ws-icon-6 = 7;7
+ws-icon-7 = 8;8
+ws-icon-8 = 9;9
+ws-icon-9 = 10;10
 
 #Separator in between workspaces
 #label-separator = |
-
-
-
+#label-separator-foreground = #626675
 
 
 ###################################
@@ -439,15 +452,12 @@ mount-1 = /home
 #mount-2 = /boot
 
 label-mounted =  %mountpoint%: %percentage_used%%
-#label-mounted = %{F#1C1C1C} %mountpoint%: %used% из %total%  %percentage_used%%
 label-mounted-foreground = ${colors.foreground.filesystem}
+label-mounted-background = ${colors.background.filesystem}
+
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground.filesystemunmounted}
 
-#Фон для модуля
-label-mounted-background = ${colors.background.filesystem}
-
-#отступы между модулями
 label-mounted-padding = 3
 
 
@@ -464,10 +474,11 @@ label-mounted-padding = 3
 
 [module/pulseaudio]
 type = internal/pulseaudio
-format-volume = %{F#389E71}<ramp-volume><label-volume> <bar-volume>
-label-volume = %{F#389E71} %percentage%%
+sink = alsa_output.pci-0000_00_1b.0.analog-stereo
+format-volume = %{F#399169}<ramp-volume><label-volume> <bar-volume>
+label-volume = %{F#399169} %percentage%%
 label-volume-foreground = ${root.foreground}
-label-muted =   muted
+label-muted =  muted
 label-muted-foreground = #19573A
 
 
@@ -516,24 +527,15 @@ ramp-volume-4 = 
 type = internal/xkeyboard
 blacklist-0 = num lock
 label-NAME-maxlen = 30
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground-alt}
-#format-prefix-overline = CF5E7F
-#format-prefix-underline = CF5E7F
+format = <label-layout>
 
 label-layout =  %layout%
 label-layout-foreground = ${colors.foreground.xkeyboard}
 format-background = ${colors.background.xkeyboard}
-#label-layout-underline = CF5E7F
-#label-layout-overline = CF5E7F
+label-layout-underline = ${colors.underline.xkeyboard}
 
-label-indicator-padding = 2
-label-indicator-margin = 1
-label-indicator-background = 2C3248
-#label-indicator-overline = 9B265F
-#label-indicator-underline = ${colors.underline.xkeyboard}
-
-label-layout-padding = 1
+label-indicator-margin = 0
+label-layout-padding = 2
 
 
 
@@ -549,10 +551,16 @@ label-layout-padding = 1
 [module/title]
 type = internal/xwindow
 label = %title%
-label-maxlen = 24
+label-maxlen = 30
 label-foreground = ${colors.foreground.title}
 format-background = ${colors.background.title}
 label-padding = 4
+
+
+
+
+
+
 
 
 
@@ -564,32 +572,20 @@ label-padding = 4
 ### Internet connection module
 ### Модуль интернет соединения
 
-
 [module/network]
 type = custom/script
 #format = <label>
 interval = 2
 
-format-prefix = 
 #exec = "nmcli g | awk 'NR==2{print $1}'"
 #exec = "nmcli c | awk 'NR==2{print $6}'"
-exec = ping -q -w1 -c1 archlinux.org &>/dev/null && echo ONLINE || echo offline
-
-
+exec =  ping -q -w1 -c1 archlinux.org &>/dev/null && echo  ONLINE || echo  offline
 
 label-foreground = ${colors.foreground.network}
-format-prefix-foreground = ${colors.foreground.network}
 label-background = ${colors.background.network}
-format-prefix-background = ${colors.background.network}
-
-#format-underline = ${colors.underline.network}
-#format-prefix-underline = ${colors.underline.network}
+format-underline = ${colors.underline.network}
 
 click-left = nm-connection-editor
-#click-right = urxvt -e speedtest-cli
-
-format-prefix-padding-left = 2
-format-prefix-padding-right = 0
 label-padding = 2
 
 
@@ -605,13 +601,12 @@ label-padding = 2
 [module/cpu]
 type = internal/cpu
 interval = 2
+
 label=  CPU %percentage%% 
-format-prefix = " "
 label-foreground = ${colors.foreground.cpu}
-format-prefix-foreground = ${colors.foreground-alt}
 format-background = ${colors.background.cpu} 
-#format-underline = ${colors.underline.cpu}
-#format-overline = #408AB9
+format-underline = ${colors.underline.cpu}
+
 label-padding = 2
 
 
@@ -629,16 +624,11 @@ label-padding = 2
 type = internal/memory
 interval = 2
 
-
-format-prefix = " "
 label =  MEM %percentage_used%%
 label-foreground = ${colors.foreground.memory}
 format-background = ${colors.background.memory}
-format-prefix-foreground = ${colors.foreground-alt}
-#format-underline = ${colors.underline.memory}
-#format-overline = #61C07C
+format-underline = ${colors.underline.memory}
 
-#padding-{left,right} 
 label-padding = 2
 
 
@@ -650,7 +640,6 @@ label-padding = 2
 ## Core3 temperature display module
 ## Модуль отображения температуры core3
 # https://github.com/polybar/polybar/wiki/Module:-temperature
-
 ### upon reaching a critical mark, the module changes color to the one we set in label-warn
 ### при достижении критической отметки модуль меняет цвет на тот который мы зададим в label-warn
 
@@ -659,22 +648,20 @@ type = internal/temperature
 thermal-zone = 0
 interval = 10
 warn-temperature = 65
-### path to the file responsible for the core temperature
-### путь к файлу отвечающему за температуру ядра
 hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon1/temp3_input
 
 label =  TEM %temperature-c%
 label-foreground = ${colors.foreground.temperature3}
+format-background = ${colors.background.temperature3}
+format-underline = ${colors.underline.temperature3}
+
 label-warn =  TEMP %temperature-c%
 label-warn-foreground = ${colors.foreground.temperature3warn}
-format-background = ${colors.background.temperature3}
-#label-warn-background = ${colors.background.temperature3warm}
-#format-underline = ${colors.underline.temperature3}
-#format-warn-underline = ${colors.underline.temperature3warn}
-#format-overline = #DFC257
+label-warn-background = ${colors.background.temperature3warm}
+format-warn-underline = ${colors.underline.temperature3warn}
+
 label-warn-padding = 2
 label-padding = 2
-
 
 
 
@@ -692,18 +679,14 @@ type = internal/date
 interval = 1
 date =
 time =  %H:%M:%S
-label-foreground = ${colors.foreground.date}
 date-alt =  %a %e %B %Y
 time-alt =  %H:%M
 
 #label = %{A1:gsimplecal & disown:} %{A3:gsimplecal & disown:} %time%%{A} %{A}
-label =%{A3:gsimplecal & disown:} %date% %time%%{A} %{A}
-format-prefix = 
-format-prefix-foreground = ${colors.foreground-alt}
+label =%{A3:gsimplecal & disown:} %date% %time%%{A} %{A} 
+label-foreground = ${colors.foreground.date}
 format-background = ${colors.background.date}
-#format-underline = ${colors.underline.date}
-#format-overline = #7163AF
-#format-foreground = #E0D9FF
+format-underline = ${colors.underline.date}
 
 label-padding-left = 1
 label-padding-right = 2
@@ -777,28 +760,13 @@ menu-0-3-margin-left = 1
 
 
 
+
+
 ###############################################
 ###############################################
 ###  INACTIVE MODULES | НЕ АКТИВНЫЕ МОДУЛИ  ###
 ###############################################
 ###############################################
-
-
-
-###################################
-## WINDOW TITLE | ЗАГОЛОВОК ОКНА ##
-###################################
-## This module shows the title of the current window.
-## Этот модуль показывает заголовок текущего окна.
-# https://github.com/polybar/polybar/wiki/Module:-xwindow
-
-#[module/title]
-#type = internal/xwindow
-#label = %title%
-#label-maxlen = 30
-#label-foreground = ${colors.foreground.title}
-#format-background = ${colors.background.title}
-#label-padding = 4
 
 
 
@@ -832,6 +800,8 @@ menu-0-3-margin-left = 1
 #ramp-1 = 
 #ramp-2 = 
 #ramp-foreground = #F8F8F8
+
+
 
 
 
