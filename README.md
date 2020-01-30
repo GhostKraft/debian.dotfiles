@@ -4,7 +4,7 @@ This is the repository of my configuration files.
 <br />You can study them and use at your discretion, but do not forget that simple copying does not always lead to correct work.
 
 **BSPWM** 
-![Last screenshot](https://https://raw.githubusercontent.com/GhostKraft/dotfiles/master/screenshot/bspwm/bspwm%20polybar-%20bark_blue.png)
+![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/screenshot/bspwm/bspwm%20polybar-%20bark_blue.png)
 *`ArchLinux bspwm sxhkd polybar dmenu pcmanfm rxvt-unicode dunst gsimplecal ttf-font-awesome`*
 
 **OPENBOX** 
