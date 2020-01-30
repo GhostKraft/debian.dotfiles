@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <!--========== http://openbox.org/wiki/Help:Menus =========== -->
+<openbox_menu>
+	<menu id="root-menu" label="OpenBox 3">
+		<item label="Opera">
+			<action name="Execute">
+				<execute>opera</execute>
+			</action>
+		</item>
+		<item label="Terminal">
+			<action name="Execute">
+				<execute>urxvt</execute>
+			</action>
+		</item>
+		<item label="PCManFM">
+			<action name="Execute">
+				<execute>pcmanfm</execute>
+			</action>
+		</item>
+		<item label="Cherrytree">
+			<action name="Execute">
+				<execute>cherrytree</execute>
+			</action>
+		</item>
+		<item label="Calendar">
+			<action name="Execute">
+				<execute>osmo</execute>
+			</action>
+		</item>
+		<item label="Calculator">
+			<action name="Execute">
+				<execute>gnome-calculator</execute>
+			</action>
+		</item>
+		<item label="Search app">
+			<action name="Execute">
+				<execute>xfce4-appfinder</execute>
+			</action>
+		</item>
+		<item label="Pamac manager">
+			<action name="Execute">
+				<execute>pamac-manager</execute>
+			</action>
+		</item>
+		<separator/>
+		<menu id="18" label="Games">
+			<item label="PlayonLinux">
+				<action name="Execute">
+					<execute>playonlinux</execute>
+				</action>
+			</item>
+			<item label="Steam (Native)">
+				<action name="Execute">
+					<execute>steam-native</execute>
+				</action>
+			</item>
+			<item label="Steam (Runtime)">
+				<action name="Execute">
+					<execute>steam-runtime</execute>
+				</action>
+			</item>
+			<item label="Fceux">
+				<action name="Execute">
+					<execute>fceux</execute>
+				</action>
+			</item>
+			<item label="Gens/GS">
+				<action name="Execute">
+					<execute>gens</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="6" label="Graphics">
+			<item label="Gcolor3">
+				<action name="Execute">
+					<execute>gcolor3</execute>
+				</action>
+			</item>
+			<item label="FBReader">
+				<action name="Execute">
+					<execute>FBReader</execute>
+				</action>
+			</item>
+			<item label="Flameshot">
+				<action name="Execute">
+					<execute>flameshot</execute>
+				</action>
+			</item>
+			<item label="Gimp">
+				<action name="Execute">
+					<execute>gimp-2.10</execute>
+				</action>
+			</item>
+			<item label="MComix">
+				<action name="Execute">
+					<execute>mcomix</execute>
+				</action>
+			</item>
+			<item label="The GIMP">
+				<action name="Execute">
+					<execute>gimp</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="7" label="Multimedia">
+			<item label="Audacious">
+				<action name="Execute">
+					<execute>audacious</execute>
+				</action>
+			</item>
+			<item label="VLC media player">
+				<action name="Execute">
+					<execute>vlc</execute>
+				</action>
+			</item>
+			<item label="VidCutter">
+				<action name="Execute">
+					<execute>vidcutter</execute>
+				</action>
+			</item>
+			<item label="Shotcut">
+				<action name="Execute">
+					<execute>shotcut</execute>
+				</action>
+			</item>
+			<item label="Audacity">
+				<action name="Execute">
+					<execute>audacity</execute>
+				</action>
+			</item>
+			<item label="ALSA mixer">
+				<action name="Execute">
+					<execute>xterm -e alsamixer</execute>
+				</action>
+			</item>
+			<item label="PulseAudio Volume Control">
+				<action name="Execute">
+					<execute>pavucontrol</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="5" label="Network">
+			<item label="qBittorrent">
+				<action name="Execute">
+					<execute>qbittorrent</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="3" label="Office">
+			<item label="LibreOffice Calc">
+				<action name="Execute">
+					<execute>libreoffice --calc</execute>
+				</action>
+			</item>
+			<item label="LibreOffice Impress">
+				<action name="Execute">
+					<execute>libreoffice</execute>
+				</action>
+			</item>
+			<item label="LibreOffice Impress">
+				<action name="Execute">
+					<execute>libreoffice --impress</execute>
+				</action>
+			</item>
+			<item label="LibreOffice Math">
+				<action name="Execute">
+					<execute>libreoffice --math</execute>
+				</action>
+			</item>
+			<item label="LibreOffice Writer">
+				<action name="Execute">
+					<execute>libreoffice --writer</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="37" label="System">
+			<menu id="36" label="Settings">
+				<item label="Openbox Configuration Manager">
+					<action name="Execute">
+						<execute>obconf</execute>
+					</action>
+				</item>
+				<item label="Openbox Menu Editor">
+					<action name="Execute">
+						<execute>obmenu</execute>
+					</action>
+				</item>
+				<item label="Tint2 Settings">
+					<action name="Execute">
+						<execute>tint2conf</execute>
+					</action>
+				</item>
+				<item label="Lxappearance">
+					<action name="Execute">
+						<execute>lxappearance</execute>
+					</action>
+				</item>
+				<item label="nitrogen">
+					<action name="Execute">
+						<execute>nitrogen</execute>
+					</action>
+				</item>
+				<item label="LightDM GTK+ Greeter settings">
+					<action name="Execute">
+						<execute>lightdm-gtk-greeter-settings-pkexec</execute>
+					</action>
+				</item>
+				<item label="Firewall Configuration">
+					<action name="Execute">
+						<execute>gufw</execute>
+					</action>
+				</item>
+				<item label="Network Configuration">
+					<action name="Execute">
+						<execute>nm-connection-editor</execute>
+					</action>
+				</item>
+				<item label="Preferred Applications">
+					<action name="Execute">
+						<execute>libfm-pref-apps</execute>
+					</action>
+				</item>
+				<item label="Grub Customizer">
+					<action name="Execute">
+						<execute>grub-customizer</execute>
+					</action>
+				</item>
+				<item label="Software Update">
+					<action name="Execute">
+						<execute>pamac-manager --updates</execute>
+					</action>
+				</item>
+			</menu>
+			<item label="Task Manager">
+				<action name="Execute">
+					<execute>lxtask</execute>
+				</action>
+			</item>
+			<item label="KeePassXC">
+				<action name="Execute">
+					<execute>keepassxc</execute>
+				</action>
+			</item>
+			<item label="GParted">
+				<action name="Execute">
+					<execute>gparted</execute>
+				</action>
+			</item>
+			<item label="Catfish">
+				<action name="Execute">
+					<execute>catfish</execute>
+				</action>
+			</item>
+			<item label="ClamTK">
+				<action name="Execute">
+					<execute>clamtk</execute>
+				</action>
+			</item>
+			<item label="BleachBit">
+				<action name="Execute">
+					<execute>bleachbit</execute>
+				</action>
+			</item>
+			<item label="Htop">
+				<action name="Execute">
+					<execute>sakura -e htop</execute>
+				</action>
+			</item>
+			<item label="Hardinfo">
+				<action name="Execute">
+					<execute>hardinfo</execute>
+				</action>
+			</item>
+			<item label="Timeshift">
+				<action name="Execute">
+					<execute>timeshift-launcher</execute>
+				</action>
+			</item>
+			<item label="VeraCrypt">
+				<action name="Execute">
+					<execute>veracrypt</execute>
+				</action>
+			</item>
+			<item label="Xev">
+				<action name="Execute">
+					<execute>xterm -e xev</execute>
+				</action>
+			</item>
+		</menu>
+		<separator/>
+		<menu id="places" label="Каталоги">
+			<item label="Home">
+				<action name="Execute">
+					<execute>pcmanfm -n ~/</execute>
+				</action>
+			</item>
+		<item label="Загрузки">
+				<action name="Execute">
+					<execute>pcmanfm -n ~/Загрузки</execute>
+				</action>
+			</item>			
+		<item label="Документы">
+				<action name="Execute">
+					<execute>pcmanfm -n ~/Документы</execute>
+				</action>
+			</item>
+		<item label="Linux info">
+				<action name="Execute">
+					<execute>pcmanfm -n ~/Документы/Linux_info</execute>
+				</action>
+			</item>			
+		<item label="Config">
+				<action name="Execute">
+					<execute>pcmanfm -n ~/.config</execute>
+				</action>
+			</item>	
+		<item label="Видео">
+				<action name="Execute">
+					<execute>pcmanfm -n ~/Видео</execute>
+				</action>
+			</item>
+		<item label="Музыка">
+				<action name="Execute">
+					<execute>pcmanfm -n ~/Музыка</execute>
+				</action>
+			</item>	
+		<item label="Изображения">
+				<action name="Execute">
+					<execute>pcmanfm -n ~/Изображения</execute>
+				</action>
+			</item>																	
+		</menu>
+		<separator/>
+		<menu id="client-list-menu"/>
+		<separator/>
+		<menu id="40" label="OpenBox">		
+			<item label="Restart">
+				<action name="Restart"/>
+			</item>
+			<item label="Reconfigure">
+				<action name="Reconfigure"/>
+			</item>
+			<separator/>
+			<item label="Перезагрузка">
+				<action name="Execute">
+					<execute>reboot </execute>
+				</action>
+			</item>
+			<item label="Выключение">
+				<action name="Execute">
+					<execute>shutdown -h now</execute>
+				</action>
+			</item>
+			<item label="Выход">
+				<action name="Exit"/>
+			</item>
+			</menu>
+	</menu>
+</openbox_menu>
