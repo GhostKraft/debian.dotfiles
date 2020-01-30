@@ -30,7 +30,7 @@
 ### Основные Цвета панели
 [colors]
 foreground = #dfdfdf
-background = #1B1D24
+background = #1E1F28
 indicator.foreground = #121218
 indicator.background = #5555BB
 indicator.underline = #5555BB
@@ -41,21 +41,27 @@ indicator.underline = #5555BB
 ### Цвета для модуля рабочих столов bspwm
 ### Пример вставки цвета в модуль ${colors.focused.foreground}
 
-focused.foreground = #EBEBEB
-focused.background = #6767AE
-focused.underline = #6767AE
+#Текущий рабочий стол
+focused.foreground = #DADADA
+focused.background = #232329
+focused.underline = #2E55D3
 
-occupied.foreground = #C6C6E2
-occupied.background = #525296
-occupied.underline = #525296
+#занятый рабочий стол
+occupied.foreground = #ABAAAA
+occupied.background = #232329
+occupied.underline = #A23E6C
 
-empty.foreground = #A6A6A6
-empty.background = #2C2F39
-empty.underline = #2C2F39
+#Пустрой не выбранный рабочий стол
+empty.foreground = #4C4C55
+empty.background = #232329
+empty.underline = #1F2027
 
-urgent.foreground = #EBEBEB
-urgent.background = #AA51C5
-urgent.underline = #A655BE
+# Рабочий стол требующий внимания
+urgent.foreground = #EFEFEF
+urgent.background = #B53E68
+urgent.underline = #B53E68
+
+
 
 
 
@@ -69,6 +75,7 @@ keepassxc = #9F9FB7
 term = #9F9FB7
 cherrytree = #9F9FB7
 fm = #9F9FB7
+search = #9F9FB7
 
 
 
@@ -76,41 +83,41 @@ fm = #9F9FB7
 ### Цвет текста модулей ${colors.foreground.имя модуля}
 foreground.filesystem = #1A1A1A
 foreground.filesystemunmounted = #CE8280
-foreground.title = #8A8AE5
-foreground.xkeyboard = #1A1A1A
-foreground.network = #478894
-foreground.cpu = #97489C
-foreground.memory =  #8356BB
-foreground.temperature3 = #715DC3
+foreground.title = #2F9EB7
+foreground.xkeyboard = #141414
+foreground.network = #141414
+foreground.cpu = #141414
+foreground.memory = #141414
+foreground.temperature3 = #141414
 foreground.temperature3warn  = #FFCC00
-foreground.date = #5761C2
+foreground.date = #121212
 foreground.powermenu = #121212
 
 
 ### background color of modules ${colors.background.modules name}
 ### цвет фона модулей ${colors.background.имя модуля}
-background.filesystem = #57578F
-background.title = #1E2024
-background.xkeyboard = #57578F
-background.network = #1E1F25
-background.cpu = #1E1F25
-background.memory = #1E1F25
-background.temperature3 = #1E1F25
+background.filesystem = #3652AE
+background.xkeyboard = #A23E6C
+background.title = #242632
+background.network = #2E55D3
+background.cpu = #A23E6C
+background.memory = #2E55D3
+background.temperature3 = #A23E6C
 background.temperature3warm = #A33541
-background.date = #1E1F25
-background.powermenu = #4F4F9C
-background.tray = #4F4F9C
+background.date = #2E55D3
+background.powermenu = #2E55D3
+background.tray = #2E55D3
 
 
 ###underline color of modules ${colors.underline.modules name}
 ###цвет нижней линии в модулях ${colors.underline.имя модуля}
-underline.xkeyboard = #57578F
-underline.network = #1E1F25
-underline.cpu = #1E1F25
-underline.memory = #1E1F25
-underline.temperature3 = #1E1F25
+underline.xkeyboard = #A23E6C
+underline.network = #2E55D3
+underline.cpu = #A23E6C
+underline.memory = #2E55D3
+underline.temperature3 = #A23E6C
 underline.temperature3warn = #A33541
-underline.date = #1E1F25
+underline.date = #2E55D3
 
 
 
@@ -133,7 +140,7 @@ width = 100%
 
 ### panel height
 ### высота панели 
-height = 24
+height = 20
 
 
 ### Change polybar location - bottom
@@ -169,19 +176,19 @@ foreground = ${colors.foreground}
 
 ### bottom line size under the modules
 ### размер нижней линии под модулями
-line-size = 4
+line-size = 3
 #line-color = #6D6DAB
 
 
 
 ### Border around the panel
 ### Рамка вокруг панели
-#border-size = 0
+border-size = 4
 #border-top-size = 4
 #border-bottom-size = 4
-#border-left-size = 1
-#border-right-size = 1
-#border-color = #1B1D24
+#border-left-size = 2
+#border-right-size = 2
+border-color = #1E1F28
 
 
 ### padding the contents of the panel from the edge
@@ -237,9 +244,9 @@ wm-restack = bspwm
 
 ### Location and activation of modules
 ### асположение и активация модулей
-modules-left = bspwm-workspaces browser audacious vlc lxtask keepassxc term cherrytree fm filesystem  xkeyboard title
+modules-left = bspwm-workspaces browser audacious vlc lxtask keepassxc term cherrytree search fm title
 modules-center = 
-modules-right = pulseaudio network cpu memory temperature3 date powermenu
+modules-right =  pulseaudio xkeyboard network cpu memory temperature3 date powermenu
 
 
 ### Scrolling workspaces anywhere in the panel
@@ -276,13 +283,13 @@ modules-right = pulseaudio network cpu memory temperature3 date powermenu
 ####################################
 [module/browser]
 type = custom/text
-content = 
+content = 
 content-foreground = ${colors.browser}
-click-left = firefox & 
-click-right = opera &
+click-left = opera &
+click-right = firefox &  
 #content-margin = 1
 content-padding = 1
-#
+# 
 
 
 
@@ -290,8 +297,8 @@ content-padding = 1
 type = custom/text
 content = 
 content-foreground = ${colors.audacious}
-click-left = urxvt -e ncmpcpp & 
-click-right = audacious &
+click-left = audacious & 
+#click-right = 
 #content-margin = 1
 content-padding = 1
 
@@ -340,7 +347,7 @@ type = custom/text
 content = 
 content-foreground = ${colors.term}
 click-left = urxvt &
-click-right =
+#click-right = 
 #content-margin = 1
 content-padding = 1
 
@@ -364,14 +371,22 @@ type = custom/text
 content = 
 content-foreground = ${colors.fm}
 click-left = pcmanfm &
-click-right = urxvt --title float -e ranger &
+#click-right = urxvt --title float -e ranger &
 #click-right = sakura --title float -e ranger &
 #content-margin = 1
 content-padding = 1
 #
 
 
-
+[module/search]
+type = custom/text
+content = 
+content-foreground = ${colors.search}
+click-left = xfce4-appfinder &
+click-right = catfish &
+#click-right = sakura --title float -e ranger &
+#content-margin = 1
+content-padding = 1
 
 
 
@@ -398,7 +413,7 @@ label-focused = %name%
 label-focused-foreground = ${colors.focused.foreground}
 label-focused-background = ${colors.focused.background}
 label-focused-underline = ${colors.focused.underline}
-label-focused-padding = 3
+label-focused-padding = 2
 
 
 ### занятый рабочий стол
@@ -406,14 +421,14 @@ label-occupied = %name%
 label-occupied-foreground = ${colors.occupied.foreground}
 label-occupied-background = ${colors.occupied.background}
 label-occupied-underline = ${colors.occupied.underline}
-label-occupied-padding = 3
+label-occupied-padding = 2
 
 
 ### Пустрой не выбранный рабочий стол
 label-empty = %name%
 label-empty-foreground = ${colors.empty.foreground}
 label-empty-background = ${colors.empty.background}
-label-empty-padding = 3
+label-empty-padding = 2
 label-empty-underline = ${colors.empty.underline}
 
 
@@ -422,10 +437,12 @@ label-urgent = %name%!
 label-urgent-foreground = ${colors.urgent.foreground}
 label-urgent-background = ${colors.urgent.background}
 label-urgent-underline = ${colors.urgent.underline}
-label-urgent-padding = 3
+label-urgent-padding = 2
 
 
-
+label-separator = |
+label-separator-padding = 0
+label-separator-foreground = #2D2D36
 
 
 
@@ -440,8 +457,8 @@ label-urgent-padding = 3
 type = internal/fs
 interval = 30
 
-mount-0 = /
-mount-1 = /home
+mount-0 = /home
+#mount-1 = /
 #mount-2 = /boot
 
 label-mounted =  %mountpoint%: %percentage_used%%
@@ -452,57 +469,6 @@ label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground.filesystemunmounted}
 
 label-mounted-padding = 3
-
-
-
-
-
-########################
-## VOLUME | ГРОМКОСТЬ ##
-########################
-## Sound control module via pulseaudio
-## Модуль управления звуком через pulseaudio
-## https://github.com/polybar/polybar/wiki/Module:-pulseaudio
-
-[module/pulseaudio]
-type = internal/pulseaudio
-sink = alsa_output.pci-0000_00_1b.0.analog-stereo
-format-volume = %{F#399169}<ramp-volume><label-volume> <bar-volume>
-label-volume = %{F#399169} %percentage%%
-label-volume-foreground = ${root.foreground}
-label-muted =  muted
-label-muted-foreground = #19573A
-
-
-bar-volume-width = 15
-bar-volume-foreground-0 = #389E71
-bar-volume-foreground-1 = #389E71
-bar-volume-foreground-2 = #389E71
-bar-volume-foreground-3 = #389E71
-bar-volume-foreground-4 = #389E71
-bar-volume-foreground-5 = #389E71
-bar-volume-foreground-6 = #389E71
-bar-volume-foreground-7 = #50B56C
-bar-volume-foreground-8 = #50B56C
-bar-volume-foreground-9 = #50B56C
-bar-volume-foreground-10 = #50B56C
-bar-volume-foreground-11 = #50B56C
-bar-volume-foreground-12 = #50B56C
-bar-volume-foreground-13 = #27C753
-bar-volume-gradient = false
-bar-volume-indicator = |
-bar-volume-indicator-font = 8
-bar-volume-fill = |
-bar-volume-fill-font = 10
-bar-volume-empty = |
-bar-volume-empty-font = 6
-bar-volume-empty-foreground = 1C562C
-
-ramp-volume-0 = 
-ramp-volume-1 = 
-ramp-volume-2 = 
-ramp-volume-3 = 
-ramp-volume-4 = 
 
 
 
@@ -532,6 +498,9 @@ label-indicator-padding = 2
 
 
 
+
+
+
 ###################################
 ## WINDOW TITLE | ЗАГОЛОВОК ОКНА ##
 ###################################
@@ -542,13 +511,63 @@ label-indicator-padding = 2
 [module/title]
 type = internal/xwindow
 label = %title%
-label-maxlen = 24
+label-maxlen = 45
 label-foreground = ${colors.foreground.title}
 format-background = ${colors.background.title}
 label-padding = 4
 
 
 
+
+
+
+
+########################
+## VOLUME | ГРОМКОСТЬ ##
+########################
+## Sound control module via pulseaudio
+## Модуль управления звуком через pulseaudio
+## https://github.com/polybar/polybar/wiki/Module:-pulseaudio
+
+[module/pulseaudio]
+type = internal/pulseaudio
+sink = alsa_output.pci-0000_00_1b.0.analog-stereo
+format-volume = %{F#A6276B}<ramp-volume><label-volume> <bar-volume>
+label-volume = %{F#A6276B} %percentage%%
+label-volume-foreground = ${root.foreground}
+label-muted =  muted
+label-muted-foreground = #763A5A
+
+
+bar-volume-width = 15
+bar-volume-foreground-0 = #B13878
+bar-volume-foreground-1 = #B13878
+bar-volume-foreground-2 = #B13878
+bar-volume-foreground-3 = #B13878
+bar-volume-foreground-4 = #B13878
+bar-volume-foreground-5 = #B13878
+bar-volume-foreground-6 = #B13878
+bar-volume-foreground-7 = #C83885
+bar-volume-foreground-8 = #C83885
+bar-volume-foreground-9 = #C83885
+bar-volume-foreground-10 = #C83885
+bar-volume-foreground-11 = #C83885
+bar-volume-foreground-12 = #C83885
+bar-volume-foreground-13 = #D9338B
+bar-volume-gradient = false
+bar-volume-indicator = |
+bar-volume-indicator-font = 8
+bar-volume-fill = |
+bar-volume-fill-font = 10
+bar-volume-empty = |
+bar-volume-empty-font = 6
+bar-volume-empty-foreground = #8F476E
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-3 = 
+ramp-volume-4 = 
 
 
 
@@ -570,13 +589,15 @@ interval = 2
 
 #exec = "nmcli g | awk 'NR==2{print $1}'"
 #exec = "nmcli c | awk 'NR==2{print $6}'"
-exec =  ping -q -w1 -c1 archlinux.org &>/dev/null && echo  ONLINE || echo  offline
+exec =  ping -q -w1 -c1 archlinux.org &>/dev/null && echo  ONLINE || echo  offline
+#exec =  ping -q -w1 -c1 archlinux.org &>/dev/null && echo  ON || echo  off
 
 label-foreground = ${colors.foreground.network}
 label-background = ${colors.background.network}
 format-underline = ${colors.underline.network}
 
 click-left = nm-connection-editor
+label-padding-left = 2
 label-padding = 2
 
 
@@ -652,8 +673,9 @@ label-warn-foreground = ${colors.foreground.temperature3warn}
 label-warn-background = ${colors.background.temperature3warm}
 format-warn-underline = ${colors.underline.temperature3warn}
 
-label-warn-padding = 2
+
 label-padding = 2
+label-warn-padding = 2
 
 
 
@@ -680,13 +702,9 @@ label-foreground = ${colors.foreground.date}
 format-background = ${colors.background.date}
 format-underline = ${colors.underline.date}
 
+#label-padding= 2
 label-padding-left = 1
 label-padding-right = 2
-
-
-
-
-
 
 ###############################################
 ## POWERMENU | ВЫКЛЮЧЕНИЕ ПЕРЕЗАГРУЗКА ВЫХОД ##
@@ -705,8 +723,8 @@ label-open-padding = 2
 #format-padding = 4
 
 label-close = cancel
-label-close-foreground = #8D8DE8
-label-close-background = #1E2028
+label-close-background = #A23E6C
+label-close-foreground = #D5DCF5
 label-close-padding  = 2
 
 #label-separator = |
@@ -714,31 +732,31 @@ label-close-padding  = 2
 
 menu-0-0 = LOGOUT 
 menu-0-0-exec =  pkill -KILL -u $USER
-menu-0-0-background = #1E2028
+menu-0-0-background = #232329
 menu-0-0-padding = 2
 menu-0-0-margin = 1
-menu-0-0-foreground = 3D9F69
+menu-0-0-foreground = #42A452
 
 
 menu-0-1 = REBOOT 
 menu-0-1-exec = reboot
-menu-0-1-background = #1E2028
+menu-0-1-background = #232329
 menu-0-1-padding = 2
 menu-0-1-margin = 1
-menu-0-1-foreground = 3D879F
+menu-0-1-foreground = #B8C746
 
 
 menu-0-2 = POWEROFF
 menu-0-2-exec = poweroff
-menu-0-2-background = #1E2028
+menu-0-2-background = #232329
 menu-0-2-padding = 2
 menu-0-2-margin = 1
-menu-0-2-foreground = A92E47
+menu-0-2-foreground = #BC4448
 
 
 menu-0-3 = 
-menu-0-3-background = 5F5FA2
-menu-0-3-foreground = D5DCF5
+menu-0-3-background = #2E55D3
+menu-0-3-foreground = #D7D7D7
 menu-0-3-padding = 2
 menu-0-3-margin-left = 1
 

@@ -40,5 +40,13 @@ mainwindow_yoffset = 36
 #mainwindow_xoffset = 1642
 #.br
 #mainwindow_yoffset = 848
+
+### i3wm
+#.br
+#mainwindow_xoffset = 1728
+#.br
+#mainwindow_yoffset = 848
+
+
 #.br
 #clock_label = Local

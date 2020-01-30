@@ -7,7 +7,7 @@ killall -q polybar
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 # Launch bar1
-polybar -c $HOME/.config/polybar/i3-polybar/config --reload polybar-i3 &
+polybar -c $HOME/.config/polybar/i3-polybar/config --reload polybar &
   
   
 echo "Bars launched..."

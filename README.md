@@ -1,40 +1,30 @@
-![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/wallpaper/logo%20DF_GK.png)
+![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/.wallpaper/logo%20DF_GK.png)
 ## Welcome to my dotfiles repository:
 This is the repository of my configuration files.
 <br />You can study them and use at your discretion, but do not forget that simple copying does not always lead to correct work.
 
 **BSPWM** 
-![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/screenshot/bspwm/ws-bspwm.png)
-*`ArchLinux bspwm sxhkd polybar dmenu pcmanfm rxvt-unicode dunst ranger gsimplecal mpd mpc ncmpcpp nitrogen ttf-font-awesome`*
+![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/screenshot/bspwm/bspwm polybar- bark_blue.png)
+*`ArchLinux bspwm sxhkd polybar dmenu pcmanfm rxvt-unicode dunst gsimplecal ttf-font-awesome`*
 
-![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/screenshot/bspwm/power-menu-polybar.png)
-*`polybar active power memu`*
-***
-**I3-WM** 
-![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/screenshot/i3-wm/i3wm-00.png)
-*`ArchLinux i3-wm i3status (i3bar) dmenu rxvt-unicode dunst ranger mpd mpc ncmpcpp nitrogen ttf-font-awesome  `*
-***
-**JWM** 
-![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/screenshot/JWM/JWM-vilol.png)
-*`ArchLinux jwm gsimplecal xxkb volumeicon conky dmenu pcmanfm rxvt-unicode dunst ranger gsimplecal mpd mpc ncmpcpp nitrogen `*
+**OPENBOX** 
+![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/screenshot/openbox/Openbox-dark_blue.png)
+*`ArchLinux openbox tint2 dmenu pcmanfm rxvt-unicode dunst gsimplecal ttf-font-awesome audacious`*
+
+
 
 | description software     |   software name     |
 | ------------------------ |:-------------------:|
 | terminal                 | urxvt (rxvt-unicode)|
-| text editor (console)    | micro               |
 | text editor  (GUI)       | geany               |
 | watching video           | mpv                 |
-| music                    | mpd + ncmpcpp       |
-| File manager (console)   | ranger              | 
+| music                    | audacious	         |
 | File manager (GUI)       | pcmanfm             |
-| application launch       | dmenu + rofi        |
+| application launch       | dmenu      		 |
 | notifications            | dunst               |
 | calendar                 | gsimplecal          |
 | bspwm panel              | polybar             |
 | wallpaper manager        | nitrogen            |
-| JWM volume in tray       | volumeicon          |
-| JWM keyboard layout      | xxkb                |
-| JWM system information   | conky               |
 | system information       | neofetch            |
 | power management         | xfce4-power-manager |
 | bar icons                | ttf-font-awesome    |

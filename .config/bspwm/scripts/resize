@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#https://github.com/Chrysostomus/bspwm-scripts/blob/master/bin/bspwm_resize.sh
 size=${2:-'10'}
 dir=$1
 

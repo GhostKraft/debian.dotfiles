@@ -1,5 +1,5 @@
 [global]
-font = Hack 11
+font = Iosevka Term 11
 
 # Allow a small subset of html markup:
 #   <b>bold</b>
@@ -70,7 +70,7 @@ hide_duplicates_count = yes
 # The width can be negative.  In this case the actual width is the
 # screen width minus the width defined in within the geometry option.
 ###Для верхней панели 32px правый верхний угол 
-geometry = "300x4-6+32"
+geometry = "300x4-6+34"
 ###верхний правый угол игнорируя панель
 #geometry = "300x50-5+25"
 
@@ -185,22 +185,22 @@ context = ctrl+shift+period
 [urgency_low]
 # IMPORTANT: colors have to be defined in quotation marks.
 # Otherwise the "#" and following would be interpreted as a comment.
-frame_color = "#3B7C87"
-foreground = "#3B7C87"
+frame_color = "#1F7DC1"
+foreground = "#1F7DC1"
 background = "#22252C"
 #background = "#2B313C"
 timeout = 6
 
 [urgency_normal]
-frame_color = "#8061D7"
-foreground = "#8061D7"
-background = "#22252C"
+frame_color = "#2E55D3"
+foreground = "#B3527F"
+background = "#1E1F28"
 #background = "#2B313C"
 timeout = 10
 
 [urgency_critical]
-frame_color = "#B7472A"
-foreground = "#B7472A"
+frame_color = "#B72A43"
+foreground = "#BE3C5F"
 background = "#22252C"
 #background = "#2B313C"
 timeout = 20

@@ -4,41 +4,49 @@ URxvt*termName: rxvt-unicode
 
 !! Colorscheme цветовая схема
 ! special
-URxvt*background:  #1A1C23
-URxvt*foreground:  #A06DE5
+!!!BLUE
+URxvt*foreground:  #5B7EEF
+URxvt*background:  #191A23
+
+!!!VIOL
+!URxvt*foreground:  #A06DE5
+!URxvt*background:  #1A1C23
+
 !*.cursorColor: #afbfbf
 
+
+
 ! black
-URxvt*color0: #272A3B
-URxvt*color8: #37573f
+URxvt*color0: #282a2e
+URxvt*color8: #43484f
 
 ! red
-URxvt*color1: #de383d
-URxvt*color9: #eb5269
+URxvt*color1: #a54040
+URxvt*color9: #cc6666
 
 ! green
-URxvt*color2: #99b45a
-URxvt*color10: #d3b89a
+URxvt*color2: #639440
+URxvt*color10: #7FB365
 
 ! yellow
-URxvt*color3: #f4a358
-URxvt*color11: #ffc15c
+URxvt*color3: #D3AA4D
+URxvt*color11: #EAC673
 
 ! blue
-URxvt*color4: #8384a9
-URxvt*color12: #d0add7
+URxvt*color4: #4486BD
+URxvt*color12: #5C8CBD
 
 ! magenta
-URxvt*color5: #bc529c
-URxvt*color13: #d76bae
+URxvt*color5: #676c8f
+URxvt*color13: #9499bb
 
 ! cyan
-URxvt*color6: #907fa2
-URxvt*color14: #b493bb
+URxvt*color6: #49A3B2
+URxvt*color14: #7DC1C4
 
 ! white
-URxvt*color7: #c4dede
-URxvt*color15: #ffffff
+URxvt*color7: #707880
+URxvt*color15: #c5c8c6
 
 
 

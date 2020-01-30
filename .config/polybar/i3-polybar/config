@@ -40,17 +40,19 @@ indicator.underline = #5555BB
 ### Colors for the workspace module i3
 ### Цвета для модуля рабочих столов i3
 ### Пример вставки цвета в модуль ${colors.focused.foreground}
+#Текущий рабочий стол
 focused.foreground = #EBEBEB
-focused.background = #6767AE
-focused.underline = #6767AE
+focused.background = #2E55D3
+focused.underline = #3756BA
 
-unfocused.foreground = #C6C6E2
-unfocused.background = #525296
-unfocused.underline = #525296
+#Рабочий стол вне фокуса
+unfocused.foreground = #A6A6A6
+unfocused.background = #1F2027
+unfocused.underline = #1F2027
 
-urgent.foreground = #C6C6E2
-urgent.background = #5959C9
-urgent.underline = #5959C9
+urgent.foreground = #EBEBEB
+urgent.background = #C5517A
+urgent.underline = #C5517A
 
 visible.foreground = #A6A6A6
 visible.background = #2C2F39
@@ -74,44 +76,44 @@ fm = #9F9FB7
 ### foreground color of modules ${colors.foreground.modules name}
 ### Цвет текста модулей ${colors.foreground.имя модуля}
 foreground.filesystem = #1A1A1A
-foreground.filesystemunmounted = #CE8280
-foreground.title = #8A8AE5
-foreground.xkeyboard = #1A1A1A
-foreground.network = #4F95A2
-foreground.cpu = #A646AC
-foreground.memory =  #8E5CCC
-foreground.temperature3 = #7864D1
+foreground.filesystemunmounted = #101010
+foreground.title = #3D63F2
+foreground.xkeyboard = #BE57AB
+foreground.network = #35ABFF
+foreground.cpu = #3596FF
+foreground.memory = #3587FF
+foreground.temperature3 = #3575FF
 foreground.temperature3warn  = #FFCC00
-foreground.date = #6561DA
-foreground.powermenu = #121212
+foreground.date = #101010
+foreground.powermenu = #101010
 
 
 
 ### background color of modules ${colors.background.modules name}
 ### цвет фона модулей ${colors.background.имя модуля}
-background.filesystem = #57578F
+background.filesystem = #3652AE
+background.xkeyboard = #1B1D24
 background.title = #1E2024
-background.xkeyboard = #57578F
 background.network = #1E1F25
 background.cpu = #1E1F25
 background.memory = #1E1F25
 background.temperature3 = #1E1F25
 background.temperature3warm = #A33541
-background.date = #1E1F25
-background.powermenu = #4F4F9C
-background.tray = #4F4F9C
+background.date = #2E55D3
+background.powermenu = #2E55D3
+background.tray = #2E55D3
 
 
 
 ###underline color of modules ${colors.underline.modules name}
 ###цвет нижней линии в модулях ${colors.underline.имя модуля}
-underline.xkeyboard = #57578F
+underline.xkeyboard = #1B1D24
 underline.network = #1E1F25
 underline.cpu = #1E1F25
 underline.memory = #1E1F25
 underline.temperature3 = #1E1F25
 underline.temperature3warn = #A33541
-underline.date = #1E1F25
+underline.date = #2E55D3
 
 
 
@@ -127,7 +129,7 @@ underline.date = #1E1F25
 ### [bar/bar NAME]
 
 
-[bar/polybar-i3]
+[bar/polybar]
 ### Panel width
 ### Ширина панели
 width = 100%
@@ -240,9 +242,9 @@ wm-restack = i3
 
 ### Location and activation of modules
 ### асположение и активация модулей
-modules-left = i3 browser audacious vlc lxtask keepassxc term cherrytree fm filesystem  xkeyboard title
+modules-left = i3 browser audacious vlc lxtask keepassxc term cherrytree fm filesystem title
 modules-center =
-modules-right = pulseaudio network cpu memory temperature3 date powermenu
+modules-right = xkeyboard pulseaudio network cpu memory temperature3 date powermenu
 
 
 ### Scrolling workspaces anywhere in the panel
@@ -279,13 +281,13 @@ modules-right = pulseaudio network cpu memory temperature3 date powermenu
 ####################################
 [module/browser]
 type = custom/text
-content = 
+content = 
 content-foreground = ${colors.browser}
-click-left = firefox & 
-click-right = opera &
+click-left = opera & 
+click-right = firefox & 
 #content-margin = 1
 content-padding = 1
-#
+#
 
 
 
@@ -367,7 +369,7 @@ type = custom/text
 content = 
 content-foreground = ${colors.fm}
 click-left = pcmanfm &
-click-right = urxvt --title float -e ranger &
+#click-right = urxvt --title float -e ranger &
 #click-right = sakura --title float -e ranger &
 #content-margin = 1
 content-padding = 1
@@ -458,8 +460,8 @@ ws-icon-9 = 10;10
 type = internal/fs
 interval = 30
 
-mount-0 = /
-mount-1 = /home
+#mount-1 = /
+mount-0 = /home
 #mount-2 = /boot
 
 label-mounted =  %mountpoint%: %percentage_used%%
@@ -725,8 +727,8 @@ label-open-padding = 2
 #format-padding = 4
 
 label-close = cancel
-label-close-foreground = #8D8DE8
-label-close-background = #1E2028
+label-close-background = #3C56A6
+label-close-foreground = #D5DCF5
 label-close-padding  = 2
 
 #label-separator = |
@@ -737,7 +739,7 @@ menu-0-0-exec =  pkill -KILL -u $USER
 menu-0-0-background = #1E2028
 menu-0-0-padding = 2
 menu-0-0-margin = 1
-menu-0-0-foreground = 3D9F69
+menu-0-0-foreground = #3DB345
 
 
 menu-0-1 = REBOOT 
@@ -745,7 +747,7 @@ menu-0-1-exec = reboot
 menu-0-1-background = #1E2028
 menu-0-1-padding = 2
 menu-0-1-margin = 1
-menu-0-1-foreground = 3D879F
+menu-0-1-foreground = #C8C943
 
 
 menu-0-2 = POWEROFF
@@ -753,12 +755,12 @@ menu-0-2-exec = poweroff
 menu-0-2-background = #1E2028
 menu-0-2-padding = 2
 menu-0-2-margin = 1
-menu-0-2-foreground = A92E47
+menu-0-2-foreground = #C23437
 
 
 menu-0-3 = 
-menu-0-3-background = 5F5FA2
-menu-0-3-foreground = D5DCF5
+menu-0-3-background = #3C56A6
+menu-0-3-foreground = #D5DCF5
 menu-0-3-padding = 2
 menu-0-3-margin-left = 1
 
