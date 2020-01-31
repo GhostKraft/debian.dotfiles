@@ -8,22 +8,19 @@
 ### перезагрузить тему курсора
 xsetroot -cursor_name left_ptr &
 
-### load dunst
-### Уведомления dunst
+
+### Уведомления Notifications
 pkill dunst
 dunst &
 
-### Music mpd
-#mpd &
 
-
-### Wallp
-### Обои
-nitrogen --restore &
+### Обои Wallp
+#nitrogen --restore &
 #feh --bg-fill ~/Wallpaper
+hsetroot -fill ~/.wallpaper/wallpaper2.png
 
-### load panel script
-### Запуск панели polybar
+
+### Запуск панели load panel script
 ./.config/polybar/bspwm-polybar/launch.sh &
 #$HOME/.config/polybar/launch.sh
 
@@ -33,11 +30,9 @@ nitrogen --restore &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 
-
 ###Keyboard layout
 ###Раскладка клавиатуры
 setxkbmap -layout 'us,ru(winkeys)' -option 'grp:alt_shift_toggle' &
-
 
 
 ### Power management
@@ -45,12 +40,12 @@ setxkbmap -layout 'us,ru(winkeys)' -option 'grp:alt_shift_toggle' &
 xfce4-power-manager &
 
 
-
-### hot KEY
-### Запуск горячих клавиш 
+### Запуск горячих клавиш  hot KEY
 sxhkd &
 
 
+### Music mpd
+#mpd &
 
 ### rofi clipboard
 ### буфер обмена через rofi
@@ -62,13 +57,10 @@ sxhkd &
 
 
 
-
-
 #################################
 #### WS рабочие пространства ####
 #################################
 bspc monitor -d 1 2 3 4
-
 
 
 
@@ -89,10 +81,11 @@ bspc config split_ratio          0.50
 bspc config borderless_monocle   true
 bspc config gapless_monocle      false
 
-#Фокус окна следует за курсором
+### Фокус окна следует за курсором Window focus follows cursor
 bspc config focus_follows_pointer true
 
-### Передвижение/размер окон с момощью мыши
+### Передвижение размер окон с момощью мыши 
+### moving resizing windows with the mouse
 bspc config pointer_modifier super
 bspc config pointer_action1 move
 bspc config pointer_action2 resize_side
@@ -126,7 +119,7 @@ bspc config normal_border_color		"#323248"
 
 ### viol
 #bspc config focused_border_color	"#6454A1"
-#bspc config normal_border_color		"#323248"
+#bspc config normal_border_color	"#323248"
 
 
 ### pre-selection space color for new window layout
@@ -204,7 +197,7 @@ bspc rule -a Xfce4-appfinder state=floating follow=on
 #rectangle=922x850+540+100
 
 
-### Welcome
+### Welcome!
 #bspc desktop -f 1
 notify-send "Hello Friend!"
 sleep 1

@@ -2,24 +2,25 @@
 # These things are run when an Openbox X Session is started.
 # You may place a similar script in $HOME/.config/openbox/autostart
 # to run user-specific things.
-#
+#=======================================================================
 
-# If you want to use GNOME config tools...
-#
-#if test -x /usr/lib/openbox/gnome-settings-daemon >/dev/null; then
-#  /usr/lib/openbox/gnome-settings-daemon &
-#elif which gnome-settings-daemon >/dev/null 2>&1; then
-#  gnome-settings-daemon &
-#fi
+### Обои wallpaper
+## nitrogen --restore &
+## feh — bg-scale /path/to/your/background/image.jpg
+## feh --bg-fill ~/.wallpaper.jpg
+hsetroot -fill ~/.wallpaper/wallpaper3.png
 
-# If you want to use XFCE config tools...
-#
-#xfce-mcs-manager &
-
+### Панель panel
 tint2 &
-xfce4-power-manager &
-dunst &
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-setxkbmap -layout 'us,ru(winkeys)' -option 'grp:alt_shift_toggle' &
-nitrogen --restore &
 
+### Менеджер питания power-manager
+xfce4-power-manager &
+
+### Менеджер уведомлений notifications
+dunst &
+
+### аутентификация authentication agent
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+### Расскладка клавиатуры Keyboard layout
+setxkbmap -layout 'us,ru(winkeys)' -option 'grp:alt_shift_toggle' &

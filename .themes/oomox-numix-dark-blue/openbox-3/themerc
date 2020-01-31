@@ -27,6 +27,8 @@ menu.separator.width: 1
 menu.separator.padding.width: 2
 menu.separator.padding.height: 4
 
+menu.overlap.x: -8
+#menu.overlap.y: -40
 
 
 # Window focused

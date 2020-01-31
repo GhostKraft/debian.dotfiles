@@ -41,22 +41,22 @@ indicator.underline = #5555BB
 ### Цвета для модуля рабочих столов bspwm
 ### Пример вставки цвета в модуль ${colors.focused.foreground}
 
-#Текущий рабочий стол
+#Текущий рабочий стол Current ws
 focused.foreground = #DADADA
 focused.background = #232329
 focused.underline = #2E55D3
 
-#занятый рабочий стол
+#занятый рабочий стол occupied ws
 occupied.foreground = #ABAAAA
 occupied.background = #232329
 occupied.underline = #A23E6C
 
-#Пустрой не выбранный рабочий стол
+#Пустрой не выбранный рабочий стол empty ws
 empty.foreground = #4C4C55
 empty.background = #232329
 empty.underline = #1F2027
 
-# Рабочий стол требующий внимания
+# Рабочий стол требующий внимания ws requiring attention (not work)
 urgent.foreground = #EFEFEF
 urgent.background = #B53E68
 urgent.underline = #B53E68
@@ -204,8 +204,8 @@ module-margin-right = 1
 #module-margin = 1
 
 
-### FONTS
-### ШРИФТЫ
+
+### ШРИФТЫ FONTS
 #font-0 = DejaVu Sans:pixelsize=10;2
 #font-0 = Droid Sans:pixelsize=10;2
 #font-0 = DejaVu Sans:weight=bold:fontformat=truetype:size=9:antialias=true;2
@@ -408,7 +408,7 @@ reverse-scroll = false
 fuzzy-match = true
 
 
-### Текущий рабочий стол
+### Текущий рабочий стол focused ws
 label-focused = %name%
 label-focused-foreground = ${colors.focused.foreground}
 label-focused-background = ${colors.focused.background}
@@ -416,7 +416,7 @@ label-focused-underline = ${colors.focused.underline}
 label-focused-padding = 2
 
 
-### занятый рабочий стол
+### занятый рабочий стол occupied ws
 label-occupied = %name%
 label-occupied-foreground = ${colors.occupied.foreground}
 label-occupied-background = ${colors.occupied.background}
@@ -424,7 +424,7 @@ label-occupied-underline = ${colors.occupied.underline}
 label-occupied-padding = 2
 
 
-### Пустрой не выбранный рабочий стол
+### Пустрой не выбранный рабочий стол empty ws
 label-empty = %name%
 label-empty-foreground = ${colors.empty.foreground}
 label-empty-background = ${colors.empty.background}
@@ -432,7 +432,7 @@ label-empty-padding = 2
 label-empty-underline = ${colors.empty.underline}
 
 
-### Рабочий стол требующий внимания (не работает)
+### Рабочий стол требующий внимания (не работает) urgent ws (not work)
 label-urgent = %name%!
 label-urgent-foreground = ${colors.urgent.foreground}
 label-urgent-background = ${colors.urgent.background}

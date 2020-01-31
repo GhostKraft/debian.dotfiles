@@ -6,7 +6,8 @@
   <!--=============== ОСНОВНЫЕ НАСТРОЙКИ ===============-->
   <resistance>
     <strength>10</strength>
-    <!-- сопротевление растоянние перед которым окна будут перекрывать друг друга -->
+    <!-- сопротивление растоянние перед которым окна будут перекрывать друг друга -->
+    <!-- the distance before which the windows will overlap each other -->
     <screen_edge_strength>20</screen_edge_strength>
     <!-- сопротевление между окном и краем экрана -->
   </resistance>
@@ -45,7 +46,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>oomox-numix-dark-blue</name>
+    <name>oomox-numix-retro-gray</name>
     <titleLayout>DSLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -127,10 +128,10 @@
     <number>4</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>1</name>
-      <name>2</name>
-      <name>3</name>
-      <name>4</name>
+      <name>I</name>
+      <name>II</name>
+      <name>III</name>
+      <name>IV</name>
     </names>
     <popupTime>0</popupTime>
     <!-- Время отображения информационного окна при переключении раболчих столов The number of milliseconds to show the popup for when switching
@@ -141,7 +142,7 @@
     <!-- отображение окон при изменении размера обновлять содержимое или нет -->
     <popupShow>Always</popupShow>
     <!-- Показывать окно изменения размера 'Always', 'Never', or 'Nonpixel' (xterms and such) -->
-    <popupPosition>Fixed</popupPosition>
+    <popupPosition>Center</popupPosition>
     <!-- Позиция окна изменения размера 'Center', 'Top', or 'Fixed' -->
     <popupFixedPosition>
       <!-- these are used if popupPosition is set to 'Fixed' -->
@@ -158,11 +159,11 @@
      Many programs reserve space automatically, but you can use this in other
      cases. -->
   <margins>
-    <top>28</top>
-    <bottom>0</bottom>
-    <left>0</left>
-    <right>0</right>
-    <!-- резервация места от края окна -->
+    <top>52</top>
+    <bottom>25</bottom>
+    <left>25</left>
+    <right>25</right>
+    <!-- резервация места от края окна reservation of space from the edge of the window -->
   </margins>
   <dock>
     <position>TopLeft</position>
@@ -357,8 +358,8 @@
       <action name="MoveResizeTo">
         <x>0</x>
         <y>-0</y>
-        <width>50%</width>
-        <height>50%</height>
+        <width>49%</width>
+        <height>49%</height>
       </action>
     </keybind>
     <keybind key="W-KP_2">
@@ -367,7 +368,7 @@
         <x>0</x>
         <y>-0</y>
         <width>100%</width>
-        <height>50%</height>
+        <height>49%</height>
       </action>
     </keybind>
     <keybind key="W-KP_3">
@@ -375,8 +376,8 @@
       <action name="MoveResizeTo">
         <x>-0</x>
         <y>-0</y>
-        <width>50%</width>
-        <height>50%</height>
+        <width>49%</width>
+        <height>49%</height>
       </action>
     </keybind>
     <keybind key="W-KP_4">
@@ -384,7 +385,7 @@
       <action name="MoveResizeTo">
         <x>0</x>
         <y>0</y>
-        <width>50%</width>
+        <width>49%</width>
         <height>100%</height>
       </action>
     </keybind>
@@ -402,7 +403,7 @@
       <action name="MoveResizeTo">
         <x>-0</x>
         <y>0</y>
-        <width>50%</width>
+        <width>49%</width>
         <height>100%</height>
       </action>
     </keybind>
@@ -411,8 +412,8 @@
       <action name="MoveResizeTo">
         <x>0</x>
         <y>0</y>
-        <width>50%</width>
-        <height>50%</height>
+        <width>49%</width>
+        <height>49%</height>
       </action>
     </keybind>
     <keybind key="W-KP_8">
@@ -421,7 +422,7 @@
         <x>0</x>
         <y>0</y>
         <width>100%</width>
-        <height>50%</height>
+        <height>49%</height>
       </action>
     </keybind>
     <keybind key="W-KP_9">
@@ -429,19 +430,17 @@
       <action name="MoveResizeTo">
         <x>-0</x>
         <y>0</y>
-        <width>50%</width>
-        <height>50%</height>
+        <width>49%</width>
+        <height>49%</height>
       </action>
     </keybind>
     <keybind key="W-f">						#ToggleMaximize
 	  <action name="ToggleMaximizeFull"/>
-
-
-     <!--Запуск приложений Keybindings for running applications -->
+    <!--Запуск приложений Keybindings for running applications -->
 	</keybind>
     <keybind key="W-d">
       <action name="Execute">
-        <command>dmenu_run -nb '#1B1D24' -nf '#A4A4B2' -sf '#0F0E0E' -sb '#4161C4'  -fn 'Hack:pixelsize=22'</command>
+        <command>dmenu_run -nb '#242732' -nf '#A8ADBD' -sf '#0F0E0E' -sb '#7B879B'  -fn 'Hack:pixelsize=23'</command>
       </action>
     </keybind>
     <keybind key="Print">
@@ -864,15 +863,71 @@
       <maximized>no</maximized>
     </application>
     <application class="Opera">
-      <focus>yes</focus>
+      <focus>no</focus>
       <decor>yes</decor>
       <desktop>1</desktop>
     </application>
-    <application class="Mainwindow.py">
+      <application class="vlc">
+      <desktop>2</desktop>
+      <focus>yes</focus>
+      <decor>yes</decor>
+        </application>
+      <application class="mpv">
+      <desktop>2</desktop>
+      <focus>yes</focus>
+      <decor>yes</decor>
+    </application>
+      <application class="Gimp">
+      <desktop>2</desktop>
+      <focus>yes</focus>
+      <decor>yes</decor>
+        </application>
+      <application class="Audacity">
+      <desktop>2</desktop>
+      <focus>yes</focus>
+      <decor>yes</decor>
+        </application>
+      <application class="Aseprite">
+      <desktop>2</desktop>
+      <focus>yes</focus>
+      <decor>yes</decor>
+        </application>
+      <application class="VidCutter">
+      <desktop>2</desktop>
+      <focus>yes</focus>
+      <decor>yes</decor>
+            </application>
+      <application class="Shotcut">
+      <desktop>2</desktop>
+      <focus>yes</focus>
+      <decor>yes</decor>
+    </application>
+    <application class="Steam">
+      <desktop>3</desktop>
+      <focus>no</focus>
+      <decor>yes</decor>
+    </application>
+        <application class="Mainwindow.py">
       <size>
         <width>40%</width>
         <height>50%</height>
       </size>
+      <desktop>3</desktop>
+      <focus>no</focus>
+      <decor>yes</decor>
+    </application>
+     <application class="Wine">
+      <desktop>3</desktop>
+      <focus>no</focus>
+      <decor>yes</decor>
+    </application>
+      <application class="wineboot.exe">
+      <desktop>3</desktop>
+      <focus>no</focus>
+      <decor>yes</decor>
+    </application>
+        <application class="qBittorrent">
+	<desktop>4</desktop>
       <focus>yes</focus>
       <decor>yes</decor>
     </application>

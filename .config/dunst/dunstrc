@@ -192,9 +192,9 @@ background = "#22252C"
 timeout = 6
 
 [urgency_normal]
-frame_color = "#2E55D3"
-foreground = "#B3527F"
-background = "#1E1F28"
+frame_color = "#49526D"
+foreground = "#919BB6"
+background = "#242732"
 #background = "#2B313C"
 timeout = 10
 

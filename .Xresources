@@ -1,59 +1,53 @@
 
 URxvt*termName: rxvt-unicode
 
-
-!! Colorscheme цветовая схема
-! special
-!!!BLUE
-URxvt*foreground:  #5B7EEF
-URxvt*background:  #191A23
-
-!!!VIOL
-!URxvt*foreground:  #A06DE5
-!URxvt*background:  #1A1C23
-
 !*.cursorColor: #afbfbf
 
 
+*foreground:  #1A1A1A
+*background:  #c2c8d4
+
 
 ! black
-URxvt*color0: #282a2e
-URxvt*color8: #43484f
+*color0:  #202742
+*color8:  #252734
 
 ! red
-URxvt*color1: #a54040
-URxvt*color9: #cc6666
+*color1:  #cd5044
+*color9:  #be6644
 
 ! green
-URxvt*color2: #639440
-URxvt*color10: #7FB365
+*color2:  #38917a
+*color10:  #57913c
 
 ! yellow
-URxvt*color3: #D3AA4D
-URxvt*color11: #EAC673
+*color3:  #818856
+*color11:  #a47a45
 
 ! blue
-URxvt*color4: #4486BD
-URxvt*color12: #5C8CBD
+*color4:  #4c9cbd
+*color12:  #2d7b94
 
 ! magenta
-URxvt*color5: #676c8f
-URxvt*color13: #9499bb
+*color5:  #c1559a
+*color13:  #ba42cf
 
 ! cyan
-URxvt*color6: #49A3B2
-URxvt*color14: #7DC1C4
+*color6:  #458ca4
+*color14:  #3b8baf
 
 ! white
-URxvt*color7: #707880
-URxvt*color15: #c5c8c6
-
+*color7:  #b4bdaf
+*color15:  #bcbbac
 
 
 !Font
 URxvt.font: xft:Hack:size=12
 !URxvt.font: xft:DejaVu Sans Mono:size=12
 !URxvt.font: xft:Droid Sans Mono :size=12
+!URxvt.font: xft:Droid Sans Mono :size=12
+
+
 
 !URxvt.font: xft:Monospace:style=Medium:size=12
 !URxvt.font: xft:Roboto Mono:size=14  
