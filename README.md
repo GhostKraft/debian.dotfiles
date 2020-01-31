@@ -41,5 +41,5 @@ This is the repository of my configuration files.
 
 
 The GTK theme and icons used are is **numix-theme** & **archdroid-icon-theme**, have been modified in **oomox**
-<br />Cursor Themes - **breeze-hacked-cursor-theme** **breeze-purple-cursor-theme**
+<br />Cursor Themes - **breeze-hacked-cursor-theme** **breeze-purple-cursor-theme** **capitaine-cursors**
 <br />Сhange themes with help **lxappearance** & **lxappearance-obconf** **qt5-styleplugins & qt5ct**
