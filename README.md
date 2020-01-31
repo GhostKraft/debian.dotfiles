@@ -20,23 +20,28 @@ This is the repository of my configuration files.
 | description software     |      software name       |
 | ------------------------ |:------------------------:|
 | terminal                 | urxvt (rxvt-unicode)     |
-| text editor  (GUI)       | geany             		  |
-| watching video           | mpv vlc           		  |
-| music                    | audacious	       		  |
+| text editor  (GUI)       | geany             		    |
+| watching video           | mpv vlc           	  	  |
+| music                    | audacious	       	  	  |
 | File manager (GUI)       | pcmanfm           	      |
-| application launch       | dmenu      			  |
-| notifications            | dunst            		  |
-| calendar                 | gsimplecal      		  |
-| openbox panel            | tint2           		  |
-| bspwm panel              | polybar          		  |
-| wallpaper manager        | nitrogen          		  |
-| wallpaper run            | hsetroot          		  |
+| application launch       | dmenu      			        |
+| notifications            | dunst            	   	  |
+| calendar                 | gsimplecal      		      |
+| openbox panel            | tint2           		      |
+| bspwm panel              | polybar          		    |
+| wallpaper manager        | nitrogen          		    |
+| wallpaper run            | hsetroot          		    |
 | system information       | neofetch          	      |
 | power management         | xfce4-power-manager   	  |
 | bar icons                | ttf-font-awesome         |
 | urxvt font               | ttf-hack                 |
 | polybar font             | ttf-roboto               |
 | tint2 font               | ttf-ubuntu-font-family   |
+| authentication-agent     | polkit-gnome             |
+| launcher                 | dmenu                    |
+| image viewer             | viewnior                 |
+
 
 The GTK theme and icons used are is **numix-theme** & **archdroid-icon-theme**, have been modified in **oomox**
 <br />Cursor Themes - **breeze-hacked-cursor-theme** **breeze-purple-cursor-theme**
+<br />Сhange themes with help **lxappearance** & **lxappearance-obconf** **qt5-styleplugins & qt5ct**
