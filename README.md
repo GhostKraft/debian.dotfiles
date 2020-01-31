@@ -15,8 +15,6 @@ This is the repository of my configuration files.
 
 
 
-| ------------------------ |:------------------------:|
-|                    used software                    |
 | description software     |      software name       |
 | ------------------------ |:------------------------:|
 | terminal                 | urxvt (rxvt-unicode)     |
