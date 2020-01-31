@@ -5,7 +5,6 @@ This is the repository of my configuration files.
 
 
 **OPENBOX**
-![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/screenshot/openbox/openbox_by_Kraft%20.png) 
 ![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/screenshot/openbox/openbox-grey-dragon.png)
 *`ArchLinux openbox tint2 dmenu pcmanfm rxvt-unicode dunst gsimplecal ttf-font-awesome audacious`*
 
