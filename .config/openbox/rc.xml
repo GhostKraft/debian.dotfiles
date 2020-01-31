@@ -159,10 +159,10 @@
      Many programs reserve space automatically, but you can use this in other
      cases. -->
   <margins>
-    <top>52</top>
-    <bottom>25</bottom>
-    <left>25</left>
-    <right>25</right>
+    <top>30</top>
+    <bottom>0</bottom>
+    <left>0</left>
+    <right>0</right>
     <!-- резервация места от края окна reservation of space from the edge of the window -->
   </margins>
   <dock>
@@ -356,37 +356,37 @@
     <keybind key="W-KP_1">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>0</x>
-        <y>-0</y>
+        <x>20</x>
+        <y>-20</y>
         <width>49%</width>
-        <height>49%</height>
+        <height>47%</height>
       </action>
     </keybind>
     <keybind key="W-KP_2">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>0</x>
-        <y>-0</y>
-        <width>100%</width>
-        <height>49%</height>
+        <x>20</x>
+        <y>-20</y>
+        <width>98%</width>
+        <height>47%</height>
       </action>
     </keybind>
     <keybind key="W-KP_3">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>-0</x>
-        <y>-0</y>
-        <width>49%</width>
-        <height>49%</height>
+        <x>-20</x>
+        <y>-20</y>
+        <width>47%</width>
+        <height>47%</height>
       </action>
     </keybind>
     <keybind key="W-KP_4">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>0</x>
-        <y>0</y>
+        <x>20</x>
+        <y>20</y>
         <width>49%</width>
-        <height>100%</height>
+        <height>96%</height>
       </action>
     </keybind>
     <keybind key="W-KP_5">
@@ -394,44 +394,44 @@
       <action name="MoveResizeTo">
         <x>center</x>
         <y>center</y>
-        <width>50%</width>
-        <height>50%</height>
+        <width>40%</width>
+        <height>45%</height>
       </action>
     </keybind>
     <keybind key="W-KP_6">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>-0</x>
-        <y>0</y>
-        <width>49%</width>
-        <height>100%</height>
+        <x>-20</x>
+        <y>20</y>
+        <width>47%</width>
+        <height>96%</height>
       </action>
     </keybind>
     <keybind key="W-KP_7">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>0</x>
-        <y>0</y>
+        <x>20</x>
+        <y>20</y>
         <width>49%</width>
-        <height>49%</height>
+        <height>47%</height>
       </action>
     </keybind>
     <keybind key="W-KP_8">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>0</x>
-        <y>0</y>
-        <width>100%</width>
-        <height>49%</height>
+        <x>20</x>
+        <y>20</y>
+        <width>98%</width>
+        <height>47%</height>
       </action>
     </keybind>
     <keybind key="W-KP_9">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>-0</x>
-        <y>0</y>
-        <width>49%</width>
-        <height>49%</height>
+        <x>-20</x>
+        <y>20</y>
+        <width>47%</width>
+        <height>47%</height>
       </action>
     </keybind>
     <keybind key="W-f">						#ToggleMaximize
