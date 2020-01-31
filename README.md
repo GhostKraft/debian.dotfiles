@@ -5,7 +5,7 @@ This is the repository of my configuration files.
 
 
 **OPENBOX**
-![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/screenshot/openbox/openbox_by_Kraft .png) 
+![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/screenshot/openbox/openbox_by_Kraft%20.png) 
 ![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/screenshot/openbox/openbox-grey-dragon.png)
 *`ArchLinux openbox tint2 dmenu pcmanfm rxvt-unicode dunst gsimplecal ttf-font-awesome audacious`*
 
@@ -21,17 +21,17 @@ This is the repository of my configuration files.
 | description software     |      software name       |
 | ------------------------ |:------------------------:|
 | terminal                 | urxvt (rxvt-unicode)     |
-| text editor  (GUI)       | geany             		  |
-| watching video           | mpv vlc           		  |
-| music                    | audacious	       		  |
+| text editor  (GUI)       | geany             		    |
+| watching video           | mpv vlc           		    |
+| music                    | audacious	       		    |
 | File manager (GUI)       | pcmanfm           	      |
-| application launch       | dmenu      			  |
-| notifications            | dunst            		  |
-| calendar                 | gsimplecal      		  |
-| openbox panel            | tint2           		  |
-| bspwm panel              | polybar          		  |
-| wallpaper manager        | nitrogen          		  |
-| wallpaper run            | hsetroot          		  |
+| application launch       | dmenu      			        |
+| notifications            | dunst            		    |
+| calendar                 | gsimplecal      		      |
+| openbox panel            | tint2           		      |
+| bspwm panel              | polybar          		    |
+| wallpaper manager        | nitrogen          		    |
+| wallpaper run            | hsetroot          		    |
 | system information       | neofetch          	      |
 | power management         | xfce4-power-manager   	  |
 | bar icons                | ttf-font-awesome         |
