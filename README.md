@@ -20,17 +20,17 @@ This is the repository of my configuration files.
 | description software     |      software name       |
 | ------------------------ |:------------------------:|
 | terminal                 | urxvt (rxvt-unicode)     |
-| text editor  (GUI)       | geany             		    |
-| watching video           | mpv vlc           		    |
-| music                    | audacious	       		    |
+| text editor  (GUI)       | geany             		  |
+| watching video           | mpv vlc           		  |
+| music                    | audacious	       		  |
 | File manager (GUI)       | pcmanfm           	      |
-| application launch       | dmenu      			        |
-| notifications            | dunst            		    |
-| calendar                 | gsimplecal      		      |
-| openbox panel            | tint2           		      |
-| bspwm panel              | polybar          		    |
-| wallpaper manager        | nitrogen          		    |
-| wallpaper run            | hsetroot          		    |
+| application launch       | dmenu      			  |
+| notifications            | dunst            		  |
+| calendar                 | gsimplecal      		  |
+| openbox panel            | tint2           		  |
+| bspwm panel              | polybar          		  |
+| wallpaper manager        | nitrogen          		  |
+| wallpaper run            | hsetroot          		  |
 | system information       | neofetch          	      |
 | power management         | xfce4-power-manager   	  |
 | bar icons                | ttf-font-awesome         |
