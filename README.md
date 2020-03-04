@@ -35,6 +35,6 @@ This is the repository of my configuration files.
 
 
 
-The GTK theme and icons used are is **numix-theme** & **archdroid-icon-theme**, have been modified in **oomox**
+The GTK theme and icons used are is **numix-theme** & **numix-icons**, have been modified in **oomox**
 <br />Cursor Themes - **volantes** https://www.gnome-look.org/p/1356095/
 <br />Сhange themes with help **lxappearance** & **lxappearance-obconf** **qt5-styleplugins & qt5ct**
