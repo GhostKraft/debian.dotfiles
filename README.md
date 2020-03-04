@@ -26,7 +26,7 @@ This is the repository of my configuration files.
 | system information       | neofetch          	      |
 | power management         | xfce4-power-manager   	  |
 | bar icons                |  fonts-materialdesignicons-webfont         |
-| urxvt font               | ttf-hack                 |
+| urxvt font               | fonts-hack-ttf           |
 | tint2 font               | sans                     |
 | authentication-agent     | policykit-1-gnome        |
 | launcher                 | dmenu                    |
