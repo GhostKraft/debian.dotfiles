@@ -30,10 +30,10 @@ mainwindow_resizable = 0
 mainwindow_position = none
 
 ### BSPWM
-.br
-mainwindow_xoffset = 1710
-.br
-mainwindow_yoffset = 36
+#.br
+#mainwindow_xoffset = 1710
+#.br
+#mainwindow_yoffset = 36
 
 ### JFM
 #.br

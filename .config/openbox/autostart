@@ -5,22 +5,22 @@
 #=======================================================================
 
 ### Обои wallpaper
-## nitrogen --restore &
 ## feh — bg-scale /path/to/your/background/image.jpg
 ## feh --bg-fill ~/.wallpaper.jpg
-hsetroot -fill ~/.wallpaper/wallpaper3.png
+## hsetroot -fill ~/.wallpaper/wallpaper3.png
+nitrogen --restore &
 
 ### Панель panel
 tint2 &
 
 ### Менеджер питания power-manager
-xfce4-power-manager &
+#xfce4-power-manager &
 
 ### Менеджер уведомлений notifications
 dunst &
 
 ### аутентификация authentication agent
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
 ### Расскладка клавиатуры Keyboard layout
 setxkbmap -layout 'us,ru(winkeys)' -option 'grp:alt_shift_toggle' &

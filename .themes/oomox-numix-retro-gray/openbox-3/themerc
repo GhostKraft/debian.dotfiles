@@ -1,31 +1,37 @@
 
 ------------------------------------------------------------------
 # Menu
+menu.border.width: 0
+menu.title.text.justify: center
+menu.border.color: #272934
 
-menu.border.color: #242732
-menu.border.width: 1
 
-menu.title.bg: solid flat
-menu.title.bg.color: #1F2024
-menu.title.text.color: #f7f7f7
+
+#menu.title.bg: solid flat
+#menu.title.bg.color: #1F2024
+
+menu.title.bg: flat gradient horizontal
+menu.title.bg.color: #242732
+menu.title.bg.colorTo: #8891A0
+menu.title.text.color: #F4F4F4
+
 
 menu.items.bg: Flat Solid
-menu.items.bg.color: #242732
-menu.items.text.color: #A7B9CC
+#menu.items.bg.color: #242732
+menu.items.bg.color: #ADB4C3
+menu.items.text.color: #1A1D23
 
 menu.items.active.bg: Flat Solid
-menu.items.active.bg.color: #848484
+menu.items.active.bg.color: #8393B0
 menu.items.active.text.color: #FFFFFF
 
-
 menu.separator.width: 1
-menu.separator.padding.width: 2
-menu.separator.padding.height: 6
-menu.separator.color: #191B25
+menu.separator.padding.width: 4
+menu.separator.padding.height: 4
+menu.separator.color: #989DAC
 
 menu.overlap.x: -6
-#menu.overlap.y: -40
-
+#menu.overlap.y: 0
 
 
 ------------------------------------------------------------------
@@ -43,16 +49,22 @@ window.*.grip.bg: Flat Solid
 window.*.grip.bg.color: #eaebec
 
 window.active.border.color: #272934
-window.active.title.separator.color: #A1A4B0
+window.active.title.separator.color: #272934
 window.active.label.bg: Parentrelative
 window.active.label.text.color: #eff0f1
 
 window.active.button.unpressed.bg: Parentrelative
 window.active.button.unpressed.image.color: #eff0f1
 window.active.button.hover.color: #e1e1e1
-window.active.button.hover.image.color: #5985E0
-window.active.button.pressed.image.color: #5985E0
+window.active.button.hover.image.color: #7F95BE
+window.active.button.toggled.hover.image.color: #7F95BE
+window.active.button.pressed.image.color: #eff0f1
 window.active.button.hover.bg.border.color: #1B1C1E
+
+window.active.client.color: #B4BAC6
+
+
+
 
 #window.inactive.title.bg: Solid Flat
 #window.inactive.title.bg.color: #8A9197
@@ -74,6 +86,9 @@ window.inactive.button.disabled.bg: parentrelative
 window.inactive.button.unpressed.bg: Parentrelative
 
 ------------------------------------------------------------------
+
+
+
 #Shitmix
 border.width: 1
 padding.width: 4

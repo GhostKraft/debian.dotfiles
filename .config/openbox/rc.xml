@@ -83,7 +83,7 @@
       <name>sans</name>
       <size>9</size>
       <!-- font size in points -->
-      <weight>normal</weight>
+      <weight>bold</weight>
       <!-- 'bold' or 'normal' -->
       <slant>normal</slant>
       <!-- 'italic' or 'normal' -->
@@ -140,7 +140,7 @@
   <resize>
     <drawContents>yes</drawContents>
     <!-- отображение окон при изменении размера обновлять содержимое или нет -->
-    <popupShow>Always</popupShow>
+    <popupShow>Never</popupShow>
     <!-- Показывать окно изменения размера 'Always', 'Never', or 'Nonpixel' (xterms and such) -->
     <popupPosition>Center</popupPosition>
     <!-- Позиция окна изменения размера 'Center', 'Top', or 'Fixed' -->
@@ -159,7 +159,7 @@
      Many programs reserve space automatically, but you can use this in other
      cases. -->
   <margins>
-    <top>30</top>
+    <top>32</top>
     <bottom>0</bottom>
     <left>0</left>
     <right>0</right>
@@ -247,7 +247,7 @@
       </action>
     </keybind>
     <!-- Клавиши управления окнами Keybindings for windows -->
-    <keybind key="W-grave">
+    <keybind key="A-grave">
       <action name="ToggleShowDesktop"/>
     </keybind>
     <keybind key="W-q">
@@ -258,7 +258,7 @@
         <menu>client-menu</menu>
       </action>
     </keybind>
-    <keybind key="A-Tab">
+    <keybind key="W-grave">
       <action name="Iconify"/>
     </keybind>
     <!-- Переключение между окнами Keybindings for window switching -->
@@ -352,11 +352,11 @@
     <keybind key="W-S-Down">
       <action name="GrowToEdgeSouth"/>
     </keybind>
-    <!-- Тайлинг окон Keybindings for window tiling AeroSnap with the keypad -->
+    <!-- Тайлинг c отступами окон Keybindings for window tiling AeroSnap gaps with the keypad 50/50 -->
     <keybind key="W-KP_1">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>20</x>
+        <x>19</x>
         <y>-20</y>
         <width>49%</width>
         <height>47%</height>
@@ -365,25 +365,25 @@
     <keybind key="W-KP_2">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>20</x>
-        <y>-20</y>
-        <width>98%</width>
-        <height>47%</height>
+        <x>0</x>
+        <y>-0</y>
+        <width>100%</width>
+        <height>50%</height>
       </action>
     </keybind>
     <keybind key="W-KP_3">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>-20</x>
+        <x>-19</x>
         <y>-20</y>
-        <width>47%</width>
+        <width>48%</width>
         <height>47%</height>
       </action>
     </keybind>
     <keybind key="W-KP_4">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>20</x>
+        <x>19</x>
         <y>20</y>
         <width>49%</width>
         <height>96%</height>
@@ -401,16 +401,16 @@
     <keybind key="W-KP_6">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>-20</x>
+        <x>-19</x>
         <y>20</y>
-        <width>47%</width>
+        <width>48%</width>
         <height>96%</height>
       </action>
     </keybind>
     <keybind key="W-KP_7">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>20</x>
+        <x>19</x>
         <y>20</y>
         <width>49%</width>
         <height>47%</height>
@@ -419,28 +419,123 @@
     <keybind key="W-KP_8">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>20</x>
-        <y>20</y>
-        <width>98%</width>
-        <height>47%</height>
+        <x>0</x>
+        <y>0</y>
+        <width>100%</width>
+        <height>50%</height>
       </action>
     </keybind>
     <keybind key="W-KP_9">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>-20</x>
+        <x>-19</x>
         <y>20</y>
-        <width>47%</width>
+        <width>48%</width>
         <height>47%</height>
       </action>
     </keybind>
-    <keybind key="W-f">						#ToggleMaximize
-	  <action name="ToggleMaximizeFull"/>
+	    <!-- Развернуть/свернуть окно Maximize Toggle window -->
+    <keybind key="W-f">
+      <action name="ToggleMaximizeFull"/>
+    </keybind>
+        <keybind key="W-KP_Enter">
+      <action name="ToggleMaximizeFull"/>
+    </keybind>
+        <!-- Дополнительный тайлинг Additional tiling AeroSnap 60/40 -->
+    <keybind key="W-S-KP_4">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>19</x>
+        <y>20</y>
+        <width>58%</width>
+        <height>96%</height>
+      </action>
+    </keybind>
+    <keybind key="W-S-KP_6">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>-19</x>
+        <y>20</y>
+        <width>39%</width>
+        <height>96%</height>
+      </action>
+    </keybind>
+        <keybind key="W-S-KP_1">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>19</x>
+        <y>-20</y>
+        <width>58%</width>
+        <height>47%</height>
+      </action>
+    </keybind>
+    <keybind key="W-S-KP_2">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>-0</y>
+        <width>100%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="W-S-KP_3">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>-19</x>
+        <y>-20</y>
+        <width>39%</width>
+        <height>47%</height>
+      </action>
+    </keybind>
+    <keybind key="W-S-KP_5">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>center</x>
+        <y>center</y>
+        <width>40%</width>
+        <height>45%</height>
+      </action>
+    </keybind>
+    <keybind key="W-S-KP_7">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>19</x>
+        <y>20</y>
+        <width>58%</width>
+        <height>47%</height>
+      </action>
+    </keybind>
+    <keybind key="W-S-KP_8">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <width>100%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="W-S-KP_9">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>-19</x>
+        <y>20</y>
+        <width>39%</width>
+        <height>47%</height>
+      </action>
+    </keybind>
+    <keybind key="W-S-KP_5">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>center</x>
+        <y>center</y>
+        <width>70%</width>
+        <height>80%</height>
+      </action>
+    </keybind>
     <!--Запуск приложений Keybindings for running applications -->
-	</keybind>
     <keybind key="W-d">
       <action name="Execute">
-        <command>dmenu_run -nb '#242732' -nf '#A8ADBD' -sf '#0F0E0E' -sb '#7B879B'  -fn 'Hack:pixelsize=23'</command>
+        <command>dmenu_run -nb '#242732' -nf '#CED0D4' -sf '#000000' -sb '#7D90B5'  -fn 'Hack:pixelsize=25'</command>
       </action>
     </keybind>
     <keybind key="Print">
@@ -466,17 +561,17 @@
     </keybind>
     <keybind key="W-F3">
       <action name="Execute">
-        <command>pamac-manager</command>
+        <command>synaptic-pkexec</command>
       </action>
     </keybind>
     <keybind key="W-F4">
       <action name="Execute">
-        <command>opera</command>
+        <command>firefox</command>
       </action>
     </keybind>
     <keybind key="W-S-F4">
       <action name="Execute">
-        <command>firefox</command>
+        <command>opera</command>
       </action>
     </keybind>
     <keybind key="W-F5">
@@ -496,7 +591,7 @@
     </keybind>
     <keybind key="W-F8">
       <action name="Execute">
-        <command>steam-runtime</command>
+        <command>steam</command>
       </action>
     </keybind>
     <keybind key="W-F9">
@@ -516,7 +611,7 @@
     </keybind>
     <keybind key="W-F12">
       <action name="Execute">
-        <command>xfce4-appfinder</command>
+        <command>libreoffice</command>
       </action>
     </keybind>
     <!-- Регулировка звука  -->
@@ -853,8 +948,8 @@
     <application class="Gsimplecal">
       <focus>yes</focus>
       <position force="yes">
-        <x>1734</x>
-        <y>4</y>
+        <x>1724</x>
+        <y>6</y>
       </position>
       <decor>yes</decor>
       <shade>no</shade>
@@ -867,37 +962,42 @@
       <decor>yes</decor>
       <desktop>1</desktop>
     </application>
-      <application class="vlc">
-      <desktop>2</desktop>
-      <focus>yes</focus>
+    <application class="Firefox-esr">
+      <focus>no</focus>
       <decor>yes</decor>
-        </application>
-      <application class="mpv">
+      <desktop>1</desktop>
+    </application>
+    <application class="vlc">
       <desktop>2</desktop>
       <focus>yes</focus>
       <decor>yes</decor>
     </application>
-      <application class="Gimp">
+    <application class="mpv">
       <desktop>2</desktop>
       <focus>yes</focus>
       <decor>yes</decor>
-        </application>
-      <application class="Audacity">
+    </application>
+    <application class="Audacity">
       <desktop>2</desktop>
       <focus>yes</focus>
       <decor>yes</decor>
-        </application>
-      <application class="Aseprite">
+    </application>
+    <application class="Aseprite">
       <desktop>2</desktop>
       <focus>yes</focus>
       <decor>yes</decor>
-        </application>
-      <application class="VidCutter">
+    </application>
+    <application class="VidCutter">
       <desktop>2</desktop>
       <focus>yes</focus>
       <decor>yes</decor>
-            </application>
-      <application class="Shotcut">
+    </application>
+    <application class="Shotcut">
+      <desktop>2</desktop>
+      <focus>yes</focus>
+      <decor>yes</decor>
+    </application>
+        <application class="Gimp">
       <desktop>2</desktop>
       <focus>yes</focus>
       <decor>yes</decor>
@@ -907,7 +1007,17 @@
       <focus>no</focus>
       <decor>yes</decor>
     </application>
-        <application class="Mainwindow.py">
+        <application class="mednafen">
+      <desktop>3</desktop>
+      <focus>yes</focus>
+      <decor>yes</decor>
+    </application>
+        <application class="Mednaffe">
+      <desktop>3</desktop>
+      <focus>no</focus>
+      <decor>yes</decor>
+    </application>
+    <application class="Mainwindow.py">
       <size>
         <width>40%</width>
         <height>50%</height>
@@ -916,19 +1026,27 @@
       <focus>no</focus>
       <decor>yes</decor>
     </application>
-     <application class="Wine">
+    <application class="Wine">
       <desktop>3</desktop>
       <focus>no</focus>
       <decor>yes</decor>
     </application>
-      <application class="wineboot.exe">
+    <application class="wineboot.exe">
       <desktop>3</desktop>
       <focus>no</focus>
       <decor>yes</decor>
     </application>
-        <application class="qBittorrent">
-	<desktop>4</desktop>
+    <application class="qBittorrent">
+      <desktop>4</desktop>
       <focus>yes</focus>
+      <decor>yes</decor>
+    </application>
+    <application class="Lxtask">
+      <size>
+        <width>678</width>
+        <height>718</height>
+      </size>
+      <focus>no</focus>
       <decor>yes</decor>
     </application>
   </applications>

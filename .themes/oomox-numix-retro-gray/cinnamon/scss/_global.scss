@@ -4,7 +4,7 @@
 // 1.0 < 1 will result in most cinnamon surfaces being transparent
 $button_bg_color: #CCCCCC;
 $button_fg_color: #000000;
-$selected_bg_color: #848484;
+$selected_bg_color: #8393B0;
 $selected_fg_color: #ffffff;
 $tooltip_bg_color: #B9B9C1;
 $tooltip_fg_color: #000000;
@@ -68,12 +68,12 @@ $scrollbar_slider_hover_color: mix($dark_bg_color, $selected_bg_color, 20%);
 $primary_caret_color: #1A1A1A;
 
 // other colors used in the theme
-$link_color: #173bc9;
-$success_color: #46ff5e;
-$warning_color: #84dc5c;
-$error_color: #848484;
-$info_fg_color: #1A1A1A;
-$info_bg_color: #2684da;
+$link_color: #4ba2a8;
+$success_color: #59b011;
+$warning_color: #a6991a;
+$error_color: #c08519;
+$info_fg_color: #c2c8d4;
+$info_bg_color: #8393b0;
 
 // used for border-radius throughout theme
 $roundness: 0px;
