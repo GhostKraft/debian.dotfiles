@@ -5,7 +5,7 @@ This is the repository of my configuration files.
 
 
 **OPENBOX**
-![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/screenshot/openbox/openbox-grey-dragon.png)
+![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/screenshot/openbox/openboxscreen.png)
 *`Debian 10 openbox tint2 dmenu pcmanfm rxvt-unicode dunst gsimplecal audacious`*
 
 
