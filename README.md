@@ -31,6 +31,8 @@ This is the repository of my configuration files.
 | authentication-agent     | policykit-1-gnome        |
 | launcher                 | dmenu                    |
 | image viewer             | viewnior                 |
+| graphics editor          | gimp                     |
+
 
 
 The GTK theme and icons used are is **numix-theme** & **archdroid-icon-theme**, have been modified in **oomox**
