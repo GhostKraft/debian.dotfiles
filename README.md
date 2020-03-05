@@ -43,7 +43,6 @@ The GTK theme and icons used are is **numix-theme** & **numix-icons**, have been
 <br />Wallpaper by GhostKraft
 
 ## Keybinds:
-<br />*`See details in the rc.xml file`*
 |  **HOT KEYS**                             |         **AKTION DESCRIPTION**                          |
 | ------------------------------------------|:-------------------------------------------------------:|
 | **mod+1 (2 3 4)**      | *workspace switching #*  |
