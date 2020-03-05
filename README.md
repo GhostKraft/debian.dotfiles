@@ -4,9 +4,9 @@ This is the repository of my configuration files.
 <br />You can study them and use at your discretion, but do not forget that simple copying does not always lead to correct work.
 
 
-**OPENBOX**
+**Debian 10 “buster” & OpenBox**
 ![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/screenshot/openbox/openbox_kraft_screen.png)
-*`Debian 10 “buster” openbox tint2 dmenu pcmanfm rxvt-unicode dunst gsimplecal audacious`*
+*`tint2 dmenu pcmanfm rxvt-unicode dunst gsimplecal audacious`*
 
 ## **Details & software used:**
 - **terminal** -*urxvt (rxvt-unicode)*
