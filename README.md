@@ -37,16 +37,31 @@ This is the repository of my configuration files.
 - **web browser** - firefox-esr              
 
 The GTK theme and icons used are is **numix-theme** & **numix-icons**, have been modified in **oomox**
-<br />Cursor Themes -  ["volantes](https://www.gnome-look.org/p/1356095/)
+<br />Cursor Themes -  [volantes](https://www.gnome-look.org/p/1356095/)
 <br />Сhange themes with help **lxappearance** & **lxappearance-obconf** **qt5-style-plugins & qt5ct**
 <br />Wallpaper by GhostKraft
 
 ## Keybinds
 |  **hot-keys**            |  **action description**  |
 | ------------------------ |:------------------------:|
-| display manager          | lightdm                  |
+|ctl+shift+up (Down Right Left )   | *Передвижение окон Window move*                |
 | web browser              | firefox-esr              |
-
+| web browser              | firefox-esr              |
+| web browser              | firefox-esr              |
+| web browser              | firefox-esr              |
+| web browser              | firefox-esr              |
+| web browser              | firefox-esr              |
+| web browser              | firefox-esr              |
+| web browser              | firefox-esr              |
+| web browser              | firefox-esr              |
+| web browser              | firefox-esr              |
+| web browser              | firefox-esr              |
+| web browser              | firefox-esr              |
+| web browser              | firefox-esr              |
+| web browser              | firefox-esr              |
+| web browser              | firefox-esr              |
+| web browser              | firefox-esr              |
+| web browser              | firefox-esr              |
 
 
 *`sudo apt install lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings ffmpeg xorg xserver-xorg-video-intel openbox rxvt-unicode geany vlc audacious pcmanfm dmenu dunst gsimplecal tint2 nitrogen neofetch xfce4-power-manager fonts-materialdesignicons-webfont fonts-hack-ttf policykit-1-gnome dmenu viewnior gimp lxappearance lxappearance-obconf qt5-style-plugins qt5ct alsa-utils pulseaudio pavucontrol lm-sensors firefox-esr firefox-esr-l10n-ru`*
