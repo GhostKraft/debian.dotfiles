@@ -7,7 +7,8 @@ This is the repository of my configuration files.
 **OPENBOX**
 ![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/screenshot/openbox/openbox_kraft_screen.png)
 *`Debian 10 “buster” openbox tint2 dmenu pcmanfm rxvt-unicode dunst gsimplecal audacious`*
-###**Software used**
+
+### **Software used**
 - **terminal** - urxvt (rxvt-unicode)
 
 
