@@ -34,6 +34,8 @@ This is the repository of my configuration files.
 - **graphics drivers** - *xorg xserver-xorg-video-intel*
 - **display manager** - *lightdm*
 - **web browser** - *firefox-esr*
+- **screenshot tool** - *flameshot*
+ 
 
 The GTK theme and icons used are is **numix-theme** & **numix-icons**, have been modified in **oomox**
 <br />Cursor Themes -  [volantes](https://www.gnome-look.org/p/1356095/)
@@ -43,8 +45,27 @@ The GTK theme and icons used are is **numix-theme** & **numix-icons**, have been
 ## Keybinds
 |  **HOT KEYS**                             |         **AKTION DESCRIPTION**                          |
 | ------------------------------------------|:-------------------------------------------------------:|
-| **ctl+shift+up (Down Right Left )**       | *Window move Передвижение окон*                         |
-| **mode+shift+up (Down Right Left )**      | *Change sticky window size Сменить липкий размер окна*  |
+| **mod+1 (2 3 4)**      | *workspace switching #*  |
+| **ctrl+alt+Right (Left)**      | *workspace switching Right or Left*  |
+| **mode+shift+1 (2 3 4)**      | *send active window to # workspace*  |
+| **mode+q**      | *kill active vindow*  |
+| **alt+grave**      | *minimize active window to panel*  |
+| **mod+tab (mod+shift+tab)**     | *switch focus between open windows in a circle*  |
+| **mod+Up (Down, Right, Left)**     | *Switch focus between open windows in a given direction*   |
+| **ctl+shift+up (Down, Right, Left)**       | *Window move in a given direction*                        |
+| **mod+shift+up (Down, Right, Left)**      | *Change sticky window size *  |
+| **mod+numpad**                       | *window size like AeroSnap with gaps 1*  |
+| **mod+shift+numpad**      | *window size like AeroSnap with gaps 2*  |
+| **mod+f (numpad enter)**      | *Toggle Maximize Full active window*  |
+| **mod+d**      | *run aplications whith dmenu*  |
+| **print screen**      | *screenshot whith flameshot*  |
+| **mod+enter**      | *run terminal urxvt*  |
+| **mod+f1 (f2-f12)**      | *run favorite aplications*  |
+| **mode+shift+r**      | *restart openbox*  |
+| **mod+midle button scroll**      | *workspace switching*  |
+<br />`See details in the rc.xml file`
+
+
 
 
 
