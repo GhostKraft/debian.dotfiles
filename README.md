@@ -42,26 +42,11 @@ The GTK theme and icons used are is **numix-theme** & **numix-icons**, have been
 <br />Wallpaper by GhostKraft
 
 ## Keybinds
-|  **HOT KEYS**                      |  **AKTION DESCRIPTION**            |
-| ---------------------------------- |:----------------------------------:|
-| ctl+shift+up (Down Right Left )    | *Window move Передвижение окон *    |
-| mode+shift+up (Down Right Left )   | *Change sticky window size Сменить липкий размер окна *  |
-| web browser              | firefox-esr              |
-| web browser              | firefox-esr              |
-| web browser              | firefox-esr              |
-| web browser              | firefox-esr              |
-| web browser              | firefox-esr              |
-| web browser              | firefox-esr              |
-| web browser              | firefox-esr              |
-| web browser              | firefox-esr              |
-| web browser              | firefox-esr              |
-| web browser              | firefox-esr              |
-| web browser              | firefox-esr              |
-| web browser              | firefox-esr              |
-| web browser              | firefox-esr              |
-| web browser              | firefox-esr              |
-| web browser              | firefox-esr              |
-| web browser              | firefox-esr              |
+|  **HOT KEYS**                             |         **AKTION DESCRIPTION**                          |
+| ------------------------------------------|:-------------------------------------------------------:|
+| **ctl+shift+up (Down Right Left )**       | *Window move Передвижение окон*                         |
+| **mode+shift+up (Down Right Left )**      | *Change sticky window size Сменить липкий размер окна*  |
+
 
 
 *`sudo apt install lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings ffmpeg xorg xserver-xorg-video-intel openbox rxvt-unicode geany vlc audacious pcmanfm dmenu dunst gsimplecal tint2 nitrogen neofetch xfce4-power-manager fonts-materialdesignicons-webfont fonts-hack-ttf policykit-1-gnome dmenu viewnior gimp lxappearance lxappearance-obconf qt5-style-plugins qt5ct alsa-utils pulseaudio pavucontrol lm-sensors firefox-esr firefox-esr-l10n-ru`*
