@@ -36,9 +36,8 @@ This is the repository of my configuration files.
 - **display manager** - lightdm                  
 - **web browser** - firefox-esr              
 
-|       hot-keys                                      |
-| ------------------------ |:------------------------:|
-|  description             |      hot-keys     |
+
+|  **description**         |      **hot-keys**        |
 | ------------------------ |:------------------------:|
 | terminal                 | urxvt (rxvt-unicode)     |
 | text editor  (GUI)       | geany             		    |
