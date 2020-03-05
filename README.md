@@ -23,7 +23,7 @@ This is the repository of my configuration files.
 - **power management** - *xfce4-power-manager*
 - **bar icons** - *fonts-materialdesignicons-webfont*
 - **urxvt font** - *fonts-hack-ttf*
-- **tint2 font** - *sans*
+- **tint2 font** - *sans & ubuntu mono*
 - **authentication-agent** - *policykit-1-gnome*
 - **launcher** - *dmenu*            
 - **image viewer**  - *viewnior*
@@ -65,4 +65,4 @@ The GTK theme and icons used are is **numix-theme** & **numix-icons**, have been
 | **super+midle button scroll**            | *workspace switching*                                   |
 
 
-*`sudo apt install lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings ffmpeg xorg xserver-xorg-video-intel openbox rxvt-unicode geany vlc audacious pcmanfm dmenu dunst gsimplecal tint2 nitrogen neofetch xfce4-power-manager fonts-materialdesignicons-webfont fonts-hack-ttf policykit-1-gnome dmenu viewnior gimp lxappearance lxappearance-obconf qt5-style-plugins qt5ct alsa-utils pulseaudio pavucontrol lm-sensors firefox-esr firefox-esr-l10n-ru`*
+*`sudo apt install lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings ffmpeg xorg xserver-xorg-video-intel openbox rxvt-unicode geany vlc audacious pcmanfm dmenu dunst gsimplecal tint2 nitrogen neofetch xfce4-power-manager ttf-ubuntu-font-family fonts-materialdesignicons-webfont fonts-hack-ttf policykit-1-gnome dmenu viewnior gimp lxappearance lxappearance-obconf qt5-style-plugins qt5ct alsa-utils pulseaudio pavucontrol lm-sensors firefox-esr firefox-esr-l10n-ru`*
