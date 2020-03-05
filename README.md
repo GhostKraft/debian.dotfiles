@@ -42,7 +42,8 @@ The GTK theme and icons used are is **numix-theme** & **numix-icons**, have been
 <br />Сhange themes with help **lxappearance** & **lxappearance-obconf** **qt5-style-plugins & qt5ct**
 <br />Wallpaper by GhostKraft
 
-## Keybinds
+## Keybinds:
+<br />*`See details in the rc.xml file`*
 |  **HOT KEYS**                             |         **AKTION DESCRIPTION**                          |
 | ------------------------------------------|:-------------------------------------------------------:|
 | **mod+1 (2 3 4)**      | *workspace switching #*  |
@@ -63,10 +64,6 @@ The GTK theme and icons used are is **numix-theme** & **numix-icons**, have been
 | **mod+f1 (f2-f12)**      | *run favorite aplications*  |
 | **mode+shift+r**      | *restart openbox*  |
 | **mod+midle button scroll**      | *workspace switching*  |
-<br />`See details in the rc.xml file`
-
-
-
 
 
 *`sudo apt install lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings ffmpeg xorg xserver-xorg-video-intel openbox rxvt-unicode geany vlc audacious pcmanfm dmenu dunst gsimplecal tint2 nitrogen neofetch xfce4-power-manager fonts-materialdesignicons-webfont fonts-hack-ttf policykit-1-gnome dmenu viewnior gimp lxappearance lxappearance-obconf qt5-style-plugins qt5ct alsa-utils pulseaudio pavucontrol lm-sensors firefox-esr firefox-esr-l10n-ru`*
