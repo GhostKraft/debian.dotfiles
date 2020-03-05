@@ -9,11 +9,11 @@ This is the repository of my configuration files.
 *`tint2 dmenu pcmanfm rxvt-unicode dunst gsimplecal audacious`*
 
 ## **Details & software used:**
-- **WM** -*openbox*
-- **panel** -*tint2*
+- **WM** - *openbox*
+- **panel** - *tint2*
 - **tint2 temperature display** - *lm-sensors*
 - **tint2 font** - *sans & ubuntu mono*
-- **terminal** -*urxvt (rxvt-unicode)*
+- **terminal** - *urxvt (rxvt-unicode)*
 - **text editor** - *geany*
 - **watching video** - *vlc*
 - **music** - *audacious*
