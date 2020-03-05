@@ -7,11 +7,11 @@ This is the repository of my configuration files.
 **OPENBOX**
 ![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/screenshot/openbox/openbox_kraft_screen.png)
 *`Debian 10 “buster” openbox tint2 dmenu pcmanfm rxvt-unicode dunst gsimplecal audacious`*
+###**Software used**
+- **terminal** - urxvt (rxvt-unicode)
 
 
-
-
-| description software     |      software name       |
+|  description             |      hot-keys     |
 | ------------------------ |:------------------------:|
 | terminal                 | urxvt (rxvt-unicode)     |
 | text editor  (GUI)       | geany             		    |
@@ -44,6 +44,6 @@ This is the repository of my configuration files.
 The GTK theme and icons used are is **numix-theme** & **numix-icons**, have been modified in **oomox**
 <br />Cursor Themes - **volantes** https://www.gnome-look.org/p/1356095/
 <br />Сhange themes with help **lxappearance** & **lxappearance-obconf** **qt5-style-plugins & qt5ct**
-<br /> wallpaper by GhostKraft =)
+<br />Wallpaper by GhostKraft
 
 *`sudo apt install lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings ffmpeg xorg xserver-xorg-video-intel openbox rxvt-unicode geany vlc audacious pcmanfm dmenu dunst gsimplecal tint2 nitrogen neofetch xfce4-power-manager fonts-materialdesignicons-webfont fonts-hack-ttf policykit-1-gnome dmenu viewnior gimp lxappearance lxappearance-obconf qt5-style-plugins qt5ct alsa-utils pulseaudio pavucontrol lm-sensors firefox-esr firefox-esr-l10n-ru`*
