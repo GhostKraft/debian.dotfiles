@@ -42,10 +42,10 @@ The GTK theme and icons used are is **numix-theme** & **numix-icons**, have been
 <br />Wallpaper by GhostKraft
 
 ## Keybinds
-|  **hot-keys**            |  **action description**  |
-| ------------------------ |:------------------------:|
-|ctl+shift+up (Down Right Left )   | *Передвижение окон Window move*                |
-| web browser              | firefox-esr              |
+|  **HOT KEYS**                      |  **AKTION DESCRIPTION**            |
+| ---------------------------------- |:----------------------------------:|
+| ctl+shift+up (Down Right Left )    | *Window move Передвижение окон *    |
+| mode+shift+up (Down Right Left )   | *Change sticky window size Сменить липкий размер окна *  |
 | web browser              | firefox-esr              |
 | web browser              | firefox-esr              |
 | web browser              | firefox-esr              |
