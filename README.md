@@ -37,7 +37,7 @@ This is the repository of my configuration files.
 - **web browser** - firefox-esr              
 
 The GTK theme and icons used are is **numix-theme** & **numix-icons**, have been modified in **oomox**
-<br />Cursor Themes -  [](https://www.gnome-look.org/p/1356095/ "volantes")
+<br />Cursor Themes -  ["volantes](https://www.gnome-look.org/p/1356095/)
 <br />Сhange themes with help **lxappearance** & **lxappearance-obconf** **qt5-style-plugins & qt5ct**
 <br />Wallpaper by GhostKraft
 
