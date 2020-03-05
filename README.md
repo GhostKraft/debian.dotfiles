@@ -43,26 +43,26 @@ The GTK theme and icons used are is **numix-theme** & **numix-icons**, have been
 <br />Wallpaper by GhostKraft
 
 ## Keybinds:
-|  **HOT KEYS**                          |         **AKTION DESCRIPTION**                          |
-| ---------------------------------------|:-------------------------------------------------------:|
-| **mod+1 (2 3 4)**                      | *workspace switching #*                                 |
-| **ctrl+alt+Right (Left)**              | *workspace switching Right or Left*                     |
-| **mode+shift+1 (2 3 4)**               | *send active window to # workspace*                     |
-| **mode+q**                             | *kill active vindow*                                    |
-| **alt+grave**                          | *minimize active window to panel*                       |
-| **mod+tab (mod+shift+tab)**            | *switch focus between open windows in a circle*         |
-| **mod+Up (Down, Right, Left)**         | *Switch focus between open windows in a given direction*|
-| **ctl+shift+up (Down, Right, Left)**   | *Window move in a given direction*                      |
-| **mod+shift+up (Down, Right, Left)**   | *Change sticky window size *                            |
-| **mod+numpad**                         | *window size like AeroSnap with gaps 1*                 |
-| **mod+shift+numpad**                   | *window size like AeroSnap with gaps 2*                 |
-| **mod+f (numpad enter)**               | *Toggle Maximize Full active window*                    |
-| **mod+d**                              | *run aplications whith dmenu*                           |
-| **print screen**                       | *screenshot whith flameshot*                            |
-| **mod+enter**                          | *run terminal urxvt*                                    |
-| **mod+f1 (f2-f12)**                    | *run favorite aplications*                              |
-| **mode+shift+r**                       | *restart openbox*                                       |
-| **mod+midle button scroll**            | *workspace switching*                                   |
+|  **HOT KEYS**                            |         **AKTION DESCRIPTION**                          |
+| -----------------------------------------|:-------------------------------------------------------:|
+| **super+1 (2 3 4)**                      | *workspace switching #*                                 |
+| **ctrl+alt+Right (Left)**                | *workspace switching Right or Left*                     |
+| **super+shift+1 (2 3 4)**                | *send active window to # workspace*                     |
+| **super+q**                              | *kill active vindow*                                    |
+| **alt+grave**                            | *minimize active window to panel*                       |
+| **super+tab (mod+shift+tab)**            | *switch focus between open windows in a circle*         |
+| **super+Up (Down, Right, Left)**         | *Switch focus between open windows in a given direction*|
+| **ctl+shift+up (Down, Right, Left)**     | *Window move in a given direction*                      |
+| **super+shift+up (Down, Right, Left)**   | *Change sticky window size *                            |
+| **super+numpad**                         | *window size like AeroSnap with gaps 1*                 |
+| **super+shift+numpad**                   | *window size like AeroSnap with gaps 2*                 |
+| **super+f (numpad enter)**               | *Toggle Maximize Full active window*                    |
+| **super+d**                              | *run aplications whith dmenu*                           |
+| **print screen**                         | *screenshot whith flameshot*                            |
+| **super+enter**                          | *run terminal urxvt*                                    |
+| **super+f1 (f2-f12)**                    | *run favorite aplications*                              |
+| **super+shift+r**                        | *restart openbox*                                       |
+| **super+midle button scroll**            | *workspace switching*                                   |
 
 
 *`sudo apt install lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings ffmpeg xorg xserver-xorg-video-intel openbox rxvt-unicode geany vlc audacious pcmanfm dmenu dunst gsimplecal tint2 nitrogen neofetch xfce4-power-manager fonts-materialdesignicons-webfont fonts-hack-ttf policykit-1-gnome dmenu viewnior gimp lxappearance lxappearance-obconf qt5-style-plugins qt5ct alsa-utils pulseaudio pavucontrol lm-sensors firefox-esr firefox-esr-l10n-ru`*
