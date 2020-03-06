@@ -535,7 +535,7 @@
     <!--Запуск приложений Keybindings for running applications -->
     <keybind key="W-d">
       <action name="Execute">
-        <command>dmenu_run -nb '#242732' -nf '#CED0D4' -sf '#000000' -sb '#7D90B5'  -fn 'Hack:pixelsize=25'</command>
+        <command>dmenu_run -i -p 'run:'  -nb '#242732' -nf '#BFBFBF' -sf '#EAEAEA' -sb '#657799'  -fn 'Hack:pixelsize=25 '</command>
       </action>
     </keybind>
     <keybind key="Print">
