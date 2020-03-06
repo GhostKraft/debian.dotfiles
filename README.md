@@ -37,7 +37,7 @@ This is the repository of my configuration files.
 - **display manager** - *lightdm*
 - **web browser** - *firefox-esr*
 - **screenshot tool** - *flameshot*
- 
+- **speedtest internet tool** - *speedtest-cli*
 
 The GTK theme and icons used are is **numix-theme** & **numix-icons**, have been modified in **oomox**
 <br />Cursor Themes -  [volantes](https://www.gnome-look.org/p/1356095/)
@@ -67,4 +67,4 @@ The GTK theme and icons used are is **numix-theme** & **numix-icons**, have been
 | **super+shift+r**                        | *restart openbox*                                       |
 | **super+midle button scroll**            | *workspace switching*                                   |
 
-*`sudo apt install lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings ffmpeg xorg xserver-xorg-video-intel openbox rxvt-unicode geany vlc audacious pcmanfm dmenu dunst gsimplecal tint2 nitrogen neofetch xfce4-power-manager ttf-ubuntu-font-family fonts-materialdesignicons-webfont fonts-hack-ttf policykit-1-gnome dmenu viewnior gimp lxappearance lxappearance-obconf qt5-style-plugins qt5ct alsa-utils pulseaudio pavucontrol lm-sensors firefox-esr firefox-esr-l10n-ru`*
+*`sudo apt install lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings ffmpeg xorg xserver-xorg-video-intel openbox rxvt-unicode geany vlc audacious pcmanfm dmenu dunst gsimplecal tint2 nitrogen neofetch xfce4-power-manager ttf-ubuntu-font-family fonts-materialdesignicons-webfont fonts-hack-ttf policykit-1-gnome dmenu viewnior gimp lxappearance lxappearance-obconf qt5-style-plugins qt5ct alsa-utils pulseaudio pavucontrol lm-sensors firefox-esr firefox-esr-l10n-ru speedtest-cli`*
