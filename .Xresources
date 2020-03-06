@@ -123,7 +123,7 @@ URxvt.matcher.button: 1
 
 
 
-!! Заставить работать некоторые клавиши Make some keys work
+!! Заставить работать некоторые клавиши в текстовых редакторах Make some keys work in text editor
 *URxvt*keysym.Home:		\033OH
 *URxvt*keysym.End:		\033OF
 URxvt.keysym.Home: \033[1~
