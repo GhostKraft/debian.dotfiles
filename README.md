@@ -15,6 +15,7 @@ This is the repository of my configuration files.
 - **tint2 font** - *sans & ubuntu mono*
 - **terminal** - *urxvt (rxvt-unicode)*
 - **text editor** - *geany*
+- **cli text editor** - *nano*
 - **watching video** - *vlc*
 - **music** - *audacious*
 - **File manager** - *pcmanfm*
