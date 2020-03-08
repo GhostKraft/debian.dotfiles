@@ -62,7 +62,7 @@ The GTK theme and icons used are is **numix-theme** & **numix-icons**, have been
 | **super+d**                              | *run aplications whith dmenu*                           |
 | **print screen**                         | *screenshot whith flameshot*                            |
 | **super+enter**                          | *run terminal urxvt*                                    |
-| **super+f1 (f2-f12)**                    | *run favorite aplications*                              |
+| **super+f1 (f2 - f12)**                  | *run favorite aplications*                              |
 | **super+minus (equal)**                  | *volume control*                                        |
 | **super+shift+r**                        | *restart openbox*                                       |
 | **super+midle button scroll**            | *workspace switching*                                   |
