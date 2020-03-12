@@ -39,6 +39,7 @@ This is the repository of my configuration files.
 - **web browser** - *firefox-esr*
 - **screenshot tool** - *flameshot*
 - **speedtest internet tool** - *speedtest-cli*
+- **widget toolkit** - gtk2
 
 The GTK theme and icons used are is **numix-theme** & **numix-icons**, have been modified in **oomox**
 <br />Cursor Themes -  [volantes](https://www.gnome-look.org/p/1356095/)
@@ -69,5 +70,7 @@ The GTK theme and icons used are is **numix-theme** & **numix-icons**, have been
 | **super+mouse midle button scroll**      | *workspace switching*                                   |
 
 *`sudo apt install lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings ffmpeg xorg xserver-xorg-video-intel openbox rxvt-unicode geany vlc audacious pcmanfm dmenu dunst gsimplecal tint2 nitrogen neofetch xfce4-power-manager ttf-ubuntu-font-family fonts-materialdesignicons-webfont fonts-hack-ttf policykit-1-gnome dmenu viewnior gimp lxappearance lxappearance-obconf qt5-style-plugins qt5ct alsa-utils pulseaudio pavucontrol lm-sensors firefox-esr firefox-esr-l10n-ru speedtest-cli`*
+
+*`sudo apt install gtk2-engines gtk2-engines-sugar gtk2-engines-qtcurve gtk2-engines-pixbuf gtk2-engines-oxygen gtk2-engines-nodoka gtk2-engines-murrine gtk2-engines-moblin gtk2-engines-cleanice gtk2-engines-aurora gtk2.0-examples`*
 
 **nnn** - [ latest stable release](https://github.com/jarun/nnn/releases/tag/v3.0)
