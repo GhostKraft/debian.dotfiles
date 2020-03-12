@@ -2,43 +2,42 @@
 URxvt*termName: rxvt-unicode
 
 
-
 ! special
 *.foreground:   #1a1a1a
 *.background:   #c2c8d4
-*.cursorColor:  #7E8FB0
+*.cursorColor:  #1a1a1a
 
 ! black
-*.color0:       #191b1e
+*.color0:       #333941
 *.color8:       #191b1e
 
 ! red
-*.color1:       #a6393e
-*.color9:       #a6393e
+*.color1:       #a74347
+*.color9:       #a74347
 
 ! green
 *.color2:       #2b8a51
 *.color10:      #2b8a51
 
 ! yellow
-*.color3:       #374d67
-*.color11:      #374d67
+*.color3:       #324861
+*.color11:      #324861
 
 ! blue
 *.color4:       #397bb0
 *.color12:      #397bb0
 
 ! magenta
-*.color5:       #ae3273
-*.color13:      #ae3273
+*.color5:       #a44075
+*.color13:      #a44075
 
 ! cyan
-*.color6:       #1da5b0
-*.color14:      #1da5b0
+*.color6:       #1f949d
+*.color14:      #1f949d
 
 ! white
-*.color7:       #e1e1e1
-*.color15:      #d9d9d9
+*.color7:       #c8ccd0
+*.color15:      #dfdfdf
 
 
 
@@ -121,13 +120,12 @@ URxvt.matcher.button: 1
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
-
-
 !! Заставить работать некоторые клавиши в текстовых редакторах Make some keys work in text editor
-*URxvt*keysym.Home:		\033OH
-*URxvt*keysym.End:		\033OF
-URxvt.keysym.Home: \033[1~
-URxvt.keysym.End: \033[4~
+URxvt.keysym.Prior:         \033[5~
+URxvt.keysym.Next:          \033[6~
+URxvt.keysym.Home:          \033[7~
+URxvt.keysym.End:           \033[8~
+
 URxvt.keysym.S-Home           : \033[1;2H
 URxvt.keysym.S-End            : \033[1;2F
 URxvt.keysym.C-Home           : \033[1;5H
@@ -140,9 +138,6 @@ URxvt.keysym.C-Up             : \033[1;5A
 URxvt.keysym.C-Down           : \033[1;5B
 URxvt.keysym.C-Right          : \033[1;5C
 URxvt.keysym.C-Left           : \033[1;5D
-
-
-
 
 
 
