@@ -70,4 +70,4 @@ The GTK theme and icons used are is **numix-theme** & **numix-icons**, have been
 
 *`sudo apt install lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings ffmpeg xorg xserver-xorg-video-intel openbox rxvt-unicode geany vlc audacious pcmanfm dmenu dunst gsimplecal tint2 nitrogen neofetch xfce4-power-manager ttf-ubuntu-font-family fonts-materialdesignicons-webfont fonts-hack-ttf policykit-1-gnome dmenu viewnior gimp lxappearance lxappearance-obconf qt5-style-plugins qt5ct alsa-utils pulseaudio pavucontrol lm-sensors firefox-esr firefox-esr-l10n-ru speedtest-cli`*
 
-[nnn latest stable release](https://github.com/jarun/nnn/releases/tag/v3.0)
+**nnn** - [ latest stable release](https://github.com/jarun/nnn/releases/tag/v3.0)
