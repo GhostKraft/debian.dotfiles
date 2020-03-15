@@ -1,0 +1,813 @@
+
+##########################################
+##########################################
+###             Arch Linux             ###
+##########################################
+###            POLYBAR-BSPWM           ###
+##########################################
+### https://github.com/polybar/polybar ###
+##########################################
+###      For icons we use a font       ###
+###    Для иконок используем шрифт:    ###
+###       ttf-font-awesome             ###
+### https://fontawesome.com/cheatsheet ###
+###  sudo pacman -S ttf-font-awesome   ###
+##########################################
+##########################################
+##https://github.com/GhostKraft/i3gaps-config/tree/master/BlueZ-theme
+#  yin-yang Icons
+
+
+
+
+########################
+########################
+###  COLORS | ЦВЕТА  ###
+########################
+########################
+
+### Panel colors
+### Основные Цвета панели
+[colors]
+foreground = #dfdfdf
+background = #1E1F28
+indicator.foreground = #121218
+indicator.background = #5555BB
+indicator.underline = #5555BB
+
+
+
+### Colors for the workspace module bspwm
+### Цвета для модуля рабочих столов bspwm
+### Пример вставки цвета в модуль ${colors.focused.foreground}
+
+#Текущий рабочий стол Current ws
+focused.foreground = #DADADA
+focused.background = #232329
+focused.underline = #2E55D3
+
+#занятый рабочий стол occupied ws
+occupied.foreground = #ABAAAA
+occupied.background = #232329
+occupied.underline = #A23E6C
+
+#Пустрой не выбранный рабочий стол empty ws
+empty.foreground = #4C4C55
+empty.background = #232329
+empty.underline = #1F2027
+
+# Рабочий стол требующий внимания ws requiring attention (not work)
+urgent.foreground = #EFEFEF
+urgent.background = #B53E68
+urgent.underline = #B53E68
+
+
+
+
+
+### colors of application launch buttons
+### цвета кнопок запуска приложений
+browser = #9F9FB7
+audacious = #9F9FB7
+vlc = #9F9FB7
+lxtask = #9F9FB7
+keepassxc = #9F9FB7
+term = #9F9FB7
+cherrytree = #9F9FB7
+fm = #9F9FB7
+search = #9F9FB7
+
+
+
+### foreground color of modules ${colors.foreground.modules name}
+### Цвет текста модулей ${colors.foreground.имя модуля}
+foreground.filesystem = #1A1A1A
+foreground.filesystemunmounted = #CE8280
+foreground.title = #2F9EB7
+foreground.xkeyboard = #141414
+foreground.network = #141414
+foreground.cpu = #141414
+foreground.memory = #141414
+foreground.temperature3 = #141414
+foreground.temperature3warn  = #FFCC00
+foreground.date = #121212
+foreground.powermenu = #121212
+
+
+### background color of modules ${colors.background.modules name}
+### цвет фона модулей ${colors.background.имя модуля}
+background.filesystem = #3652AE
+background.xkeyboard = #A23E6C
+background.title = #242632
+background.network = #2E55D3
+background.cpu = #A23E6C
+background.memory = #2E55D3
+background.temperature3 = #A23E6C
+background.temperature3warm = #A33541
+background.date = #2E55D3
+background.powermenu = #2E55D3
+background.tray = #2E55D3
+
+
+###underline color of modules ${colors.underline.modules name}
+###цвет нижней линии в модулях ${colors.underline.имя модуля}
+underline.xkeyboard = #A23E6C
+underline.network = #2E55D3
+underline.cpu = #A23E6C
+underline.memory = #2E55D3
+underline.temperature3 = #A23E6C
+underline.temperature3warn = #A33541
+underline.date = #2E55D3
+
+
+
+
+
+##########################################################
+##########################################################
+###  BASIC PANEL SETTINGS | ОСНОВНЫЕ НАСТРОЙКИ ПАНЕЛИ  ###
+##########################################################
+##########################################################
+### specify the name of the bar to which launch.sh startup script will turn
+### указываем название бара к которому будет обрящаться скрипт автозапуска launch.sh
+### [bar/bar NAME]
+
+
+[bar/polybar-bspwm]
+### Panel width
+### Ширина панели
+width = 100%
+
+### panel height
+### высота панели 
+height = 20
+
+
+### Change polybar location - bottom
+### Поменять расположение polybar - низ
+#bottom = true
+
+### Panel Offset 
+### Смещение панели 
+#offset-x = 1%
+#offset-y = 1%
+
+
+### rounding edges
+### закругление по краям панели
+radius = 0.0 
+
+
+### fixed center or dynamic
+### зафиксированый центр или динамический true / false
+fixed-center = false 
+
+
+### the panel locale is responsible for displaying some data such as date
+### локаль панели отвечает за вывод некотрых данных например дата
+locale = ru_RU.UTF-8 
+
+
+### Primary panel colors
+### Основные цвета панели
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+
+### bottom line size under the modules
+### размер нижней линии под модулями
+line-size = 3
+#line-color = #6D6DAB
+
+
+
+### Border around the panel
+### Рамка вокруг панели
+border-size = 4
+#border-top-size = 4
+#border-bottom-size = 4
+#border-left-size = 2
+#border-right-size = 2
+border-color = #1E1F28
+
+
+### padding the contents of the panel from the edge
+### отступы содержимого панели от края
+padding-left = 0
+padding-right = 0
+
+
+### margin between modules
+### отступы между модулями
+module-margin-left = 1
+module-margin-right = 1
+#module-margin = 1
+
+
+
+### ШРИФТЫ FONTS
+#font-0 = DejaVu Sans:pixelsize=10;2
+#font-0 = Droid Sans:pixelsize=10;2
+#font-0 = DejaVu Sans:weight=bold:fontformat=truetype:size=9:antialias=true;2
+#font-0 = Ubuntu:weight=bold:fontformat=truetype:size=10:antialias=true;2
+font-0 = Roboto Condensed:weight=bold:fontformat=truetype:size=12:antialias=true;2
+font-1 = FontAwesome 5 Free:style=Solid:pixelsize=11;2
+font-2 = FontAwesome 5 Free:style=Regular:pixelsize=11;2
+font-3 = FontAwesome 5 Brands:pixelsize=12;2
+
+
+### system tray location and color
+### расположение, цвет системного лотка none|right|center|left
+tray-position = right
+tray-padding = 1
+tray-detached = false
+tray-background = ${colors.background.tray}
+#tray-transparent = true
+#tray-maxsize = 16
+
+
+### Requires polybar to be built with xcursor support (xcb-util-cursor)
+### Changes the cursor when hovering over active polybar icons
+### Требуется сборка polybar с поддержкой xcursor (xcb-util-cursor)
+### Меняет вид курсора при наведении на активные иконки polybar 
+### default | pointer | ns-resize
+cursor-click = pointer
+cursor-scroll = default
+
+
+### Currently supported WM's
+### Коректная поддержка оконного менеджера
+wm-restack = bspwm
+#wm-restack = i3
+#override-redirect = true
+
+
+### Location and activation of modules
+### асположение и активация модулей
+modules-left = bspwm-workspaces browser audacious vlc lxtask keepassxc term cherrytree search fm title
+modules-center = 
+modules-right =  pulseaudio xkeyboard network cpu memory temperature3 date powermenu
+
+
+### Scrolling workspaces anywhere in the panel
+### Прокрутка рабочих пространств в любом месте панели
+#scroll-up = i3wm-wsnext
+#scroll-down = i3wm-wsprev
+#scroll-up = bspwm-desknext
+#scroll-down = bspwm-deskprev
+
+### For configuring multiple monitors
+### Опция для настройки нескольких 
+#monitor = ${env:MONITOR:HDMI-1}
+
+
+
+#[settings]
+### Прозрачность
+#pseudo-transparency = true
+
+
+
+
+
+
+
+##########################################
+##########################################
+###  ACTIVE MODULES | АКТИВНЫЕ МОДУЛИ  ###
+##########################################
+##########################################
+
+####################################
+## Active Icons | Активные иконки ##
+####################################
+[module/browser]
+type = custom/text
+content = 
+content-foreground = ${colors.browser}
+click-left = opera &
+click-right = firefox &  
+#content-margin = 1
+content-padding = 1
+# 
+
+
+
+[module/audacious]
+type = custom/text
+content = 
+content-foreground = ${colors.audacious}
+click-left = audacious & 
+#click-right = 
+#content-margin = 1
+content-padding = 1
+
+
+
+
+[module/vlc]
+type = custom/text
+content = 
+content-foreground = ${colors.vlc}
+click-left = vlc &
+click-right =
+#
+#content-margin = 1
+content-padding = 1
+
+
+
+
+[module/lxtask]
+type = custom/text
+content = 
+content-foreground = ${colors.lxtask}
+click-left = lxtask &
+click-right = urxvt -e htop &
+#content-margin = 1
+content-padding = 1
+
+
+
+
+[module/keepassxc]
+type = custom/text
+content = 
+content-foreground = ${colors.keepassxc}
+click-left = keepassxc &
+click-right = 
+#content-margin = 1
+content-padding = 1
+
+
+
+
+[module/term]
+type = custom/text
+content = 
+content-foreground = ${colors.term}
+click-left = urxvt &
+#click-right = 
+#content-margin = 1
+content-padding = 1
+
+
+
+
+[module/cherrytree]
+type = custom/text
+content = 
+content-foreground = ${colors.cherrytree}
+click-left = cherrytree &
+click-right =
+#content-margin = 1
+content-padding = 1
+
+
+
+
+[module/fm]
+type = custom/text
+content = 
+content-foreground = ${colors.fm}
+click-left = pcmanfm &
+#click-right = urxvt --title float -e ranger &
+#click-right = sakura --title float -e ranger &
+#content-margin = 1
+content-padding = 1
+#
+
+
+[module/search]
+type = custom/text
+content = 
+content-foreground = ${colors.search}
+click-left = xfce4-appfinder &
+click-right = catfish &
+#click-right = sakura --title float -e ranger &
+#content-margin = 1
+content-padding = 1
+
+
+
+
+#####################################################
+#####################################################
+####   workspaces | рабочие пространства bspwm   ####
+#####################################################
+#####################################################
+#https://github.com/polybar/polybar/wiki/Module:-bspwm
+
+[module/bspwm-workspaces]
+type = internal/bspwm
+pin-workspaces = true
+inline-mode = true
+enable-click = true
+enable-scroll = true
+reverse-scroll = false
+fuzzy-match = true
+
+
+### Текущий рабочий стол focused ws
+label-focused = %name%
+label-focused-foreground = ${colors.focused.foreground}
+label-focused-background = ${colors.focused.background}
+label-focused-underline = ${colors.focused.underline}
+label-focused-padding = 2
+
+
+### занятый рабочий стол occupied ws
+label-occupied = %name%
+label-occupied-foreground = ${colors.occupied.foreground}
+label-occupied-background = ${colors.occupied.background}
+label-occupied-underline = ${colors.occupied.underline}
+label-occupied-padding = 2
+
+
+### Пустрой не выбранный рабочий стол empty ws
+label-empty = %name%
+label-empty-foreground = ${colors.empty.foreground}
+label-empty-background = ${colors.empty.background}
+label-empty-padding = 2
+label-empty-underline = ${colors.empty.underline}
+
+
+### Рабочий стол требующий внимания (не работает) urgent ws (not work)
+label-urgent = %name%!
+label-urgent-foreground = ${colors.urgent.foreground}
+label-urgent-background = ${colors.urgent.background}
+label-urgent-underline = ${colors.urgent.underline}
+label-urgent-padding = 2
+
+
+label-separator = |
+label-separator-padding = 0
+label-separator-foreground = #2D2D36
+
+
+
+###################################
+## FILESYSTEM | ФАЙЛОВАЯ СИСТЕМА ##
+###################################
+## File system free space module
+## Модуль свободного места файловой системы
+## https://github.com/polybar/polybar/wiki/Module:-filesystem
+
+[module/filesystem]
+type = internal/fs
+interval = 30
+
+mount-0 = /home
+#mount-1 = /
+#mount-2 = /boot
+
+label-mounted =  %mountpoint%: %percentage_used%%
+label-mounted-foreground = ${colors.foreground.filesystem}
+label-mounted-background = ${colors.background.filesystem}
+
+label-unmounted = %mountpoint% not mounted
+label-unmounted-foreground = ${colors.foreground.filesystemunmounted}
+
+label-mounted-padding = 3
+
+
+
+
+
+
+############################################
+## KEYBOARD LAYOUT | РАСКЛАДКА КЛАВИАТУРЫ ##
+############################################
+# https://github.com/polybar/polybar/wiki/Module:-xkeyboard
+
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+
+label-layout =  %layout%
+label-layout-foreground = ${colors.foreground.xkeyboard}
+format-background = ${colors.background.xkeyboard}
+label-layout-underline = ${colors.underline.xkeyboard}
+
+label-layout-padding = 2
+
+label-indicator-foreground = ${colors.indicator.foreground}
+label-indicator-background = ${colors.indicator.background}
+label-indicator-underline = ${colors.indicator.underline}
+label-indicator-padding = 2
+
+
+
+
+
+
+###################################
+## WINDOW TITLE | ЗАГОЛОВОК ОКНА ##
+###################################
+## This module shows the title of the current window.
+## Этот модуль показывает заголовок текущего окна.
+# https://github.com/polybar/polybar/wiki/Module:-xwindow
+
+[module/title]
+type = internal/xwindow
+label = %title%
+label-maxlen = 45
+label-foreground = ${colors.foreground.title}
+format-background = ${colors.background.title}
+label-padding = 4
+
+
+
+
+
+
+
+########################
+## VOLUME | ГРОМКОСТЬ ##
+########################
+## Sound control module via pulseaudio
+## Модуль управления звуком через pulseaudio
+## https://github.com/polybar/polybar/wiki/Module:-pulseaudio
+
+[module/pulseaudio]
+type = internal/pulseaudio
+sink = alsa_output.pci-0000_00_1b.0.analog-stereo
+format-volume = %{F#A6276B}<ramp-volume><label-volume> <bar-volume>
+label-volume = %{F#A6276B} %percentage%%
+label-volume-foreground = ${root.foreground}
+label-muted =  muted
+label-muted-foreground = #763A5A
+
+
+bar-volume-width = 15
+bar-volume-foreground-0 = #B13878
+bar-volume-foreground-1 = #B13878
+bar-volume-foreground-2 = #B13878
+bar-volume-foreground-3 = #B13878
+bar-volume-foreground-4 = #B13878
+bar-volume-foreground-5 = #B13878
+bar-volume-foreground-6 = #B13878
+bar-volume-foreground-7 = #C83885
+bar-volume-foreground-8 = #C83885
+bar-volume-foreground-9 = #C83885
+bar-volume-foreground-10 = #C83885
+bar-volume-foreground-11 = #C83885
+bar-volume-foreground-12 = #C83885
+bar-volume-foreground-13 = #D9338B
+bar-volume-gradient = false
+bar-volume-indicator = |
+bar-volume-indicator-font = 8
+bar-volume-fill = |
+bar-volume-fill-font = 10
+bar-volume-empty = |
+bar-volume-empty-font = 6
+bar-volume-empty-foreground = #8F476E
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-3 = 
+ramp-volume-4 = 
+
+
+
+
+
+
+
+
+####################
+## NETWORK | СЕТЬ ##
+####################
+### Internet connection module
+### Модуль интернет соединения
+
+[module/network]
+type = custom/script
+#format = <label>
+interval = 2
+
+#exec = "nmcli g | awk 'NR==2{print $1}'"
+#exec = "nmcli c | awk 'NR==2{print $6}'"
+exec =  ping -q -w1 -c1 archlinux.org &>/dev/null && echo  ONLINE || echo  offline
+#exec =  ping -q -w1 -c1 archlinux.org &>/dev/null && echo  ON || echo  off
+
+label-foreground = ${colors.foreground.network}
+label-background = ${colors.background.network}
+format-underline = ${colors.underline.network}
+
+click-left = nm-connection-editor
+label-padding-left = 2
+label-padding = 2
+
+
+
+
+###################
+## CPU ПРОЦЕССОР ##
+###################
+## CPU load module
+## модуль загрузки CPU
+# https://github.com/polybar/polybar/wiki/Module:-cpu
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+
+label=  CPU %percentage%% 
+label-foreground = ${colors.foreground.cpu}
+format-background = ${colors.background.cpu} 
+format-underline = ${colors.underline.cpu}
+
+label-padding = 2
+
+
+
+
+
+##############################
+## MEM | ОПЕРАТИВНАЯ ПАМЯТЬ ##
+##############################
+## RAM memory load module
+## Модуль памяти ОЗУ
+#https://github.com/polybar/polybar/wiki/Module:-memory
+
+[module/memory]
+type = internal/memory
+interval = 2
+
+label =  MEM %percentage_used%%
+label-foreground = ${colors.foreground.memory}
+format-background = ${colors.background.memory}
+format-underline = ${colors.underline.memory}
+
+label-padding = 2
+
+
+
+
+
+##############################################
+## CPU TEMPERATURE | ТЕМПЕРАТУРА ПРОЦЕССОРА ##
+##############################################
+## Core3 temperature display module
+## Модуль отображения температуры core3
+# https://github.com/polybar/polybar/wiki/Module:-temperature
+### upon reaching a critical mark, the module changes color to the one we set in label-warn
+### при достижении критической отметки модуль меняет цвет на тот который мы зададим в label-warn
+
+[module/temperature3]
+type = internal/temperature
+thermal-zone = 0
+interval = 10
+warn-temperature = 65
+hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon1/temp3_input
+
+label =  TEM %temperature-c%
+label-foreground = ${colors.foreground.temperature3}
+format-background = ${colors.background.temperature3}
+format-underline = ${colors.underline.temperature3}
+
+label-warn =  TEMP %temperature-c%
+label-warn-foreground = ${colors.foreground.temperature3warn}
+label-warn-background = ${colors.background.temperature3warm}
+format-warn-underline = ${colors.underline.temperature3warn}
+
+
+label-padding = 2
+label-warn-padding = 2
+
+
+
+
+
+#########################
+## DATE | ДАТА и ВРЕМЯ ##
+#########################
+## Time and date module
+## Модуль времени и даты
+#https://github.com/polybar/polybar/wiki/Module:-date
+
+[module/date]
+type = internal/date
+interval = 1
+date =
+time =  %H:%M:%S
+date-alt =  %a %e %B %Y
+time-alt =  %H:%M
+
+#label = %{A1:gsimplecal & disown:} %{A3:gsimplecal & disown:} %time%%{A} %{A}
+label =%{A3:gsimplecal & disown:} %date% %time%%{A} %{A} 
+label-foreground = ${colors.foreground.date}
+format-background = ${colors.background.date}
+format-underline = ${colors.underline.date}
+
+#label-padding= 2
+label-padding-left = 1
+label-padding-right = 2
+
+###############################################
+## POWERMENU | ВЫКЛЮЧЕНИЕ ПЕРЕЗАГРУЗКА ВЫХОД ##
+###############################################
+## Shutdown reboot module
+## Модуль выключения
+
+[module/powermenu]
+type = custom/menu
+format-spacing = 1
+label-open = 
+
+label-open-foreground = ${colors.foreground.powermenu}
+label-open-background = ${colors.background.powermenu}
+label-open-padding = 2
+#format-padding = 4
+
+label-close = cancel
+label-close-background = #A23E6C
+label-close-foreground = #D5DCF5
+label-close-padding  = 2
+
+#label-separator = |
+#label-separator-foreground =
+
+menu-0-0 = LOGOUT 
+menu-0-0-exec =  pkill -KILL -u $USER
+menu-0-0-background = #232329
+menu-0-0-padding = 2
+menu-0-0-margin = 1
+menu-0-0-foreground = #42A452
+
+
+menu-0-1 = REBOOT 
+menu-0-1-exec = reboot
+menu-0-1-background = #232329
+menu-0-1-padding = 2
+menu-0-1-margin = 1
+menu-0-1-foreground = #B8C746
+
+
+menu-0-2 = POWEROFF
+menu-0-2-exec = poweroff
+menu-0-2-background = #232329
+menu-0-2-padding = 2
+menu-0-2-margin = 1
+menu-0-2-foreground = #BC4448
+
+
+menu-0-3 = 
+menu-0-3-background = #2E55D3
+menu-0-3-foreground = #D7D7D7
+menu-0-3-padding = 2
+menu-0-3-margin-left = 1
+
+
+
+
+
+
+
+
+
+
+
+###############################################
+###############################################
+###  INACTIVE MODULES | НЕ АКТИВНЫЕ МОДУЛИ  ###
+###############################################
+###############################################
+
+
+
+
+############################################
+# CPU TEMPERATURE | ТЕМПЕРАТУРА ПРОЦЕССОРА # 
+############################################
+#TEMP CPU core2
+#https://github.com/polybar/polybar/wiki/Module:-temperature
+
+
+#[module/temperature2]
+#type = internal/temperature
+#thermal-zone = 0
+#warn-temperature = 65
+
+#путь к файлу отвечающему за температуру ядра
+#hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon1/temp2_input
+
+#label = %{F#FFCD6A}  temp %temperature-c%
+#label-warn =  temp %temperature-c%
+#label-warn-foreground = #F1A37A
+#format-underline = #DFA857
+#format-warn-underline = #CA4E4E
+#interval = 10
+
+#format = <ramp> <label>
+#format-warn = <ramp> <label-warn>
+
+#ramp-0 = 
+#ramp-1 = 
+#ramp-2 = 
+#ramp-foreground = #F8F8F8
+
+
+
