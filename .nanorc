@@ -15,12 +15,11 @@ bind ^Z undo main
 bind ^F whereis main
 
 
-
-
 ## delete keybindings
 unbind ^K main
 unbind ^U main
 unbind ^W main
+
 
 
 ## My color theme
@@ -34,23 +33,15 @@ set functioncolor black
 
 
 
+
 ## Remember the used search/replace strings for the next session.
 set historylog
 
-## Display line numbers to the left of the text.
-set linenumbers
 
 ## Enable vim-style lock-files.  This is just to let a vim user know you
 ## are editing a file [s]he is trying to edit and vice versa.  There are
 ## no plans to implement vim-style undo state in these files.
 set locking
-
-
-## Enable mouse support, if available for your system.  When enabled,
-## mouse clicks can be used to place the cursor, set the mark (with a
-## double click), and execute shortcuts.  The mouse will work in the X
-## Window System, and on the console when gpm is running.
-set mouse
 
 
 ## Don't wrap text at all.
@@ -60,18 +51,34 @@ set nowrap
 ## Enable soft line wrapping (AKA full-line display).
 set softwrap
 
-## Use this spelling checker instead of the internal one.  This option
-## does not have a default value.
-# set speller "aspell -x -c"
 
 ## Allow nano to be suspended.
 set suspend
 
+
 ## Use this tab size instead of the default; it must be greater than 0.
 set tabsize 4
 
+
 ## To include all existing syntax definitions, you can do:
 include "/usr/share/nano/*.nanorc"
+
+
+## Display line numbers to the left of the text.
+#set linenumbers
+
+
+## Enable mouse support, if available for your system.  When enabled,
+## mouse clicks can be used to place the cursor, set the mark (with a
+## double click), and execute shortcuts.  The mouse will work in the X
+## Window System, and on the console when gpm is running.
+#set mouse
+
+
+
+
+
+
 
 
 
