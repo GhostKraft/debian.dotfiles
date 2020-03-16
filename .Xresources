@@ -5,7 +5,7 @@ URxvt*termName: rxvt-unicode
 ! special
 *.foreground:   #1a1a1a
 *.background:   #c2c8d4
-*.cursorColor:  #1a1a1a
+*.cursorColor:  #7B90B5
 
 ! black
 *.color0:       #333941
@@ -45,6 +45,7 @@ URxvt*termName: rxvt-unicode
 
 !Font
 URxvt.font: xft:Hack:size=12
+
 
 
 
@@ -120,27 +121,63 @@ URxvt.matcher.button: 1
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
-!! Заставить работать некоторые клавиши в текстовых редакторах Make some keys work in text editor
-URxvt.keysym.Prior:         \033[5~
-URxvt.keysym.Next:          \033[6~
-URxvt.keysym.Home:          \033[7~
-URxvt.keysym.End:           \033[8~
-
-URxvt.keysym.S-Home           : \033[1;2H
-URxvt.keysym.S-End            : \033[1;2F
-URxvt.keysym.C-Home           : \033[1;5H
-URxvt.keysym.C-End            : \033[1;5F
-URxvt.keysym.C-S-Up           : \033[1;6A
-URxvt.keysym.C-S-Down         : \033[1;6B
-URxvt.keysym.C-S-Right        : \033[1;6C
-URxvt.keysym.C-S-Left         : \033[1;6D
-URxvt.keysym.C-Up             : \033[1;5A
-URxvt.keysym.C-Down           : \033[1;5B
-URxvt.keysym.C-Right          : \033[1;5C
-URxvt.keysym.C-Left           : \033[1;5D
 
 
 
+
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!! Заставить работать некоторые клавиши в cli текстовых редакторах 
+!!!! Make some keys work in text editor and cli fm
+
+!!! Normal
+URxvt.keysym.Home:				\033[7~
+URxvt.keysym.End:				\033[8~
+!URxvt.keysym.Prior:			\033[5~ !breaks scrolling
+!URxvt.keysym.Next:				\033[6~ !breaks scrolling
+
+!!! Shift
+*URxvt*keysym.S-Delete:			\033[3;2~
+*URxvt*keysym.S-Home:			\033[1;2H
+*URxvt*keysym.S-End:			\033[1;2F
+
+
+!!! Control
+*URxvt*keysym.C-Delete:			\033[3;5~
+*URxvt*keysym.C-Home:			\033[1;5H
+*URxvt*keysym.C-End:			\033[1;5F
+*URxvt*keysym.C-Page_Up:		\033[5;5~
+*URxvt*keysym.C-Page_Down:		\033[6;5~
+*URxvt*keysym.C-Up:				\033[1;5A
+*URxvt*keysym.C-Down:			\033[1;5B
+*URxvt*keysym.C-Right:			\033[1;5C
+*URxvt*keysym.C-Left:			\033[1;5D
+
+!!! Shift+Control
+*URxvt*keysym.S-C-Insert:		\033[2;6~
+*URxvt*keysym.S-C-Delete:		\033[3;6~
+*URxvt*keysym.S-C-Home:			\033[1;6H
+*URxvt*keysym.S-C-End:			\033[1;6F
+*URxvt*keysym.S-C-Page_Up:		\033[5;6~
+*URxvt*keysym.S-C-Page_Down:	\033[6;6~
+
+*URxvt*keysym.S-C-Up:			\033[1;6A
+*URxvt*keysym.S-C-Down:			\033[1;6B
+*URxvt*keysym.S-C-Right:		\033[1;6C
+*URxvt*keysym.S-C-Left:			\033[1;6D
+
+
+
+
+
+
+
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!
 !!ISO 14755 mode
 !!Picture Insert Mode
 URxvt.iso14755: false
