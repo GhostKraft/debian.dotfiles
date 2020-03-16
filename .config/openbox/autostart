@@ -4,10 +4,13 @@
 # to run user-specific things.
 #=======================================================================
 
+### Композитный менеджер Compositor
+compton -b
+
 ### Обои wallpaper
 ## feh — bg-scale /path/to/your/background/image.jpg
 ## feh --bg-fill ~/.wallpaper.jpg
-## hsetroot -fill ~/.wallpaper/wallpaper3.png
+#hsetroot -fill ~/.wallpaper/wallpaper3.png
 nitrogen --restore &
 
 ### Панель panel
