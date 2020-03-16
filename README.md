@@ -34,6 +34,7 @@ This is the repository of my configuration files.
 - **graphics editor**  - *gimp*
 - **sound** - *alsa-utils pulseaudio pavucontrol*
 - **media codec** - *ffmpeg*
+- **сompositor** - *compton*
 - **graphics drivers** - *xorg xserver-xorg-video-intel*
 - **display manager** - *lightdm*
 - **web browser** - *firefox-esr*
