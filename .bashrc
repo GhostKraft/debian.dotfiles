@@ -8,6 +8,7 @@ case $- in
       *) return;;
 esac
 
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignorespace:ignoredups:erasedups
@@ -116,10 +117,23 @@ if ! shopt -oq posix; then
 fi
 
 
+### nnn (cli fm)
+## text editor
+export EDITOR=nano
+#export PAGER=
 
+# Заклаки
+export NNN_BMS='D:~/Документы;d:~/Загрузки/;v:~/Видео/;m:~/Музыка/;i:~/Изображения/;l:~/Документы/Linux-info/;p:~/Programs/;c:~/.config/;e:/etc/;u:/usr/'
 
-## Blue
+# удаление в корзину корзину нужен пакет trash-cli
+export NNN_TRASH=1
+
+# Цветовая схема вкладок
+export NNN_COLORS='3421'
+
+## Строка приглашения Blue
 PS1=' \w \[\e[2;34m\]>\[\e[0m\]\[\e[2;34m\]>\[\e[0m\]\[\e[2;34m\]>\[\e[0m\] '  
 
 ### Стандартное приглашение
 #PS1='[\u@\h \W]\$ '
+
