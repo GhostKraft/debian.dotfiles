@@ -5,7 +5,7 @@ This is the repository of my configuration files.
 
 
 **Debian 10 “buster” & OpenBox**
-![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/screenshot/openbox/openbox_kraft_screen.png)
+![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/screenshot/openbox/openbox-gkraft-screen.png)
 *`tint2 dmenu pcmanfm rxvt-unicode dunst gsimplecal audacious`*
 
 ## **Details & software used:**
