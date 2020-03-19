@@ -2,14 +2,21 @@ how to install sudo:
 
 
 $ su
+$ apt update
+$ apt upgrade
 $ apt install sudo
 $ sudo usermod -aG sudo user_name
+$ systemctl reboot
+
+after reboot you can use a sudo
 
 
 or
 
 
-$ su 
+$ su
+$ apt update
+$ apt upgrade
 $ apt install sudo
 $ nano /etc/sudoers
 
@@ -18,3 +25,7 @@ add your user:
 user_name ALL=(ALL) ALL
 
 ctr+x - save & exit
+
+$ exit
+
+now you can use a sudo
