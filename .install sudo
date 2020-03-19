@@ -1,0 +1,20 @@
+how to install sudo:
+
+
+$ su
+$ apt install sudo
+$ sudo usermod -aG sudo user_name
+
+
+or
+
+
+$ su 
+$ apt install sudo
+$ nano /etc/sudoers
+
+under the line "root ALL=(ALL) ALL"
+add your user:
+user_name ALL=(ALL) ALL
+
+ctr+x - save & exit
