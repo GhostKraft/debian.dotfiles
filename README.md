@@ -78,6 +78,6 @@ First you need to install clear  [Debian 10 *"buster"*](https://www.debian.org/)
 
 *`sudo apt install gtk2-engines gtk2-engines-sugar gtk2-engines-qtcurve gtk2-engines-pixbuf gtk2-engines-oxygen gtk2-engines-nodoka gtk2-engines-murrine gtk2-engines-moblin gtk2-engines-cleanice gtk2-engines-aurora gtk2.0-examples`*
 
-**nnn** - [latest stable release](https://github.com/jarun/nnn/releases/tag/v3.0) *you can download the nnn deb package and install it with gdebi*
+**nnn** - [latest stable release](https://github.com/jarun/nnn/releases/tag/v3.0) *you can download the nnn deb package and install it with gdebi ($ sudo apt install gdebi)*
 
 
