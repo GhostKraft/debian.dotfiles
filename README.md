@@ -13,7 +13,7 @@ This is the repository of my configuration files.
 - **panel** - *tint2*
 - **tint2 temperature display** - *lm-sensors*
 - **tint2 font** - *sans & ubuntu mono*
-- **terminal** - *urxvt (rxvt-unicode)*
+- **terminal** - *xfce4-terminal*
 - **text editor** - *geany*
 - **cli text editor** - *nano*
 - **cli fm** - *nnn*
@@ -29,7 +29,7 @@ This is the repository of my configuration files.
 - **bar icons** - *fonts-materialdesignicons-webfont*
 - **urxvt font** - *fonts-hack-ttf*
 - **authentication-agent** - *policykit-1-gnome*
-- **launcher** - *dmenu*            
+- **launcher** - *rofi*            
 - **image viewer**  - *viewnior*
 - **graphics editor**  - *gimp*
 - **sound** - *alsa-utils pulseaudio pavucontrol*
@@ -64,7 +64,7 @@ The GTK theme and icons used are is **numix-theme** & **numix-icons**, have been
 | **super+f (numpad enter)**               | *Toggle Maximize Full active window*                    |
 | **super+d**                              | *run aplications whith dmenu*                           |
 | **print screen**                         | *screenshot whith flameshot*                            |
-| **super+enter**                          | *run terminal urxvt*                                    |
+| **super+enter**                          | *run terminal*                                          |
 | **super+f1 (f2 - f12)**                  | *run favorite aplications*                              |
 | **super+minus (equal)**                  | *volume control*                                        |
 | **super+shift+r**                        | *restart openbox*                                       |
@@ -74,7 +74,7 @@ The GTK theme and icons used are is **numix-theme** & **numix-icons**, have been
 ## Installation:
 First you need to install clear  [Debian 10 *"buster"*](https://www.debian.org/) without any desktop environments, only with basic utilities. After installing and configuring [sudo](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/install%20sudo), you need to install the following packages and reboot the system:
 
-*`sudo apt install lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings ffmpeg xorg xserver-xorg-video-intel openbox rxvt-unicode geany vlc audacious pcmanfm dmenu dunst gsimplecal tint2 nitrogen neofetch xfce4-power-manager ttf-ubuntu-font-family fonts-materialdesignicons-webfont fonts-hack-ttf policykit-1-gnome dmenu viewnior gimp lxappearance lxappearance-obconf qt5-style-plugins qt5ct alsa-utils pulseaudio pavucontrol lm-sensors firefox-esr firefox-esr-l10n-ru speedtest-cli compton`*
+*`sudo apt install lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings ffmpeg xorg xserver-xorg-video-intel openbox geany vlc audacious pcmanfm rofi dunst gsimplecal tint2 nitrogen neofetch xfce4-power-manager xfce4-terminal ttf-ubuntu-font-family fonts-materialdesignicons-webfont fonts-hack-ttf policykit-1-gnome dmenu viewnior gimp lxappearance lxappearance-obconf qt5-style-plugins qt5ct alsa-utils pulseaudio pavucontrol lm-sensors firefox-esr firefox-esr-l10n-ru speedtest-cli compton`*
 
 *`sudo apt install gtk2-engines gtk2-engines-sugar gtk2-engines-qtcurve gtk2-engines-pixbuf gtk2-engines-oxygen gtk2-engines-nodoka gtk2-engines-murrine gtk2-engines-moblin gtk2-engines-cleanice gtk2-engines-aurora gtk2.0-examples`*
 
