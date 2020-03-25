@@ -76,7 +76,7 @@ First you need to install clear  [Debian 10 *"buster"*](https://www.debian.org/)
 
 *`sudo apt install lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings ffmpeg xorg xserver-xorg-video-intel openbox geany vlc audacious pcmanfm rofi dunst gsimplecal tint2 nitrogen neofetch xfce4-power-manager xfce4-terminal ttf-ubuntu-font-family fonts-materialdesignicons-webfont fonts-hack-ttf policykit-1-gnome dmenu viewnior gimp lxappearance lxappearance-obconf qt5-style-plugins qt5ct alsa-utils pulseaudio pavucontrol lm-sensors firefox-esr firefox-esr-l10n-ru speedtest-cli compton`*
 
-*`sudo apt install gtk2-engines gtk2-engines-sugar gtk2-engines-qtcurve gtk2-engines-pixbuf gtk2-engines-oxygen gtk2-engines-nodoka gtk2-engines-murrine gtk2-engines-moblin gtk2-engines-cleanice gtk2-engines-aurora gtk2.0-examples`*
+*`sudo apt install gtk2-engines gtk2-engines-murrine`*
 
 **nnn** - [latest stable release](https://github.com/jarun/nnn/releases/tag/v3.0) *you can download the nnn deb package and install it with gdebi ($ sudo apt install gdebi)*
 
