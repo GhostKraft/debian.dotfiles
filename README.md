@@ -1,5 +1,5 @@
 ![Last screenshot](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/.wallpaper/logo%20DF_GK.png)
-# Welcome to my dotfiles repository:
+# Welcome to my Debian .dotfiles repository:
 This is the repository of my configuration files.
 <br />You can study them and use at your discretion, but do not forget that simple copying does not always lead to correct work.
 
