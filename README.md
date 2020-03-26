@@ -13,7 +13,7 @@ This is the repository of my configuration files.
 - **panel** - *tint2*
 - **tint2 temperature display** - *lm-sensors*
 - **tint2 font** - *sans & ubuntu mono*
-- **terminal** - *xfce4-terminal*
+- **terminal** - *rxvt-unicode*
 - **text editor** - *geany*
 - **cli text editor** - *nano*
 - **cli fm** - *nnn*
@@ -74,7 +74,7 @@ The GTK theme and icons used are is **numix-theme** & **numix-icons**, have been
 ## Installation:
 First you need to install clear  [Debian 10 *"buster"*](https://www.debian.org/) without any desktop environments, only with basic utilities. After installing and configuring [sudo](https://raw.githubusercontent.com/GhostKraft/dotfiles/master/install%20sudo), you need to install the following packages and reboot the system:
 
-*`sudo apt install lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings ffmpeg xorg xserver-xorg-video-intel openbox geany vlc audacious pcmanfm rofi dunst gsimplecal tint2 nitrogen neofetch xfce4-power-manager xfce4-terminal ttf-ubuntu-font-family fonts-materialdesignicons-webfont fonts-hack-ttf policykit-1-gnome dmenu viewnior gimp lxappearance lxappearance-obconf qt5-style-plugins qt5ct alsa-utils pulseaudio pavucontrol lm-sensors firefox-esr firefox-esr-l10n-ru speedtest-cli compton`*
+*`sudo apt install lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings ffmpeg xorg xserver-xorg-video-intel openbox geany vlc audacious pcmanfm rofi dunst gsimplecal tint2 nitrogen neofetch xfce4-power-manager rxvt-unicode ttf-ubuntu-font-family fonts-materialdesignicons-webfont fonts-hack-ttf policykit-1-gnome dmenu viewnior gimp lxappearance lxappearance-obconf qt5-style-plugins qt5ct alsa-utils pulseaudio pavucontrol lm-sensors firefox-esr firefox-esr-l10n-ru speedtest-cli compton`*
 
 *`sudo apt install gtk2-engines gtk2-engines-murrine`*
 
